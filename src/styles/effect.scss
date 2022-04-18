@@ -1,0 +1,35 @@
+.BoxEffect{
+    position:relative;
+    background:rgba(0,0,0,0.5);
+    overflow:hidden;
+    border-radius:20px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.BoxEffect::before{
+    content:"";
+    position:absolute;
+    width: 100px;
+    height: 200%;
+    background:linear-gradient(#00ccff,#d400d4);
+    animation:circular 4s linear infinite;
+}
+.BoxEffect::after{
+    content:"";
+    position:absolute;
+    inset: 4px;
+    background:#2b4141;
+    border-radius:16px;
+}
+@keyframes circular{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
