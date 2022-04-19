@@ -4,9 +4,17 @@ import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import "../../styles/effect.scss";
 
-import { app } from "../../configs/firebase-config";
-import { getAuth } from "firebase/auth";
-import { getDatabase, ref, set, push } from "firebase/database";
+import { authentication } from "../../configs/firebase-config";
+import {
+  getDatabase,
+  get,
+  ref,
+  set,
+  child,
+  push,
+  update,
+  onValue,
+} from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 //判斷使用者是否登入
@@ -20,13 +28,13 @@ import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
   const signInWithGoogle = () => {
-    const authentication = getAuth(app);
-    const database = getDatabase(app);
     const provider = new GoogleAuthProvider();
+    const db = getDatabase();
     signInWithPopup(authentication, provider)
-      .then((re) => {
-        push(ref(database, "/"), {
-          username: re.user.displayName,
+      .then((data) => {
+        push(ref(db, "/user"), {
+          name: data.user.displayName,
+          gmail: data.user.email,
         });
       })
       .catch((err) => {
@@ -36,7 +44,11 @@ const Login = () => {
   return (
     <Box className="BoxEffect">
       <Box sx={{ width: "260px", mb: 2, zIndex: 20 }}>
-        <Button variant="contained" sx={{ width: "100%" }}>
+        <Button
+          variant="contained"
+          sx={{ width: "100%" }}
+          onClick={signInWithGoogle}
+        >
           <Box
             sx={{
               p: 1,
