@@ -1,53 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
+
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import "../../styles/effect.scss";
 
 import { authentication } from "../../configs/firebase-config";
-import {
-  getDatabase,
-  get,
-  ref,
-  set,
-  child,
-  push,
-  update,
-  onValue,
-} from "firebase/database";
+import { getDatabase, ref, push, onValue } from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-//判斷使用者是否登入
-// const auth = getAuth();
-// const user = auth.currentUser;
-// if (user) {
-//   console.log("log in");
-// } else {
-//   console.log("no");
-// }
+function writeUserData(db, name, email) {
+  push(ref(db, "user/"), {
+    username: name,
+    email: email,
+  });
+}
+
+function readUserData(db) {
+  const userEmail_Arr = [];
+  onValue(ref(db, "user/"), (snapshot) => {
+    const data = snapshot.val();
+    if (data !== null) {
+      Object.values(data).map((user) => {
+        userEmail_Arr.push(user.email);
+      });
+    }
+  });
+  return userEmail_Arr;
+}
 
 const Login = () => {
+  const db = getDatabase();
+  const userEmail_Arr = readUserData(db);
+  const [goto, setGoto] = useState("show");
+
   const signInWithGoogle = () => {
     const provider = new GoogleAuthProvider();
-    const db = getDatabase();
+    let signed = false;
     signInWithPopup(authentication, provider)
       .then((data) => {
-        push(ref(db, "/user"), {
-          name: data.user.displayName,
-          gmail: data.user.email,
+        userEmail_Arr.map((userEmail) => {
+          if (data.user.email === userEmail) signed = true;
         });
+        if (!signed) {
+          setGoto("setting");
+          writeUserData(db, data.user.displayName, data.user.email);
+        }
       })
       .catch((err) => {
         console.log(err);
       });
   };
+
   return (
     <Box className="BoxEffect">
-      <Box sx={{ width: "260px", mb: 2, zIndex: 20 }}>
+      <Box sx={{ mb: 2, zIndex: 20 }}>
         <Button
           variant="contained"
-          sx={{ width: "100%" }}
           onClick={signInWithGoogle}
+          component={RouterLink}
+          to={`/${goto}`}
         >
           <Box
             sx={{
@@ -64,8 +77,13 @@ const Login = () => {
         </Button>
       </Box>
 
-      <Box sx={{ width: "260px", zIndex: 20 }}>
-        <Button variant="contained" color="secondary" sx={{ width: "100%" }}>
+      <Box sx={{ zIndex: 20 }}>
+        <Button
+          variant="contained"
+          color="secondary"
+          component={RouterLink}
+          to={"/show"}
+        >
           <Box
             sx={{
               p: 1,
