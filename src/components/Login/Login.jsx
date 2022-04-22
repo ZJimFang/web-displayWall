@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { UserContext } from "../UserContext";
 
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
@@ -7,19 +8,21 @@ import Box from "@mui/material/Box";
 import "../../styles/effect.scss";
 
 import { authentication } from "../../configs/firebase-config";
-import { getDatabase, ref, push, onValue } from "firebase/database";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+//是否第一次登入 是的話填寫username
+//登入進入show
 
-function writeUserData(db, name, email) {
-  push(ref(db, "user/"), {
-    username: name,
+function writeUserData(db, displayName, email, uid) {
+  set(ref(db, "users/" + uid), {
+    displayName: displayName,
     email: email,
   });
 }
 
 function readUserData(db) {
   const userEmail_Arr = [];
-  onValue(ref(db, "user/"), (snapshot) => {
+  onValue(ref(db, "users/"), (snapshot) => {
     const data = snapshot.val();
     if (data !== null) {
       Object.values(data).map((user) => {
@@ -33,20 +36,29 @@ function readUserData(db) {
 const Login = () => {
   const db = getDatabase();
   const userEmail_Arr = readUserData(db);
-  const [goto, setGoto] = useState("show");
+  const { setUserInfo } = useContext(UserContext);
 
   const signInWithGoogle = () => {
-    const provider = new GoogleAuthProvider();
     let signed = false;
+    const provider = new GoogleAuthProvider();
+
     signInWithPopup(authentication, provider)
       .then((data) => {
+        const { displayName, email, uid } = data.user;
+
         userEmail_Arr.map((userEmail) => {
-          if (data.user.email === userEmail) signed = true;
+          if (email === userEmail) signed = true;
         });
+
         if (!signed) {
-          setGoto("setting");
-          writeUserData(db, data.user.displayName, data.user.email);
+          writeUserData(db, displayName, email, uid);
         }
+        setUserInfo({
+          status: signed,
+          displayName: displayName,
+          email: email,
+          uid: uid,
+        });
       })
       .catch((err) => {
         console.log(err);
@@ -60,7 +72,7 @@ const Login = () => {
           variant="contained"
           onClick={signInWithGoogle}
           component={RouterLink}
-          to={`/${goto}`}
+          to={"/show"}
         >
           <Box
             sx={{
