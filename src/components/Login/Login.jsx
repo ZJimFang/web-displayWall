@@ -10,13 +10,12 @@ import "../../styles/effect.scss";
 import { authentication } from "../../configs/firebase-config";
 import { getDatabase, ref, set, onValue } from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-//是否第一次登入 是的話填寫username
-//登入進入show
 
-function writeUserData(db, displayName, email, uid) {
+function writeUserData(db, displayName, email, photoURL, uid) {
   set(ref(db, "users/" + uid), {
     displayName: displayName,
     email: email,
+    photoURL: photoURL,
   });
 }
 
@@ -44,20 +43,22 @@ const Login = () => {
 
     signInWithPopup(authentication, provider)
       .then((data) => {
-        const { displayName, email, uid } = data.user;
+        console.log(data);
+        const { displayName, email, uid, photoURL } = data.user;
 
         userEmail_Arr.map((userEmail) => {
           if (email === userEmail) signed = true;
         });
 
         if (!signed) {
-          writeUserData(db, displayName, email, uid);
+          writeUserData(db, displayName, email, photoURL, uid);
         }
         setUserInfo({
           status: signed,
           displayName: displayName,
           email: email,
           uid: uid,
+          photoURL: photoURL,
         });
       })
       .catch((err) => {

@@ -1,10 +1,9 @@
 import React, { useState, useContext } from "react";
 import { UserContext } from "../UserContext";
-import { getDatabase, ref, set } from "firebase/database";
-import { getAuth } from "firebase/auth";
 
-import Swal from "sweetalert2";
-
+import SetUsername from "./SetUsername";
+import Bar from "./Bar";
+import Album from "./Album";
 // const auth = getAuth();
 // const user = auth.currentUser;
 
@@ -13,35 +12,28 @@ import Swal from "sweetalert2";
 // } else {
 //   setLogIn(false);
 // }
-function storeUsername(email, uid, displayName, username) {
-  const db = getDatabase();
-  set(ref(db, "users/" + uid), {
-    displayName: displayName,
-    email: email,
-    username: username,
-  });
-}
 
 const Show = () => {
   const { userInfo } = useContext(UserContext);
-  const { status, email, displayName, uid } = userInfo;
+  const { status, email, displayName, uid, photoURL } = userInfo;
+  let setUsername = null;
   if (!status && email !== undefined) {
-    Swal.fire({
-      title: "Submit your username",
-      input: "text",
-      inputAttributes: {
-        autocapitalize: "off",
-      },
-      showCancelButton: true,
-      confirmButtonText: "Confirm",
-      showLoaderOnConfirm: true,
-      preConfirm: (value) => {
-        storeUsername(email, uid, displayName, value);
-      },
-      allowOutsideClick: () => !Swal.isLoading(),
-    });
+    setUsername = (
+      <SetUsername
+        email={email}
+        displayName={displayName}
+        uid={uid}
+        photoURL={photoURL}
+      />
+    );
   }
-  return <span>thank you! you have already give me your username</span>;
+
+  return (
+    <>
+      {setUsername}
+      <Bar />
+    </>
+  );
 };
 
 export default Show;
