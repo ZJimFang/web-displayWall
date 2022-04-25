@@ -1,9 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { UserContext } from "../UserContext";
 
 import SetUsername from "./SetUsername";
 import Bar from "./Bar";
-import Album from "./Album";
+import ProjectCard from "./ProjectCard";
+
+import Grid from "@mui/material/Grid";
+import { Box } from "@mui/material";
 // const auth = getAuth();
 // const user = auth.currentUser;
 
@@ -32,6 +35,27 @@ const Show = () => {
     <>
       {setUsername}
       <Bar />
+
+      <Box sx={{ mt: "100px" }}>
+        <Grid container spacing={3}>
+          {Array.from(Array(6)).map((_, index) => (
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              key={index}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <ProjectCard />
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </>
   );
 };

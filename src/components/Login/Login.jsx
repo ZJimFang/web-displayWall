@@ -67,49 +67,59 @@ const Login = () => {
   };
 
   return (
-    <Box className="BoxEffect">
-      <Box sx={{ mb: 2, zIndex: 20 }}>
-        <Button
-          variant="contained"
-          onClick={signInWithGoogle}
-          component={RouterLink}
-          to={"/show"}
-        >
-          <Box
-            sx={{
-              p: 1,
-              mr: 2,
-              my: 0.5,
-              bgcolor: "white",
-              borderRadius: "50%",
-            }}
+    <Box
+      sx={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Box className="BoxEffect">
+        <Box sx={{ mb: 2, zIndex: 20 }}>
+          <Button
+            variant="contained"
+            onClick={signInWithGoogle}
+            component={RouterLink}
+            to={"/show"}
           >
-            <Avatar src={"https://freesvg.org/img/1534129544.png"} />
-          </Box>
-          <span>Log in with Google</span>
-        </Button>
-      </Box>
+            <Box
+              sx={{
+                p: 1,
+                mr: 2,
+                my: 0.5,
+                bgcolor: "white",
+                borderRadius: "50%",
+              }}
+            >
+              <Avatar src={"https://freesvg.org/img/1534129544.png"} />
+            </Box>
+            <span>Log in with Google</span>
+          </Button>
+        </Box>
 
-      <Box sx={{ zIndex: 20 }}>
-        <Button
-          variant="contained"
-          color="secondary"
-          component={RouterLink}
-          to={"/show"}
-        >
-          <Box
-            sx={{
-              p: 1,
-              mr: 2,
-              my: 0.5,
-              bgcolor: "#BDBDBD",
-              borderRadius: "50%",
-            }}
+        <Box sx={{ zIndex: 20 }}>
+          <Button
+            variant="contained"
+            color="secondary"
+            component={RouterLink}
+            to={"/show"}
           >
-            <Avatar />
-          </Box>
-          <span>Log in with visiter</span>
-        </Button>
+            <Box
+              sx={{
+                p: 1,
+                mr: 2,
+                my: 0.5,
+                bgcolor: "#BDBDBD",
+                borderRadius: "50%",
+              }}
+            >
+              <Avatar />
+            </Box>
+            <span>Log in with visiter</span>
+          </Button>
+        </Box>
       </Box>
     </Box>
   );
