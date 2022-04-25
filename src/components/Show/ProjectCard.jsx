@@ -1,19 +1,16 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 export default function ProjectCard() {
   return (
-    <Card sx={{ minWidth: "350px" }}>
+    <Card sx={{ minWidth: "350px", backgroundColor: "#C8C2AE" }}>
       <CardMedia
         component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
+        height="200px"
+        image="https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -23,9 +20,6 @@ export default function ProjectCard() {
           Description
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Let's Go</Button>
-      </CardActions>
     </Card>
   );
 }
