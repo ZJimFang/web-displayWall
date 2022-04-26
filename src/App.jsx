@@ -5,6 +5,8 @@ import { UserContext } from "./components/UserContext";
 import Login from "./components/Login/Login";
 import Show from "./components/Show/Show";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
+import Frame from "./components/Show/Frame";
+
 function App() {
   const [userInfo, setUserInfo] = useState({});
   const value = useMemo(
@@ -17,6 +19,7 @@ function App() {
       <UserContext.Provider value={value}>
         <Routes>
           <Route exact path="/" element={<Login />} />
+          <Route path="/frame/:group" element={<Frame />} />
           <Route path="/show" element={<Show />} />
           <Route path="/show/leaderBoard" element={<LeaderBoard />} />
         </Routes>
