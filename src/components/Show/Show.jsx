@@ -36,7 +36,6 @@ const Show = () => {
     );
   }
   for (const group in c1) {
-    console.log(c1[group]);
     item_arr.push(
       <Grid
         item
