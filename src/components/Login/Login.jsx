@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { UserContext } from "../UserContext";
+import { UserContext } from "../public/UserContext";
 
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
@@ -82,7 +82,7 @@ const Login = () => {
             variant="contained"
             onClick={signInWithGoogle}
             component={RouterLink}
-            to={"/show"}
+            to={"/show/c1"}
           >
             <Box
               sx={{
@@ -104,7 +104,7 @@ const Login = () => {
             variant="contained"
             color="secondary"
             component={RouterLink}
-            to={"/show"}
+            to={"/show/c1"}
           >
             <Box
               sx={{

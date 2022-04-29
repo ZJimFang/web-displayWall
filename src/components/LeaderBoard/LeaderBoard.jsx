@@ -1,7 +1,12 @@
 import React from "react";
-
+import Bar from "../public/Bar";
 const LeaderBoard = () => {
-  return <div>LeaderBoard</div>;
+  return (
+    <>
+      <Bar />
+      <div>LeaderBoard</div>;
+    </>
+  );
 };
 
 export default LeaderBoard;

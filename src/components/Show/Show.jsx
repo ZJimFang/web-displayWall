@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
-import { UserContext } from "../UserContext";
+import { UserContext } from "../public/UserContext";
+import { useParams } from "react-router-dom";
 
 import SetUsername from "./SetUsername";
-import Bar from "./Bar";
+import Bar from "../public/Bar";
 import ProjectCard from "./ProjectCard";
 
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
 
-import { c1, c2 } from "./Info";
+import { c1, c2 } from "../public/Info";
 
 import { v4 as uuidv4 } from "uuid";
 // const auth = getAuth();
@@ -23,7 +24,10 @@ import { v4 as uuidv4 } from "uuid";
 const Show = () => {
   const { userInfo } = useContext(UserContext);
   const { status, email, displayName, uid, photoURL } = userInfo;
+  const { group } = useParams();
+
   let setUsername = null;
+  let group_now;
   const item_arr = [];
   if (!status && email !== undefined) {
     setUsername = (
@@ -35,34 +39,23 @@ const Show = () => {
       />
     );
   }
-  for (const group in c1) {
+  group_now = group === "c1" ? c1 : c2;
+  for (const group in group_now) {
     item_arr.push(
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        key={uuidv4()}
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <Grid item xs={12} sm={6} md={4} key={uuidv4()}>
         <ProjectCard
-          name={c1[group].name}
-          description={c1[group].description}
+          name={group_now[group].name}
+          description={group_now[group].description}
+          img_url={group_now[group].img_url}
         />
       </Grid>
     );
   }
-
   return (
     <>
       {setUsername}
       <Bar />
-
-      <Box sx={{ mt: "100px" }}>
+      <Box sx={{ mt: "30px" }}>
         <Grid container spacing={3}>
           {item_arr.map((item) => item)}
         </Grid>

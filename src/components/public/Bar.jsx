@@ -9,6 +9,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Link as RouterLink } from "react-router-dom";
+
+const pages = ["c1", "c2", "Leaderboard"];
 
 const Bar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -21,17 +24,8 @@ const Bar = () => {
     setAnchorElNav(null);
   };
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
   return (
-    <AppBar>
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -72,11 +66,16 @@ const Bar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">C1</Typography>
-                <Typography textAlign="center">C2</Typography>
-                <Typography textAlign="center">Leader board</Typography>
-              </MenuItem>
+              {pages.map((page) => (
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  component={RouterLink}
+                  to={`/show/${page}`}
+                >
+                  {page}
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
           <Typography
@@ -85,27 +84,25 @@ const Bar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            Web Show
+            Web show
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              C1
-            </Button>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              C2
-            </Button>
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              Leader board
-            </Button>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                component={RouterLink}
+                to={`/show/${page}`}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  textAlign: "center",
+                }}
+              >
+                {page}
+              </Button>
+            ))}
           </Box>
         </Toolbar>
       </Container>
