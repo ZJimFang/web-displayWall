@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import "../../styles/effect.scss";
+import { c1_userTable, c2_userTable } from "../public/Info";
 
 import { authentication } from "../../configs/firebase-config";
 import { getDatabase, ref, set, onValue } from "firebase/database";
@@ -16,6 +17,8 @@ function writeUserData(db, displayName, email, photoURL, uid) {
     displayName: displayName,
     email: email,
     photoURL: photoURL,
+    c1: c1_userTable,
+    c2: c2_userTable,
   });
 }
 

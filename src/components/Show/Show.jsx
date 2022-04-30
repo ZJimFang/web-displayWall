@@ -12,6 +12,7 @@ import { Box } from "@mui/material";
 import { c1, c2 } from "../public/Info";
 
 import { v4 as uuidv4 } from "uuid";
+
 // const auth = getAuth();
 // const user = auth.currentUser;
 
@@ -23,21 +24,14 @@ import { v4 as uuidv4 } from "uuid";
 
 const Show = () => {
   const { userInfo } = useContext(UserContext);
-  const { status, email, displayName, uid, photoURL } = userInfo;
+  const { status, email, uid } = userInfo;
   const { group } = useParams();
 
   let setUsername = null;
   let group_now;
   const item_arr = [];
   if (!status && email !== undefined) {
-    setUsername = (
-      <SetUsername
-        email={email}
-        displayName={displayName}
-        uid={uid}
-        photoURL={photoURL}
-      />
-    );
+    setUsername = <SetUsername uid={uid} />;
   }
   group_now = group === "c1" ? c1 : c2;
   for (const group in group_now) {
@@ -47,6 +41,7 @@ const Show = () => {
           name={group_now[group].name}
           description={group_now[group].description}
           img_url={group_now[group].img_url}
+          uid={uid}
         />
       </Grid>
     );
