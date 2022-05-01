@@ -21,7 +21,7 @@ export const c1 = {
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
   },
   group4: {
-    name: "------",
+    name: "a",
     description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
     img_url:
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
@@ -51,7 +51,7 @@ export const c1 = {
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
   },
   group9: {
-    name: "台灣靈異故事",
+    name: "台灣靈異故事2",
     description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
     img_url:
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
@@ -69,7 +69,7 @@ export const c1 = {
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
   },
   group12: {
-    name: "------",
+    name: "b",
     description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
     img_url:
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
@@ -162,7 +162,7 @@ export const c2 = {
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
   },
   group14: {
-    name: "-----",
+    name: "c",
     description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
     img_url:
       "https://imgv3.fotor.com/images/homepage-feature-card/%E4%B8%80%E9%8D%B5%E7%BE%8E%E5%8C%96%E7%85%A7%E7%89%87.jpg",
@@ -175,23 +175,20 @@ export const c2 = {
   },
 };
 
-export const c1_userTable = {
+export const rate_table = {
   台灣五區趴趴GO: { score: 0 },
   嗯哼: { score: 0 },
   口紅評比: { score: 0 },
-  母災: { score: 0 },
+  a: { score: 0 },
   浪浪四缺一: { score: 0 },
   IN_鞋子: { score: 0 },
   談攝世界: { score: 0 },
   台灣靈異故事: { score: 0 },
-  母災啦: { score: 0 },
+  台灣靈異故事2: { score: 0 },
   傳說對決: { score: 0 },
   元智國際電玩展: { score: 0 },
-  母災啦吧: { score: 0 },
+  b: { score: 0 },
   Bivino: { score: 0 },
-};
-
-export const c2_userTable = {
   Yee遊未盡: { score: 0 },
   葉尾蝶: { score: 0 },
   "hhien studio": { score: 0 },
@@ -205,6 +202,6 @@ export const c2_userTable = {
   "COOL BABY": { score: 0 },
   "God web": { score: 0 },
   電影大百科: { score: 0 },
-  母災: { score: 0 },
+  c: { score: 0 },
   你的好蜂蜜網站: { score: 0 },
 };

@@ -12,20 +12,20 @@ import { Box } from "@mui/material";
 import { c1, c2 } from "../public/Info";
 
 import { v4 as uuidv4 } from "uuid";
-
-// const auth = getAuth();
-// const user = auth.currentUser;
-
-// if (user) {
-//   setLogIn(true);
-// } else {
-//   setLogIn(false);
-// }
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const Show = () => {
   const { userInfo } = useContext(UserContext);
   const { status, email, uid } = userInfo;
   const { group } = useParams();
+  const auth = getAuth();
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     console.log(true);
+  //   } else {
+  //     console.log(false);
+  //   }
+  // });
 
   let setUsername = null;
   let group_now;
@@ -38,6 +38,7 @@ const Show = () => {
     item_arr.push(
       <Grid item xs={12} sm={6} md={4} key={uuidv4()}>
         <ProjectCard
+          auth={auth}
           name={group_now[group].name}
           description={group_now[group].description}
           img_url={group_now[group].img_url}

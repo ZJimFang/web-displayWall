@@ -5,20 +5,21 @@ import { UserContext } from "../public/UserContext";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
+import { rate_table } from "../public/Info";
 import "../../styles/effect.scss";
-import { c1_userTable, c2_userTable } from "../public/Info";
 
 import { authentication } from "../../configs/firebase-config";
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import { getDatabase, ref, onValue, update } from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 function writeUserData(db, displayName, email, photoURL, uid) {
-  set(ref(db, "users/" + uid), {
+  update(ref(db, `users/${uid}`), {
     displayName: displayName,
     email: email,
     photoURL: photoURL,
-    c1: c1_userTable,
-    c2: c2_userTable,
+  });
+  update(ref(db, `users/${uid}`), {
+    rate: rate_table,
   });
 }
 
@@ -46,9 +47,7 @@ const Login = () => {
 
     signInWithPopup(authentication, provider)
       .then((data) => {
-        console.log(data);
         const { displayName, email, uid, photoURL } = data.user;
-
         userEmail_Arr.map((userEmail) => {
           if (email === userEmail) signed = true;
         });

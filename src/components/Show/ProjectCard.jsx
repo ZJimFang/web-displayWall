@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -11,30 +11,51 @@ import { getDatabase, ref, onValue, update } from "firebase/database";
 
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-// const db = getDatabase();
-// set(ref(db, "projects/" + name), {
-//   score: star,
-//   comment: "hi",
-// });
 
-function store(name, star) {
+function update_database(auth, name, star) {
+  const uid = auth.currentUser.uid;
   const db = getDatabase();
-  update(ref(db, "projects/" + name), {
+  //update user's star
+  update(ref(db, `users/${uid}/rate/${name}`), {
     score: star,
-    comment: "hi",
   });
+
+  //update leader table
+  // onValue(ref(db, `projects/${name}`), (snapshot) => {
+  //   const data = snapshot.val();
+  //   let { score, total } = data;
+  //   score *= total;
+  //   score += star;
+  //   total += 1;
+  //   score /= total;
+  //   update(ref(db, `projects/${name}`), {
+  //     score: score,
+  //     total: total,
+  //   });
+  // });
 }
 
-export default function ProjectCard({ name, description, img_url }) {
+export default function ProjectCard({ auth, name, description, img_url }) {
   const [star, setStar] = React.useState(0);
   const db = getDatabase();
+  // update(ref(db, "projects/" + name), {
+  //   score: 0,
+  //   comment: {},
+  //   total: 0,
+  // });
 
+  //bug
   useEffect(() => {
-    onValue(ref(db, "projects/" + name), (snapshot) => {
-      const data = snapshot.val();
-      const { score } = data;
-      setStar(score);
-    });
+    if (auth.currentUser != null) {
+      const uid = auth.currentUser.uid;
+      onValue(ref(db, `users/${uid}/rate/${name}`), (snapshot) => {
+        const data = snapshot.val();
+        if (data != null) {
+          const { score } = data;
+          setStar(score);
+        }
+      });
+    }
   });
 
   return (
@@ -64,7 +85,7 @@ export default function ProjectCard({ name, description, img_url }) {
             name="size-large"
             value={star}
             onChange={(event, value) => {
-              store(name, value);
+              update_database(auth, name, value);
             }}
           />
           <Popup

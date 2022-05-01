@@ -9,9 +9,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { Link as RouterLink } from "react-router-dom";
 
+import { getAuth, signOut } from "firebase/auth";
+
 const pages = ["c1", "c2", "Leaderboard"];
+
+function logOut() {
+  const auth = getAuth();
+  signOut(auth);
+}
 
 const Bar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -104,6 +112,9 @@ const Bar = () => {
               </Button>
             ))}
           </Box>
+          <Button color="inherit">
+            <LogoutIcon onClick={logOut} />
+          </Button>
         </Toolbar>
       </Container>
     </AppBar>
