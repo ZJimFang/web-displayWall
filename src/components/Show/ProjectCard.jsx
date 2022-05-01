@@ -7,47 +7,50 @@ import Typography from "@mui/material/Typography";
 import CommentTwoToneIcon from "@mui/icons-material/CommentTwoTone";
 import Rating from "@mui/material/Rating";
 import { Link as RouterLink } from "react-router-dom";
-import { getDatabase, ref, onValue, update } from "firebase/database";
+import {
+  getDatabase,
+  ref,
+  onValue,
+  get,
+  update,
+  child,
+} from "firebase/database";
 
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
-function update_database(auth, name, star) {
-  const uid = auth.currentUser.uid;
-  const db = getDatabase();
-  //update user's star
+//update user's star
+function update_user(db, uid, name, star) {
   update(ref(db, `users/${uid}/rate/${name}`), {
     score: star,
   });
+}
 
-  //update leader table
-  // onValue(ref(db, `projects/${name}`), (snapshot) => {
-  //   const data = snapshot.val();
-  //   let { score, total } = data;
-  //   score *= total;
-  //   score += star;
-  //   total += 1;
-  //   score /= total;
-  //   update(ref(db, `projects/${name}`), {
-  //     score: score,
-  //     total: total,
-  //   });
-  // });
+//update leader table
+function update_project(name, star) {
+  const db = getDatabase();
+  const dbRef = ref(getDatabase());
+  get(child(dbRef, `projects/${name}`)).then((snapshot) => {
+    const data = snapshot.val();
+    let { total } = data;
+    total += star;
+    update(ref(db, `projects/${name}`), {
+      total: total,
+    });
+  });
 }
 
 export default function ProjectCard({ auth, name, description, img_url }) {
   const [star, setStar] = React.useState(0);
   const db = getDatabase();
+  const uid = auth.currentUser.uid;
   // update(ref(db, "projects/" + name), {
-  //   score: 0,
-  //   comment: {},
   //   total: 0,
   // });
 
   //bug
   useEffect(() => {
     if (auth.currentUser != null) {
-      const uid = auth.currentUser.uid;
       onValue(ref(db, `users/${uid}/rate/${name}`), (snapshot) => {
         const data = snapshot.val();
         if (data != null) {
@@ -56,7 +59,7 @@ export default function ProjectCard({ auth, name, description, img_url }) {
         }
       });
     }
-  });
+  }, [star]);
 
   return (
     <Card sx={{ minWidth: "350px", backgroundColor: "#C8C2AE" }}>
@@ -85,7 +88,8 @@ export default function ProjectCard({ auth, name, description, img_url }) {
             name="size-large"
             value={star}
             onChange={(event, value) => {
-              update_database(auth, name, value);
+              update_user(db, uid, name, value);
+              update_project(name, value);
             }}
           />
           <Popup

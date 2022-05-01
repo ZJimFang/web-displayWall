@@ -30,9 +30,11 @@ const Show = () => {
   let setUsername = null;
   let group_now;
   const item_arr = [];
+
   if (!status && email !== undefined) {
     setUsername = <SetUsername uid={uid} />;
   }
+
   group_now = group === "c1" ? c1 : c2;
   for (const group in group_now) {
     item_arr.push(
