@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
-import { Link as RouterLink } from "react-router-dom";
-import { UserContext } from "../public/UserContext";
+import React from "react";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
@@ -11,17 +10,6 @@ import "../../styles/effect.scss";
 import { authentication } from "../../configs/firebase-config";
 import { getDatabase, ref, onValue, update } from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-
-function writeUserData(db, displayName, email, photoURL, uid) {
-  update(ref(db, `users/${uid}`), {
-    displayName: displayName,
-    email: email,
-    photoURL: photoURL,
-  });
-  update(ref(db, `users/${uid}`), {
-    rate: rate_table,
-  });
-}
 
 function readUserData(db) {
   const userEmail_Arr = [];
@@ -38,8 +26,8 @@ function readUserData(db) {
 
 const Login = () => {
   const db = getDatabase();
+  const navigate = useNavigate();
   const userEmail_Arr = readUserData(db);
-  const { setUserInfo } = useContext(UserContext);
 
   const signInWithGoogle = () => {
     let signed = false;
@@ -47,21 +35,23 @@ const Login = () => {
 
     signInWithPopup(authentication, provider)
       .then((data) => {
-        const { displayName, email, uid, photoURL } = data.user;
+        const { displayName, email, uid } = data.user;
         userEmail_Arr.map((userEmail) => {
           if (email === userEmail) signed = true;
         });
 
         if (!signed) {
-          writeUserData(db, displayName, email, photoURL, uid);
+          update(ref(db, `users/${uid}`), {
+            displayName: displayName,
+            email: email,
+            rate: rate_table,
+          });
         }
-        setUserInfo({
-          status: signed,
-          displayName: displayName,
-          email: email,
-          uid: uid,
-          photoURL: photoURL,
-        });
+
+        return signed;
+      })
+      .then((signed) => {
+        navigate("/show/c1", { state: { signed: signed } });
       })
       .catch((err) => {
         console.log(err);
@@ -80,12 +70,7 @@ const Login = () => {
     >
       <Box className="BoxEffect">
         <Box sx={{ mb: 2, zIndex: 20 }}>
-          <Button
-            variant="contained"
-            onClick={signInWithGoogle}
-            component={RouterLink}
-            to={"/show/c1"}
-          >
+          <Button variant="contained" onClick={signInWithGoogle}>
             <Box
               sx={{
                 p: 1,

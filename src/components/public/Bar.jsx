@@ -10,19 +10,24 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { Link as RouterLink } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 
 const pages = ["c1", "c2", "Leaderboard"];
 
-function logOut() {
-  const auth = getAuth();
-  signOut(auth);
-}
-
-const Bar = () => {
+const Bar = ({ signed }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const navigate = useNavigate();
+
+  function logOut() {
+    const auth = getAuth();
+    signOut(auth);
+    navigate("/");
+  }
+
+  function goTo(page) {
+    navigate(`/show/${page}`, { state: { signed: true } });
+  }
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -77,9 +82,10 @@ const Bar = () => {
               {pages.map((page) => (
                 <MenuItem
                   key={page}
-                  onClick={handleCloseNavMenu}
-                  component={RouterLink}
-                  to={`/show/${page}`}
+                  onClick={() => {
+                    handleCloseNavMenu();
+                    goTo(page);
+                  }}
                 >
                   {page}
                 </MenuItem>
@@ -98,9 +104,10 @@ const Bar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
-                component={RouterLink}
-                to={`/show/${page}`}
+                onClick={() => {
+                  handleCloseNavMenu();
+                  goTo(page);
+                }}
                 sx={{
                   my: 2,
                   color: "white",
@@ -112,8 +119,8 @@ const Bar = () => {
               </Button>
             ))}
           </Box>
-          <Button color="inherit">
-            <LogoutIcon onClick={logOut} />
+          <Button color="inherit" onClick={logOut}>
+            <LogoutIcon />
           </Button>
         </Toolbar>
       </Container>

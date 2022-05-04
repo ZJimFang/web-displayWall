@@ -5,7 +5,7 @@ import { getDatabase, ref, update } from "firebase/database";
 function storeUsername(id, username) {
   const db = getDatabase();
   update(ref(db, `users/${id}`), {
-    displayName: username,
+    username: username,
   });
 }
 
