@@ -1,36 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 import Divider from "@mui/material/Divider";
-import {
-  getDatabase,
-  ref,
-  onValue,
-  get,
-  update,
-  child,
-} from "firebase/database";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { v4 as uuidv4 } from "uuid";
 
-const Comments = () => {
-  return (
-    <>
-      <Grid container wrap="nowrap" spacing={2}>
-        <Grid justifyContent="left" item xs zeroMinWidth>
-          <h4 style={{ margin: 0, textAlign: "left" }}>Michel Michel</h4>
-          <p style={{ textAlign: "left" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            luctus ut est sed faucibus. Duis bibendum ac ex vehicula laoreet.
-            Suspendisse congue vulputate lobortis. Pellentesque at interdum
-            tortor. Quisque arcu quam, malesuada vel mauris et, posuere sagittis
-            ipsum. Aliquam ultricies a ligula nec faucibus. In elit metus,
-            efficitur lobortis nisi quis, molestie porttitor metus. Pellentesque
-            et neque risus. Aliquam vulputate, mauris vitae tincidunt interdum,
-            mauris mi vehicula urna, nec feugiat quam lectus vitae ex.{" "}
-          </p>
-        </Grid>
-      </Grid>
-      <Divider variant="fullWidth" style={{ margin: "10px 0" }} />
-    </>
-  );
+const Comments = ({ name }) => {
+  const [comments, setComments] = useState();
+  const db = getDatabase();
+  let comments_arr = [];
+  useEffect(() => {
+    onValue(ref(db, `projects/${name}`), (snapshot) => {
+      const data = snapshot.val();
+      setComments(data.comment);
+    });
+  }, []);
+
+  if (comments !== undefined) {
+    for (const key of Object.keys(comments)) {
+      comments_arr.push(
+        <div key={uuidv4()}>
+          <Grid container wrap="nowrap" spacing={2}>
+            <Grid justifyContent="left" item xs zeroMinWidth>
+              <h4 style={{ margin: 0, textAlign: "left" }}>{key}</h4>
+              <p style={{ textAlign: "left" }}>{comments[key]}</p>
+            </Grid>
+          </Grid>
+          <Divider variant="fullWidth" style={{ margin: "10px 0" }} />
+        </div>
+      );
+    }
+  }
+  return <>{comments_arr.map((comment) => comment)}</>;
 };
 
 export default Comments;

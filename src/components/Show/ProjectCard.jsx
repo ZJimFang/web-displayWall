@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "@mui/material/Card";
 import Stack from "@mui/material/Stack";
 import CardContent from "@mui/material/CardContent";
@@ -17,9 +17,11 @@ import {
   ref,
   onValue,
   get,
+  set,
   update,
   child,
 } from "firebase/database";
+import { getAuth } from "firebase/auth";
 
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
@@ -49,9 +51,34 @@ function update_project(name, value, star) {
   });
 }
 
-export default function ProjectCard({ name, description, img_url, uid }) {
-  const [star, setStar] = React.useState(0);
+export default function ProjectCard({
+  name,
+  description,
+  img_url,
+  uid,
+  signed,
+}) {
+  const [star, setStar] = useState(0);
+  const [message, setMessage] = useState("");
   const db = getDatabase();
+  const onChangeHandler = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const store_message = () => {
+    const dbRef = ref(getDatabase());
+
+    get(child(dbRef, `users/${uid}`))
+      .then((snapshot) => {
+        const data = snapshot.val();
+        return data.displayName;
+      })
+      .then((displayName) => {
+        update(ref(db, `projects/${name}/comment`), {
+          [displayName]: message,
+        });
+      });
+  };
 
   useEffect(() => {
     onValue(ref(db, `users/${uid}/rate/${name}`), (snapshot) => {
@@ -63,14 +90,14 @@ export default function ProjectCard({ name, description, img_url, uid }) {
     });
   }, []);
 
-  update(ref(db, "projects/" + name), {
-    total: 0,
-    comment: {
-      1082022: "Hi",
-      1082023: "Hi bro",
-      1082024: "Hiii",
-    },
-  });
+  // update(ref(db, "projects/" + name), {
+  //   total: 0,
+  //   comment: {
+  //     1082022: "Hi",
+  //     1082023: "Hi bro",
+  //     1082024: "Hiii",
+  //   },
+  // });
 
   return (
     <Card sx={{ minWidth: "350px", backgroundColor: "#C8C2AE" }}>
@@ -89,41 +116,52 @@ export default function ProjectCard({ name, description, img_url, uid }) {
         >
           {description}
         </Typography>
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Rating
-            name="size-large"
-            value={star}
-            onChange={(event, value) => {
-              update_user(db, uid, name, value);
-              update_project(name, value, star);
-            }}
-          />
-          <Popup
-            trigger={<CommentTwoToneIcon sx={{ cursor: "pointer" }} />}
-            modal
-            nested
+        {signed === "visiter" ? (
+          ""
+        ) : (
+          <Grid
+            container
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
           >
-            <Paper
-              style={{
-                padding: "30px 20px",
-                border: "1px solid black",
-                height: "300px",
-                overflow: "auto",
+            <Rating
+              name="size-large"
+              value={star}
+              onChange={(event, value) => {
+                update_user(db, uid, name, value);
+                update_project(name, value, star);
               }}
+            />
+            <Popup
+              trigger={<CommentTwoToneIcon sx={{ cursor: "pointer" }} />}
+              modal
+              nested
             >
-              <Comments />
-            </Paper>
-            <Stack spacing={1} direction="row" sx={{ margin: "20px 0" }}>
-              <TextField fullWidth label="Comment" id="fullWidth" />
-              <Button variant="contained">Send</Button>
-            </Stack>
-          </Popup>
-        </Grid>
+              <Paper
+                style={{
+                  padding: "30px 20px",
+                  border: "1px solid black",
+                  height: "300px",
+                  overflow: "auto",
+                }}
+              >
+                <Comments name={name} />
+              </Paper>
+              <Stack spacing={1} direction="row" sx={{ margin: "20px 0" }}>
+                <TextField
+                  fullWidth
+                  label="Comment"
+                  id="fullWidth"
+                  onChange={onChangeHandler}
+                />
+                <Button variant="contained" onClick={store_message}>
+                  Send
+                </Button>
+              </Stack>
+            </Popup>
+          </Grid>
+        )}
       </CardContent>
     </Card>
   );

@@ -17,7 +17,7 @@ function Show() {
   const { group } = useParams();
   const location = useLocation();
 
-  const { uid } = getAuth().currentUser;
+  const { uid } = getAuth().currentUser || "";
   const item_arr = [];
   const signed = location.state.signed;
   let group_now = group === "c1" ? c1 : c2;
@@ -30,6 +30,7 @@ function Show() {
           description={group_now[group].description}
           img_url={group_now[group].img_url}
           uid={uid}
+          signed={signed}
         />
       </Grid>
     );

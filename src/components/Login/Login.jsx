@@ -29,7 +29,7 @@ const Login = () => {
   const navigate = useNavigate();
   const userEmail_Arr = readUserData(db);
 
-  const signInWithGoogle = () => {
+  function signInWithGoogle() {
     let signed = false;
     const provider = new GoogleAuthProvider();
 
@@ -56,8 +56,11 @@ const Login = () => {
       .catch((err) => {
         console.log(err);
       });
-  };
+  }
 
+  function log_visiter() {
+    navigate("/show/c1", { state: { signed: "visiter" } });
+  }
   return (
     <Box
       sx={{
@@ -87,12 +90,7 @@ const Login = () => {
         </Box>
 
         <Box sx={{ zIndex: 20 }}>
-          <Button
-            variant="contained"
-            color="secondary"
-            component={RouterLink}
-            to={"/show/c1"}
-          >
+          <Button variant="contained" color="secondary" onClick={log_visiter}>
             <Box
               sx={{
                 p: 1,
