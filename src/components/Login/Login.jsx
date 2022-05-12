@@ -1,17 +1,16 @@
 import React from "react";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import { rate_table } from "../public/Info";
 import "../../styles/effect.scss";
-
 import { authentication } from "../../configs/firebase-config";
 import { getDatabase, ref, onValue, update } from "firebase/database";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
-function readUserData(db) {
+//Get all the emails to determine whether you have registered
+function getAllEmail(db) {
   const userEmail_Arr = [];
   onValue(ref(db, "users/"), (snapshot) => {
     const data = snapshot.val();
@@ -24,10 +23,11 @@ function readUserData(db) {
   return userEmail_Arr;
 }
 
+//log in with google
 const Login = () => {
   const db = getDatabase();
   const navigate = useNavigate();
-  const userEmail_Arr = readUserData(db);
+  const userEmail_Arr = getAllEmail(db);
 
   function signInWithGoogle() {
     let signed = false;
@@ -58,9 +58,11 @@ const Login = () => {
       });
   }
 
+  //log in with visiter
   function log_visiter() {
     navigate("/show/c1", { state: { signed: "visiter" } });
   }
+
   return (
     <Box
       sx={{

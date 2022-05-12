@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Swal from "sweetalert2";
 import { getDatabase, ref, update } from "firebase/database";
 
-function storeUsername(id, username) {
+//store username into db
+function storeUsername(uid, username) {
   const db = getDatabase();
-  update(ref(db, `users/${id}`), {
+  update(ref(db, `users/${uid}`), {
     username: username,
   });
 }
 
+//jump Swal for input username
 const SetUsername = ({ uid }) => {
-  const [id, setId] = useState(uid);
-
   useEffect(() => {
     Swal.fire({
       title: "Submit your username",
@@ -23,7 +23,7 @@ const SetUsername = ({ uid }) => {
       confirmButtonText: "Confirm",
       showLoaderOnConfirm: true,
       preConfirm: (value) => {
-        storeUsername(id, value);
+        storeUsername(uid, value);
       },
       allowOutsideClick: () => !Swal.isLoading(),
     });

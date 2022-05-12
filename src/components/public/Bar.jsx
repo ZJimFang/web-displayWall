@@ -13,20 +13,25 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 
-const pages = ["c1", "c2", "Leaderboard"];
-
 const Bar = ({ signed }) => {
+  const pages = ["c1", "c2", "Leaderboard"];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
+  let flag = "visiter";
+  if (signed !== "visiter") {
+    flag = true;
+  }
 
+  //log out
   function logOut() {
     const auth = getAuth();
     signOut(auth);
     navigate("/");
   }
 
+  //navigate to page
   function goTo(page) {
-    navigate(`/show/${page}`, { state: { signed: true } });
+    navigate(`/show/${page}`, { state: { signed: flag } });
   }
 
   const handleOpenNavMenu = (event) => {

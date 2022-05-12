@@ -1,22 +1,17 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
 import SetUsername from "./SetUsername";
-
 import Bar from "../public/Bar";
 import ProjectCard from "./ProjectCard";
-
 import Grid from "@mui/material/Grid";
 import { Box } from "@mui/material";
-
 import { c1, c2 } from "../public/Info";
-
 import { v4 as uuidv4 } from "uuid";
 import { getAuth } from "firebase/auth";
 
-function Show() {
+const Show = () => {
   const { group } = useParams();
   const location = useLocation();
-
   const { uid } = getAuth().currentUser || "";
   const item_arr = [];
   const signed = location.state.signed;
@@ -48,6 +43,6 @@ function Show() {
       </Box>
     </>
   );
-}
+};
 
 export default Show;

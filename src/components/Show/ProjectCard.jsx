@@ -10,24 +10,19 @@ import CommentTwoToneIcon from "@mui/icons-material/CommentTwoTone";
 import Rating from "@mui/material/Rating";
 import { Paper } from "@mui/material";
 import Button from "@mui/material/Button";
-
 import { Link as RouterLink } from "react-router-dom";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import "../../styles/popup.scss";
+import Comments from "./Comments";
 import {
   getDatabase,
   ref,
   onValue,
   get,
-  set,
   update,
   child,
 } from "firebase/database";
-import { getAuth } from "firebase/auth";
-
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
-import "../../styles/popup.scss";
-
-import Comments from "./Comments";
 
 //update user's star
 function update_user(db, uid, name, star) {
@@ -51,24 +46,18 @@ function update_project(name, value, star) {
   });
 }
 
-export default function ProjectCard({
-  name,
-  description,
-  img_url,
-  uid,
-  signed,
-}) {
+const ProjectCard = ({ name, description, img_url, uid, signed }) => {
   const [star, setStar] = useState(0);
   const [message, setMessage] = useState("");
   const db = getDatabase();
+
   const onChangeHandler = (event) => {
     setMessage(event.target.value);
   };
 
-  const store_message = () => {
-    const dbRef = ref(getDatabase());
-
-    get(child(dbRef, `users/${uid}`))
+  //store message into db
+  function store_message() {
+    get(child(ref(getDatabase()), `users/${uid}`))
       .then((snapshot) => {
         const data = snapshot.val();
         return data.displayName;
@@ -78,8 +67,10 @@ export default function ProjectCard({
           [displayName]: message,
         });
       });
-  };
+    document.getElementById("fullWidth").value = "";
+  }
 
+  //load the star
   useEffect(() => {
     onValue(ref(db, `users/${uid}/rate/${name}`), (snapshot) => {
       const data = snapshot.val();
@@ -165,4 +156,6 @@ export default function ProjectCard({
       </CardContent>
     </Card>
   );
-}
+};
+
+export default ProjectCard;

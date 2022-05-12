@@ -8,6 +8,8 @@ const Comments = ({ name }) => {
   const [comments, setComments] = useState();
   const db = getDatabase();
   let comments_arr = [];
+
+  //get this project's all comments
   useEffect(() => {
     onValue(ref(db, `projects/${name}`), (snapshot) => {
       const data = snapshot.val();
@@ -15,6 +17,7 @@ const Comments = ({ name }) => {
     });
   }, []);
 
+  //show the comments if exists
   if (comments !== undefined) {
     for (const key of Object.keys(comments)) {
       comments_arr.push(
