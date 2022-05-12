@@ -15,6 +15,7 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import "../../styles/popup.scss";
 import Comments from "./Comments";
+import { useParams } from "react-router-dom";
 import {
   getDatabase,
   ref,
@@ -32,15 +33,15 @@ function update_user(db, uid, name, star) {
 }
 
 //update leader table
-function update_project(name, value, star) {
+function update_project(name, value, star, group) {
   const db = getDatabase();
   const dbRef = ref(getDatabase());
-  get(child(dbRef, `projects/${name}`)).then((snapshot) => {
+  get(child(dbRef, `projects/${group}/${name}`)).then((snapshot) => {
     const data = snapshot.val();
     let { total } = data;
     total -= star;
     total += value;
-    update(ref(db, `projects/${name}`), {
+    update(ref(db, `projects/${group}/${name}`), {
       total: total,
     });
   });
@@ -50,6 +51,7 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
   const [star, setStar] = useState(0);
   const [message, setMessage] = useState("");
   const db = getDatabase();
+  const { group } = useParams();
 
   const onChangeHandler = (event) => {
     setMessage(event.target.value);
@@ -63,7 +65,7 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
         return data.displayName;
       })
       .then((displayName) => {
-        update(ref(db, `projects/${name}/comment`), {
+        update(ref(db, `projects/${group}/${name}/comment`), {
           [displayName]: message,
         });
       });
@@ -121,7 +123,7 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
               value={star}
               onChange={(event, value) => {
                 update_user(db, uid, name, value);
-                update_project(name, value, star);
+                update_project(name, value, star, group);
               }}
             />
             <Popup

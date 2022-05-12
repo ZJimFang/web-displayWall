@@ -3,15 +3,17 @@ import { Grid } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { v4 as uuidv4 } from "uuid";
+import { useParams } from "react-router-dom";
 
 const Comments = ({ name }) => {
   const [comments, setComments] = useState();
+  const { group } = useParams();
   const db = getDatabase();
   let comments_arr = [];
 
   //get this project's all comments
   useEffect(() => {
-    onValue(ref(db, `projects/${name}`), (snapshot) => {
+    onValue(ref(db, `projects/${group}/${name}`), (snapshot) => {
       const data = snapshot.val();
       setComments(data.comment);
     });

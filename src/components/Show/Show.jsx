@@ -29,6 +29,17 @@ const Show = () => {
         />
       </Grid>
     );
+
+    // update(ref(db, `projects/c2`), {
+    //   [group_now[group].name]: {
+    //     comment: {
+    //       1082022: "hi",
+    //       1082023: "yo",
+    //     },
+    //     name: group_now[group].name,
+    //     total: 0,
+    //   },
+    // });
   }
 
   return (
