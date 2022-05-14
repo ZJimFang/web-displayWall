@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import SetUsername from "./SetUsername";
 import Bar from "../public/Bar";
@@ -8,7 +8,16 @@ import { Box } from "@mui/material";
 import { c1, c2 } from "../public/Info";
 import { v4 as uuidv4 } from "uuid";
 import { getAuth } from "firebase/auth";
-
+// update(ref(db, `projects/c2`), {
+//   [group_now[group].name]: {
+//     comment: {
+//       1082022: "hi",
+//       1082023: "yo",
+//     },
+//     name: group_now[group].name,
+//     total: 0,
+//   },
+// });
 const Show = () => {
   const { group } = useParams();
   const location = useLocation();
@@ -16,7 +25,6 @@ const Show = () => {
   const item_arr = [];
   const signed = location.state.signed;
   let group_now = group === "c1" ? c1 : c2;
-
   for (const group in group_now) {
     item_arr.push(
       <Grid item xs={12} sm={6} md={4} key={uuidv4()}>
@@ -29,17 +37,6 @@ const Show = () => {
         />
       </Grid>
     );
-
-    // update(ref(db, `projects/c2`), {
-    //   [group_now[group].name]: {
-    //     comment: {
-    //       1082022: "hi",
-    //       1082023: "yo",
-    //     },
-    //     name: group_now[group].name,
-    //     total: 0,
-    //   },
-    // });
   }
 
   return (

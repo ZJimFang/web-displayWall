@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Login from "./components/Login/Login";
 import Show from "./components/Show/Show";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";

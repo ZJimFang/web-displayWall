@@ -14,13 +14,13 @@ import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 
 const Bar = ({ signed }) => {
-  const pages = ["c1", "c2", "Leaderboard"];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
   let flag = "visiter";
   if (signed !== "visiter") {
     flag = true;
   }
+  const pages = flag === "visiter" ? ["c1", "c2"] : ["c1", "c2", "Leaderboard"];
 
   //log out
   function logOut() {
