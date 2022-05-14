@@ -26,21 +26,25 @@ import {
 } from "firebase/database";
 
 //update user's star
-function update_user(db, uid, name, star) {
+function update_user(db, uid, name, click_value, star_now, group) {
+  if (click_value === null) return;
   update(ref(db, `users/${uid}/rate/${name}`), {
-    score: star,
+    score: click_value,
   });
+
+  update_project(name, click_value, star_now, group);
 }
 
 //update leader table
-function update_project(name, value, star, group) {
+function update_project(name, click_value, star_now, group) {
+  if (star_now === null) return;
   const db = getDatabase();
   const dbRef = ref(getDatabase());
   get(child(dbRef, `projects/${group}/${name}`)).then((snapshot) => {
     const data = snapshot.val();
     let { total } = data;
-    total -= star;
-    total += value;
+    total -= star_now;
+    total += click_value;
     update(ref(db, `projects/${group}/${name}`), {
       total: total,
     });
@@ -48,7 +52,7 @@ function update_project(name, value, star, group) {
 }
 
 const ProjectCard = ({ name, description, img_url, uid, signed }) => {
-  const [star, setStar] = useState(0);
+  const [star_now, setStar_now] = useState(0);
   const [message, setMessage] = useState("");
   const db = getDatabase();
   const { group } = useParams();
@@ -78,7 +82,7 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
       const data = snapshot.val();
       if (data != null) {
         const { score } = data;
-        setStar(score);
+        setStar_now(score);
       }
     });
   }, []);
@@ -120,10 +124,9 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
           >
             <Rating
               name="size-large"
-              value={star}
-              onChange={(event, value) => {
-                update_user(db, uid, name, value);
-                update_project(name, value, star, group);
+              value={star_now}
+              onChange={(event, click_value) => {
+                update_user(db, uid, name, click_value, star_now, group);
               }}
             />
             <Popup
