@@ -66,11 +66,12 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
     get(child(ref(getDatabase()), `users/${uid}`))
       .then((snapshot) => {
         const data = snapshot.val();
-        return data.displayName;
+        console.log(data);
+        return data.username;
       })
-      .then((displayName) => {
+      .then((username) => {
         update(ref(db, `projects/${group}/${name}/comment`), {
-          [displayName]: message,
+          [username]: message,
         });
       });
     document.getElementById("fullWidth").value = "";
