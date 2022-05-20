@@ -13,11 +13,11 @@ const Show = () => {
   const { group } = useParams();
   const location = useLocation();
   const item_arr = [];
-  const signed = location.state.signed;
   const [uid, setUid] = useState("");
+  const signed = location.state === null ? true : location.state.signed;
   let group_now = group === "c1" ? c1 : c2;
-
   const auth = getAuth();
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
