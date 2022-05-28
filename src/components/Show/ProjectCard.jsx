@@ -56,7 +56,6 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
   const [message, setMessage] = useState("");
   const db = getDatabase();
   const { group } = useParams();
-
   const onChangeHandler = (event) => {
     setMessage(event.target.value);
   };
@@ -96,11 +95,14 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
   //     1082024: "Hiii",
   //   },
   // });
-
   return (
     <Card sx={{ minWidth: "350px", backgroundColor: "#C8C2AE" }}>
       <CardActionArea component={RouterLink} to={`/frame/${name}`}>
-        <CardMedia component="img" height="200px" image={img_url} />
+        <CardMedia
+          component="img"
+          height="200px"
+          image={require(`../../images/${img_url}`)}
+        />
       </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
