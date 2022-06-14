@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+           <!--Css only-->
+           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+           <!--JavaScript Bundle with Popper-->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+          </script>
+          <script type="text/javascript" src="/js/jquery/jquery.form.js"></script> 
+          <script type="text/javascript" src="/js/jquery/jquery-1.8.0.min.js"></script>  
+          <script type="text/javascript" src="/js/jquery/jquery.easyui.min.js"></script>  
+    <style>
+        html{
+            height: 100%;
+        }
+
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            background: white;
+        }
+
+        nav ul{
+            text-align: center ;
+        }
+
+        nav ul li{
+            display: inline-flex;
+            list-style-type: none;
+            font-size: larger;
+          
+        }
+
+        nav ul li a{
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover{
+            background: gray;
+            color: white;
+        }
+
+        .intro{
+            margin-top: 10px;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+            position: relative;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        .intro::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .intro::before{
+            border-left: 2px solid white;
+            background-color: rgb(255, 255, 255);
+            animation: typing 6s steps(20) forwards infinite,blink 900ms steps(20) infinite;
+        }
+
+        @keyframes blink{
+        to{
+           border-left: transparent;
+          }
+        }
+
+
+        @keyframes typing{
+        25%{
+           left: 100%;
+          }
+        65%{
+           left: 100%;
+          }
+        80%{
+           left: 0%;
+          }
+        }
+
+        .container{
+            height: 200px;
+            width: 600px;
+            position: relative;
+            background: rgba(234, 248, 108, 0);
+            padding: 90px;
+            overflow: hidden;
+            top: 20px;
+            
+
+        }
+
+        .title{
+            font-size: 50px;
+            white-space: nowrap;
+            text-align: center;
+        }
+
+        .mynav{
+            padding: 10px;
+           
+        
+        }
+
+
+
+
+      
+
+        .modal {
+  --gap: 15px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: var(--gap);
+  background: rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+}
+
+.modal__inner {
+  background: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.modal__top {
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.modal__title {
+  flex-grow: 1;
+  padding: 0 var(--gap);
+  font-size: 20px;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: var(--gap);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.modal__content {
+  padding: 0 var(--gap);
+  line-height: 1.5;
+}
+
+.modal__bottom {
+  text-align: right;
+  padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.modal__button {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #009578;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.modal__button:not(:last-child) {
+  margin-right: var(--gap);
+}
+
+.modal__button:hover {
+  background: #008066;
+}
+
+.path{
+  background: #f5f8f8;
+  margin: 10px;
+  padding: 2px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.patha{
+  text-decoration: none;
+  color: white;
+  }
+
+.btn-info{
+  background: #002f95b8;
+  border: 1px solid gray;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+.path li{
+  font-size: large;
+}
+
+.logo{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 13px;
+  left: 60px;
+
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body background  ="./img/S__4046851.jpg">   
+
+
+ 
+  
+
+
+    <div class="mynav">
+      <nav>
+          <ul>
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="area.html">地區</a></li>
+              <li><a href="compare.html">比較</a></li>
+              <li><a href="about.html">關於我們</a></li>
+          </ul>
+      </nav>
+
+  </div>
+
+  
+     <br>
+
+    <div class="container">
+        <h1 class="title">台灣美食-不服來戰</h1>
+     <div class="intro">Let me introduce taiwanese food!</div>
+       
+    </div>
+
+    <a href="index.html"><img src="./img/logo2.jpg" alt="" class="logo"></a>
+
+    
+
+
+
+    <script >
+        function showModal(titleHtml, contentHtml, buttons) {
+       const modal = document.createElement("div");
+     
+       modal.classList.add("modal");
+       modal.innerHTML = `
+             <div class="modal__inner">
+                 <div class="modal__top">
+                     <div class="modal__title">${titleHtml}</div>
+                     <button class="modal__close" type="button">
+                         <span class="material-icons">close</span>
+                     </button>
+                 </div>
+                 <div class="modal__content"> 
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSs_d611oKgn7w_lUiRlt5fNttlcT839b1qInUDMECT2CO-w/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+                  </div>
+
+                  <div class="path">
+                    <ul>
+                    <li>對哪一個區域的美食感到好奇?</li>
+                  <button type="button" class="btn btn-info">
+                    <a href="area.html#area1" class="patha">北部</a>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                    <a href="area.html#area2" class="patha">中部</a>
+                    </button>
+                    <button type="button" class="btn btn-info">
+                    <a href="area.html#area3" class="patha">南部</a>
+                    </button>
+
+                  </ul>
+
+                    </div>
+
+                 <div class="modal__bottom"></div>
+             </div>
+         `;
+     
+       for (const button of buttons) {
+         const element = document.createElement("button");
+     
+         element.setAttribute("type", "button");
+         element.classList.add("modal__button");
+         element.textContent = button.label;
+         element.addEventListener("click", () => {
+           if (button.triggerClose) {
+             document.body.removeChild(modal);
+           }
+     
+           button.onClick(modal);
+         });
+     
+         modal.querySelector(".modal__bottom").appendChild(element);
+       }
+     
+       modal.querySelector(".modal__close").addEventListener("click", () => {
+         document.body.removeChild(modal);
+       });
+     
+       document.body.appendChild(modal);
+     }
+     
+     showModal("請回答以下問題", "<p></p>",[]);
+    
+    </script>
+    
+   
+
+
+
+</body>
+</html>

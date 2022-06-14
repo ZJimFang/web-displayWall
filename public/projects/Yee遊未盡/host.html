@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script src="assets/dist/js/javascript.js"></script>
+    <title>Document</title>
+    <style>
+        .bg {
+            background-image: url("assets/img/discount_bg.jpg");
+            background-attachment: relative;
+        }
+
+        h1 {
+            color: white;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card {
+            margin-top: 10px;
+        }
+
+        #cart_win {
+            float: right;
+            position: relative;
+            border: 1px solid white;
+            padding: 10px;
+            background-color: white;
+            display: none;
+            border-radius: 8px;
+            box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+            padding-top: 30px;
+            opacity: 0.95;
+        }
+
+        #myBtn {
+            float: right;
+            margin-top: 30px;
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        #myShare {
+            float: right;
+            margin-right: 5px;
+        }
+    </style>
+    <script>             
+        $(document).ready(function () {            
+            (function ($) {
+                $.fn.myfunction = function () {
+                    $('#new').remove();
+                    // $('.new').append('<div class="card" style="margin-left:10px ;margin-top:10px;width:727px;height:135.2px"id="new">' +
+                    //     '<div class="card-body">' + '<img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"style="width:40px;height:40px;border-radius:50%;flex-direction:block">'
+                    //     + '<h5 class="card-title">訪客</h5>' + '<h6 class="card-subtitle mb-2 text-muted" id="game"></h6>' +
+                    //     '<p class="card-text" id="text"></p>' +
+                    //     '</div>' + '</div>');
+                    $('.new').append('<div class="card" style="margin-left:10px ;margin-top:10px;"id="new">' +
+                        '<div class="card-body">' + '<img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"style="width:40px;height:40px;border-radius:50%;flex-direction:block">'
+                        + '<h5 class="card-title">訪客</h5>' + '<h6 class="card-subtitle mb-2 text-muted" id="game"></h6>' +
+                        '<p class="card-text" id="text"></p>' +
+                        '</div>' + '</div>');
+                };
+            })(jQuery);
+            $("#myBtn").click(function () {                
+                $('.new').myfunction()                
+                $('#new').css('opacity', 0)                
+            });            
+            $('#myShare').click(function () {
+                var i = 0;
+                var str = $("#myGame").val();
+                $('#new').find('#game').append(str + '．just now');
+                var str2 = $("#myInput").val();
+                $('#new').find('#text').append(str2);
+                $('#new').css('opacity', 1);
+                if (i == 0) {
+                    alert("一天只能新增一次喔");
+                    //$('#myShare').remove();
+                    //$('#myShare').fadeTo(2000, 0);
+                }                
+                i++;              
+            });            
+        });
+    </script>
+</head>
+
+<body class="bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid container">
+                <a class="navbar-brand title" href="index.html"><img class="me-2" src="assets/img/logo_new.png" width="50"
+                        height="50" alt="Yee遊未盡">YEE遊未盡</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link a-nav" href="index.html">遊戲推薦</a>
+                        <a class="nav-link a-nav" href="form.html">測驗結果統計</a>
+                        <a class="nav-link a-nav" href="discount.html">折扣紀錄查詢</a>
+                        <a class="nav-link active a-nav" aria-current="page" href="#">訪客遊戲分享</a>
+                        <a class="nav-link a-nav" href="yee.html">關於我們</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="title p-4 upperCarousel1">－訪客遊戲分享－</h1>
+        <div class="row w-100 upperCarouselText">
+            <div class="col-6">
+                <div class="card" style="margin-left:10px;">
+                    <div class="card-body">
+                        <img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"
+                            style="width:40px;height:40px;border-radius:50%;">
+                        <h5 class="card-title">訪客</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">曠野之息．1days ago</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card" style="margin-right:10px;">
+                    <div class="card-body">
+                        <img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"
+                            style="width:40px;height:40px;border-radius:50%;flex-direction:block">
+                        <h5 class="card-title">訪客</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">糖豆人．15hr ago</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 upperCarouselText">
+            <div class="col-6">
+                <div class="card" style="margin-left:10px;">
+                    <div class="card-body">
+                        <img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"
+                            style="width:40px;height:40px;border-radius:50%;flex-direction:block">
+                        <h5 class="card-title">訪客</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">糖豆人．8hr ago</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card" style="margin-right:10px;">
+                    <div class="card-body">
+                        <img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"
+                            style="width:40px;height:40px;border-radius:50%;flex-direction:block">
+                        <h5 class="card-title">訪客</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">糖豆人．1hr ago</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 upperCarouselText">
+            <div class="col-6">
+                <div class="card" style="margin-left:10px;">
+                    <div class="card-body">
+                        <img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"
+                            style="width:40px;height:40px;border-radius:50%;flex-direction:block">
+                        <h5 class="card-title">訪客</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">糖豆人．40mins ago</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card" style="margin-right:10px;">
+                    <div class="card-body">
+                        <img class="card-img-left" src="assets/img/usericon.png" alt="Card image cap"
+                            style="width:40px;height:40px;border-radius:50%;flex-direction:block">
+                        <h5 class="card-title">訪客</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">糖豆人．3mins ago</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!--New Message-->
+            <div class="new col-6"></div>
+        </div>       
+        <!-- Modal -->
+        <div class="col-12 w-100">
+            <button type="button" class="btn btn-warning fa fa-pencil-square-o fa-lg" data-toggle="modal"
+            data-target="#exampleModal" id="myBtn"></button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-label="exampleModalLabel" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">遊戲分享</h5>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></buttson>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <span>你要分享哪款遊戲</span><br>
+                            <input type="text" id="myGame" class="form-control" required><br>
+                        </div>
+                        <div class="mb-3">
+                            <span>你的遊戲體驗如何</span><br>
+                            <textarea class="form-control" id="myInput" required></textarea><br>
+                        </div>
+                    </div>
+                    <div class="modal-footer">                        
+                        <button type="button" class="btn btn-primary" id="myShare" data-dismiss="modal" aria-label="Close">分享</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+</body>
+
+</html>

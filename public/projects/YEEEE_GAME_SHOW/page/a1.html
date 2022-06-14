@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="/js/a.js"></script>
+    <link rel="stylesheet" href="/css/a1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            padding: 0;
+            margin: 0;
+        }
+        .light {
+            width: 100%;
+            height: 100%;
+            background-image: url('/img/0.jpg');
+            background-size: cover;
+           clip-path: circle(80px at var(--x) var(--y));
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid" >
+        <div class="light">
+            <input type="image"  class="btn1"  src="/img/1.png" width="250" height="200"onclick="window.open('https://www.gamecity.com.tw/zero/maiden/system.html?id=system1')" >
+            <input type="image" class="btn2"  src="/img/4.png" width="350" height="200" onclick="window.open('https://game.kikinote.net/14370')">
+            <input type="image"  class="btn3"  src="/img/3.png" width="250" height="200" onclick="window.open('https://home.gamer.com.tw/artwork.php?sn=5293590')">
+            </div>
+             <div class="flash">
+            </div>
+        
+            <script>
+                    var pos=document.documentElement;
+                    pos.addEventListener("mousemove",e=>{
+                    pos.style.setProperty('--x',e.clientX+"px")
+                    pos.style.setProperty('--y',e.clientY+"px")
+                })
+        
+                </script>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: #ffe880;
+}
+
+.content {
+    padding: 0 10% 0 10%;
+}
+
+#mn{
+    height: 363px;
+}
+#lg{
+    height: 150px;
+}
+#tit{
+    height: 150px;
+}
+footer{
+    background-color: #d7d7df;
+}

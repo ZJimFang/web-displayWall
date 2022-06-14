@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: #fff0ac;
+}
+
+img.myImg {
+    height: 25rem;
+    /* 使圖片不被壓縮 */
+    object-fit: cover !important;
+    /* 多出來的隱藏 */
+    overflow: hidden !important;
+}
+#modal{
+    text-align: left;
+}
+#lg{
+    height: 150px;
+}
+#tit{
+    height: 150px;
+}
+.modal-content{
+    background-color: #e5dcb4;
+}
+footer{
+    background-color: #d7d7df;
+}

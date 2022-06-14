@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yee遊未盡</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/dist/css/style.css">
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/dist/js/javascript.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* body{
+            background-color: #212529;
+        } */
+    .typing-txt-block {
+      height: 70vh;
+      display: block;
+      /* background-image: url("../images/bg-banner-01.jpg"); */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .typing-txt-block .container h1 {
+      position: relative;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      letter-spacing: 5px;
+      color: transparent;
+    }
+
+    .typing-txt-block .container h1::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      overflow: hidden;
+      border-right: 1px solid #fff;
+      animation: type 1s steps(18), blink 0.5s infinite alternate;
+      -webkit-animation: type 1s steps(18), blink 0.5s infinite alternate;
+      white-space: nowrap;
+    }
+
+    section {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #sec-1 {
+      position: relative;
+    }
+
+    #sec-2 {
+      color: #fff;
+    }
+
+    .scroll-down {
+      height: 100px;
+      width: 70px;
+      border: 2px solid white;
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      bottom: 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .scroll-down::before,
+    .scroll-down::after {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      border: 2px solid white;
+      height: 10px;
+      width: 10px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      border-top: transparent;
+      border-left: transparent;
+      animation: scroll-down 1s ease-in-out infinite;
+    }
+
+    .scroll-down::after {
+      top: 30%;
+    }
+
+    @keyframes scroll-down {
+      0% {
+        opacity: 0;
+      }
+
+      30% {
+        opacity: 1;
+      }
+
+      60% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        top: 90%;
+      }
+    }
+
+    @keyframes type {
+      0% {
+        width: 0%;
+      }
+
+      100% {
+        width: 40%;
+      }
+    }
+
+    @keyframes blink {
+      from {
+        border-color: transparent;
+      }
+
+      to {
+        border-color: #fff;
+      }
+    }
+
+    .bg {
+      background-image: url("assets/img/result_bg.jpg");
+      background-position: center;
+      background-attachment: relative;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      $('.scroll-down').delay(2000).fadeIn(300);
+    });
+  </script>
+</head>
+
+<body class="bg-dark">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid container">
+        <a class="navbar-brand title" href="index.html"><img class="me-2" src="assets/img/logo_new.png" width="50"
+            height="50" alt="Yee遊未盡">YEE遊未盡</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link a-nav " href="index.html">遊戲推薦</a>
+            <a class="nav-link active a-nav" aria-current="page" href="form.html">測驗結果統計</a>
+            <a class="nav-link a-nav" href="discount.html">折扣紀錄查詢</a>
+            <a class="nav-link a-nav" href="host.html">訪客遊戲分享</a>
+            <a class="nav-link a-nav" href="yee.html">關於我們</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <hr class="container" style="border: 1px solid lightgoldenrodyellow;">
+  </header>
+  <div class="bg">
+    <section id="sec-1">
+      <div class="typing-txt-block bg-animation">
+        <div class="container">
+          <div class="row typing-txt-row justify-content-center">
+            <h1 data-text="你適合的遊戲類型是：戰術策略">你適合的遊戲類型是：戰術策略</h1>
+          </div>
+          <a href="#sec-2">
+            <div class="scroll-down">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="sec-2">
+      <div
+        class="container d-flex flex-wrap align-items-center justify-content-center *justify-content-lg-start col-10">
+        <div class="col-10" style="text-align: center;">
+          <p class="title">－推薦這款遊戲給您－</p>
+        </div>
+        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> -->
+        <div class="col-lg-5 col-8">
+          <div class="div-card">
+            <a href="arknights.html" class="text-dark text-decoration-none">
+              <div class="card shadow-sm">
+                <img class="img-thumbnail" src="assets/img/Arknights/logo.jpg">
+                <div class="card-body">
+                  <p class="card-text">
+                  <h3>《明日方舟》</h3><hr>
+                  是由鷹角網絡所開發的一款策略塔防手機遊戲，也是鷹角網絡開發的第一款遊戲。遊戲在2017年9月8日發布概念預告後開始，經歷三次刪檔測試，於2019年5月1日全平台公開測試...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="div-card col">
+            <a href="#" class="text-dark text-decoration-none">
+              <div class="card shadow-sm">
+                <img class="img-thumbnail" src="assets/img/Sekiro/sekiro.jfif">
+                <div class="card-body">
+                  <p class="card-text">
+                  <h3>《隻狼》</h3>
+                  是由From Software開發與動視發行，於2019年3月22日在Microsoft Windows、PlayStation 4和Xbox One平台上發售的動作冒險遊戲。本作...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="div-card col">
+            <a href="#" class="text-dark text-decoration-none">
+              <div class="card shadow-sm">
+                <img class="img-thumbnail" src="assets/img/Ghost/ghost.webp">
+                <div class="card-body">
+                  <p class="card-text">
+                  <h3>《對馬戰鬼》</h3>
+                  是一款由Sucker Punch Productions開發製作，由索尼互動娛樂發行的開放世界動作冒險電子遊戲。遊戲於2020年7月17日在PlayStation 4平台發行...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+.main{
+    background-color: black;
+}
+.title{
+    color: antiquewhite; 
+    font-size: 30px; 
+    font-family: LiGothic, FangSong; 
+    font-weight: bold;          
+}
+.upperTitle{
+    color: antiquewhite; 
+    font-size: 30px; 
+    font-family: LiGothic, FangSong; 
+    font-weight: bold;
+}       
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.img-thumbnail{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.img-discount-thumbnail{
+    opacity: 40%; 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.img-discount-thumbnail:hover{
+    opacity: 100%; 
+}
+.bgc-dark{
+    background: rgba(0,0,0,0.5);            
+}
+.a-nav, .div-card{
+    font-size: 20px;
+    opacity: 80%;
+    transition: all .15s ease-in;
+}
+.a-nav:hover{
+    opacity: 100%;            
+    transform:translateY(-2px);
+}
+.div-card:hover{
+    opacity: 100%;            
+    transform:translateY(-5px);
+}
+#upperCarouselText {
+    display: block;
+    /* animation 參數設定 */
+    animation-name: Upper;    /*動畫名稱，需與 keyframe 名稱對應*/
+    animation-duration: 0.5s;    /*動畫持續時間，單位為秒*/
+    animation-delay: 0s;    /*動畫延遲開始時間*/
+    animation-iteration-count: 1;    /*動畫次數，infinite 為無限次*/ 
+    animation-fill-mode: forwards;   
+}
+#moveUp {
+    display: block;
+    position: relative;
+
+    /* animation 參數設定 */
+    animation-name: MoveUp;    /*動畫名稱，需與 keyframe 名稱對應*/
+    animation-duration: 0.7s;    /*動畫持續時間，單位為秒*/
+    animation-delay: 0s;    /*動畫延遲開始時間*/
+    animation-iteration-count: 1;    /*動畫次數，infinite 為無限次*/ 
+    animation-fill-mode: forwards;   
+}
+/* 關鍵影格(@keyframe) */
+@keyframes Upper {
+    0% {                
+        animation-timing-function: ease-out;
+        opacity: 0%;
+    } 
+    100% {                
+        animation-timing-function: ease-in;
+        opacity: 100%;
+    }                 
+}
+
+@keyframes MoveUp {
+    0% {
+        top: 45px;
+        animation-timing-function: ease-out;
+        opacity: 0%;
+    } 
+    100% {
+        top:0;
+        animation-timing-function: ease-in;
+        opacity: 100%;
+    }                 
+}
+
+/* 圖片放大置中 */
+.imgPreview {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%; /*容器佔滿整個螢幕*/
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.imgPreview img {
+    z-index: 100;
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

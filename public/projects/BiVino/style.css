@@ -1,0 +1,299 @@
+body{
+    background-color: #2e2222;
+}
+/*===========================header=====================================*/
+#header a {
+    color: #FFF;
+    
+}
+#header{
+    background: #00000000;
+    /*margin: 10px;*/
+    padding-top: 20px;
+    padding-left:30px;
+    /*margin-left: 20px;*/
+    z-index:50;
+    position: fixed;
+    width:100%;
+    
+}
+#header h1 {
+    float: left;
+    font-size: 2em;
+    z-index:50;
+}
+/*h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4; 字上下行的寬度
+    z-index:50;
+}
+*/
+/*===========================左上角logo=====================================*/
+#BiVino{
+    background-color:rgba(0, 0, 0, 0);/**/
+    box-sizing: border-box;/**/
+    color: rgb(255, 255, 255);/**/
+    cursor: pointer;/**/
+    /*display:inline;*/
+    font-family:"Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size:35px; /*文字大小*/
+    font-weight: 500;  /*字体的粗细程度*/
+    height: auto; /*元素內容區域的高度 auto=預設值*/
+    letter-spacing: 0.7168px;
+    line-height: 25.088px;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin-top: 50px;
+    transition-delay:0s;
+    transition-duration:0.5s;
+    z-index:50;
+    overflow-wrap: break-word;
+    
+    
+}
+#BiVino:hover{
+    color: #bc9d51;
+}
+/*===========================圖片輪播=====================================*/
+.imgchange{
+    width:100%;
+    height: 100%;
+    position:relative;
+    background-image: url(img/food1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    justify-content: center;
+    animation: change 25s infinite ease-in-out;
+    background-position:center;
+    background-color: #2c2c2c;
+    z-index:-1;
+    object-fit: cover;
+    padding-top: 65px;
+}
+@keyframes change{
+    0%{
+        background-image: url(img/food1.jpg);
+    }
+    20%{
+        background-image: url(img/food2.jpg);
+    }
+    40%{
+        background-image: url(img/food3.jpg);
+    }
+    60%{
+        background-image: url(img/food4.jpg);
+    }
+    80%{
+        background-image: url(img/food5.jpg);
+    }
+    100%{
+        background-image: url(img/food1.jpg);
+    }
+}
+.imgchange::after{
+    display:none;
+    content: "";
+    background-image: url(img/food1.jpg);
+    background-image: url(img/food2.jpg);
+    background-image: url(img/food3.jpg);
+    background-image: url(img/food4.jpg);
+    background-image: url(img/food5.jpg);
+}
+
+/*===========================LOGO動畫=====================================*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height: 100vh;
+}
+#logo{
+    margin-top:209px;
+    background-color: #00000000;
+}
+#logo path:nth-child(1){
+    stroke-dasharray: 3661;
+    stroke-dashoffset: 3661;
+    animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 1316;
+    stroke-dashoffset: 1316;
+    animation: line-anim 2s ease forwards 0.16s;
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 2553;
+    stroke-dashoffset: 2553;
+    animation: line-anim 2s ease forwards 0.33s;
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 1316;
+    stroke-dashoffset: 1316;
+    animation: line-anim 2s ease forwards 0.49s;
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 3382;
+    stroke-dashoffset: 3382;
+    animation: line-anim 2s ease forwards 0.66s;
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 3050;
+    stroke-dashoffset: 3050;
+    animation: line-anim 2s ease forwards 0.83s;
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 3661;
+    stroke-dashoffset: 3661;
+    animation: line-anim 2s ease forwards 1s;
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 1316;
+    stroke-dashoffset: 1316;
+    animation: line-anim 2s ease forwards 1.16s;
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 2553;
+    stroke-dashoffset: 2553;
+    animation: line-anim 2s ease forwards 1.33s;
+}
+#logo path:nth-child(10){
+    stroke-dasharray: 1316;
+    stroke-dashoffset: 1316;
+    animation: line-anim 2s ease forwards 1.49s;
+}
+#logo path:nth-child(11){
+    stroke-dasharray: 3382;
+    stroke-dashoffset: 3382;
+    animation: line-anim 2s ease forwards 1.66s;
+}
+#logo path:nth-child(12){
+    stroke-dasharray: 3050;
+    stroke-dashoffset: 3050;
+    animation: line-anim 2s ease forwards 1.83s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+/*================================首頁文字====================================*/
+.content{
+    width:100%;
+    height: 100%;
+    left:50%;
+    z-index:3;
+    display: inline-block;
+    filter:brightness(150%);
+    
+}
+.imgchange{
+    width:100%;
+    height: 100%;
+    
+}
+
+/*==========================表單設計區======================================*/
+
+#menu{
+    text-align: right;
+    padding-right: 100px;
+    z-index:50;
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-m {
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS     PGothic", sans-serif;
+    font-size: 15.5px;
+    height: auto;
+    letter-spacing: 0.7168px;
+    line-height: 22.2029px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    overflow-wrap: break-word;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration:none;
+    text-decoration-line: none;
+    padding: 11px 20px;
+    padding-left:20px;
+    z-index:50;
+}
+.menu-m a{
+    text-decoration-line: none;
+}
+.menu-m a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height:2.3px;
+    width: 0%;
+    left: 17px;
+    bottom: 10px;
+    transition:  0.3s all;
+}
+#welcome:hover:after{
+    width: 73%;
+}
+#realmenu:hover:after{
+    width: 61%;
+}
+#floor:hover:after{
+    width: 65%;
+}
+#lasest:hover:after{
+    width: 67%;
+}
+#access:hover:after{
+    width: 70%;
+}
+#contact:hover:after{
+    width: 73%;
+}
+#fb{
+    fill:white;
+    text-decoration:none;
+    transform: translate(30px,0px);
+    transition-duration:0.3s;
+    z-index:9999;
+}
+#fb:hover{
+    fill:#bc9d51;
+}
+#ig{
+    fill:white;
+    text-decoration:none;
+    transform: translate(60px,0px);
+    transition-duration:0.3s;
+    z-index:9999;
+}
+#ig:hover{
+    fill:#bc9d51;
+}
+/*================================================================*/
+/*================文字反白顏色控制區==================================*/
+::selection {
+    color: #FFF;
+    background: #bc9d51;
+}
+/*================================================================*/

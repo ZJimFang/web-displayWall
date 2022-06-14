@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1300px;
+            margin:0 auto;
+        }
+
+        header {
+            background-color: #e8e8e8;
+            height:160px;
+            padding: 10px 15px;
+            padding-top: 40px;
+        }
+
+        header p{
+            font-size: 18px;
+            margin-right: 250px;
+            padding-top: 35px;
+        }
+
+        header div {
+            position: absolute;
+            top: 60px;
+            right: 160px;
+        }
+
+        header a #logo {
+            position: absolute;
+            top: -60px;
+            left: 140px;
+        }
+
+        body {
+            background-color: #e8e8e8;
+        }
+
+        #top{
+            width: 80%;
+            padding: 4%;
+            margin-inline: 35%;
+            margin-left: 350px;
+            font-size: 27px;
+        }
+
+        .circle{
+            background-color: rgb(255, 255, 255);
+            border:none;
+            margin: auto;
+            padding: 3%;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration-color: black;
+        }
+
+        #content {
+            width: 80%;
+            padding: 0%;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.829);
+        }
+
+        .car-item {
+            border-collapse: collapse;
+            text-align: center;
+            border-bottom: 1px solid #999;
+            position: relative;
+            margin:  auto;
+            min-width: 70%;
+        }
+
+        table thead {
+            text-align: left;
+            
+        }
+
+        .car-item td ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .car-item img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .car-item a,.car-item td ul {
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .car-item tr:last-child td {
+            padding-bottom: 20px;
+        }
+
+        .car-item,.car-pay,.car-btn-area,.pay-area,.pay-area a,.pay-area ul,.pay-area select,.pay-area h4,.pay-area input,.pay-area textarea,.alertMsg #lblErrMsg span#packking_alertMsg {
+            letter-spacing: 1px;
+            color: rgba(51, 51, 51, 0.807);
+            font-size: 20px;
+            font-family: "Roboto Condensed", sans-serif, 微軟正黑體;
+        }
+
+        .car-pay {
+            overflow: hidden;
+            text-align: right;
+            width: 70%;
+            margin: 20px auto;
+            padding-right: 30px;
+            width: 100%;
+            background-color: rgba(165, 165, 165, 0.273)
+        }
+
+        @media (max-width: 993px) {
+            table {
+                background-color: transparent;
+            }
+
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        table {
+            display: table;
+            border-collapse: separate;
+            box-sizing: border-box;
+            text-indent: initial;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+
+        .car-item .btn-del {
+            border: 0ch;
+            background: url(./img/trash.png) no-repeat center center;
+            background-size: contain;
+            width: 37px;
+            height: 37px;
+        }
+
+        .list-unstyled {
+            padding-right: 20%;
+        }
+
+        button {
+            border-radius: 20%;
+            border-style: none;
+            width: 80px;
+            height: 30px;
+            font-weight: bolder;
+            font-size: medium;
+        }
+
+        .button:hover{
+            color: rgb(89, 62, 62);
+            text-decoration: underline;
+            background-color: rgba(160, 159, 157, 0.31);
+
+        }
+
+        a {
+            color: black;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: rgb(109, 46, 46);
+            text-decoration: underline
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+    <header>
+        <a href ="index.html"><img src="props/logo.png" alt="" width=230px></a>
+        <div>
+            <a href="index.html"><p>繼續購物</p>
+            <img src="img/triangle.png" alt="" height="15px"></a>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <div id="top">
+        <br>
+           <span class="circle" span style="color:rgb(255, 255, 255); background-color: black;">購物車</span>  &nbsp; > &nbsp;
+           <span class="circle">&nbsp;&nbsp;&nbsp;付款&nbsp;&nbsp;&nbsp;</span> &nbsp; > &nbsp;<span class="circle">訂單完成</span>
+           <br>
+    </div>
+
+    <div id="content">
+        <table class="car-item">
+            <br>
+            <thead>
+                <tr>
+                    <th>
+                        <div class="step-title">
+                            <h4 class="on">Check Order<span>購物清單確認</span></h4>
+                        </div>
+                    </th>
+                    <th>數量</th>
+                    <th>價格</th>
+                    <th>刪除</th>
+                </tr>
+            </thead>
+        </table>
+
+        <table class="car-item">
+            <br>
+            <tbody>
+                <tr>
+                    <td data-label="商品資訊">
+                        <!-- 要連結單品的頁面 -->
+                        <a href="./01-1.html"><img src="./img/shirt1.jpg" alt="透膚襯衫"></a>
+           
+                        <ul>
+                            <li>衣長：68</li>
+                            <li>胸圍：112</li>
+                            <li>袖長：40</li>
+                            <li>肩寬：62</li>
+                        </ul>
+                    </td>
+                    <td data-label="數量">
+                        <select class="qty4087a164-4304-4162-9413-d064fa454734" name="selectQty" data-saleid="01097177"
+                            data-productid="01097177" data-colorid="01" data-sizeid="F">
+                            <option value="1">1</option>
+                            <script> $(function () {
+                                    $(".qty4087a164-4304-4162-9413-d064fa454734 option[value ='1']").prop("selected", "true");
+                                });
+                            </script>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                    <td data-label="價格">NT.390</td>
+                    <td data-label="刪除">
+                        <button type="button" name="btnDelItem" class="btn btn-del" data-toggle="button"
+                            aria-pressed="false" autocomplete="off"
+                            data-id="4087a164-4304-4162-9413-d064fa454734"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <table class="car-item">
+            <tbody>
+                <tr>
+                    <td data-label="商品資訊">
+                        <!-- 要連結單品的頁面 -->
+                        <a href=" ! "><img src="img/02.jpg" alt="黑色洋裝"></a>
+                        <ul>
+                            <li>女性-洋裝</li>
+                            <li>黑色洋裝</li>
+                            <li>顏色 :F</li>
+                            <li>尺寸 :F</li>
+                        </ul>
+                    </td>
+                    <td data-label="數量">
+                        <select class="qty4087a164-4304-4162-9413-d064fa454734" name="selectQty" data-saleid="01097177"
+                            data-productid="01097177" data-colorid="01" data-sizeid="F">
+                            <option value="1">1</option>
+                            <script> $(function () {
+                                    $(".qty4087a164-4304-4162-9413-d064fa454734 option[value ='1']").prop("selected", "true");
+                                });
+                            </script>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                    <td data-label="價格">NT.420</td>
+                    <td data-label="刪除">
+                        <button type="button" name="btnDelItem" class="btn btn-del" data-toggle="button"
+                            aria-pressed="false" autocomplete="off"
+                            data-id="4087a164-4304-4162-9413-d064fa454734"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="car-pay" id="foot">
+        <ul class="list-unstyled">
+            共 <span>2</span> 件 ／ 總金額：<span>NT$ 810</span> ／ <span>
+                <span><a href="cart2.html"><button type="button" name="button" class="button">去付款</button></a></span>
+        </ul>
+    </div>
+
+
+
+
+
+</div>
+</body>
+
+</html>

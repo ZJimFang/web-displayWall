@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!--Css only-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <!--JavaScript Bundle with Popper-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+     </script>
+<style>
+   html{
+       height: 100%;
+   }
+
+   body{
+       background-color: rgba(246, 223, 196, 0.712);
+        
+     
+   }
+
+   nav{
+       display: flex;
+       justify-content: space-around;
+       background: white;
+   }
+
+   nav ul{
+       text-align: center ;
+   }
+
+   nav ul li{
+       display: inline-flex;
+       list-style-type: none;
+       font-size: larger;
+   }
+
+   nav ul li a{
+       color: black;
+       padding: 10px;
+       text-decoration: none;
+   }
+
+   nav ul li a:hover{
+       background: gray;
+       color: white;
+   }
+   .mynav{
+            padding: 10px;
+        }
+
+   .content{
+       background-color: rgba(255, 238, 0, 0.582);
+       margin: 10px;
+   }
+
+   .title{
+       background-color: rgb(84, 114, 166);
+       border: 1px inset;
+       margin: 30px;
+       text-align: center;
+       width: 800px;
+       color: white;
+       position: relative;
+       left: 200px;
+   }
+
+
+   .row{
+       position: relative;
+       left: 240px;
+   }
+
+   .col{
+       width: 400px;
+       height: 550px;
+   }
+
+
+   .slogan{
+    text-align: center;
+   }
+   .slogan-text{
+       text-align: center;
+   }
+
+   img.img{
+       height: 300px;
+       object-fit: cover;
+        overflow: hidden;
+   }
+
+   .vote{
+      position: relative;
+      top: -120px;
+      left: 80px;
+   }
+
+   #imgTOP{
+     width: 80px;
+     position: fixed;
+     right: 40px;
+     bottom: 10px;
+   }
+
+   
+   .col img{
+    transform: scale(1,1);
+     transition: all 1s ease-out;
+     
+   }
+
+   .col img:hover{
+    transform: scale(1.1,1.1);
+   }
+
+   .card{
+    overflow: hidden;
+   }
+
+   .logo{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 13px;
+  left: 60px;
+
+}
+  
+
+
+
+</style>
+</head>
+<body >
+ 
+
+
+    <div class="mynav">
+  
+      <nav>
+          <ul>
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="area.html">地區</a></li>
+              <li><a href="compare.html">比較</a></li>
+              <li><a href="about.html">關於我們</a></li>
+          </ul>
+      </nav>
+
+  </div>
+
+  
+   <br>
+
+   <div class="tab-content" id="mytabcontent">
+    <div class="tab-pane fade show active" id="tabA">
+        <h1 class="slogan">名字一樣，吃起來不一樣! </h1>
+        <h4 class="slogan-text">這些你常見的台灣經典小吃，走出家鄉後又是另一個味道!</h4>
+       
+   </div>
+</div>
+
+    <div class="content">
+        <br>
+          <div class="title">
+              <h3  >南部肉圓vs北部肉圓</h3>
+           </div> 
+
+           <div class="row row-cols-1 row-cols-md-2 g-4">
+
+            <div class="col">
+              <div class="card">
+                <img src="./img/南肉圓.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">南部肉圓</h5>
+                  <p class="card-text">烹調方式主要用蒸的，內餡大多是小塊的豬肉塊再淋上醬汁，個人喜好會放上香菜和蒜泥</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card">
+                <img src="./img/北部肉圓.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">北部肉圓</h5>
+                  <p class="card-text">烹調方式主要用炸的，內餡大多包筍子和豬肉塊，再淋上鹹甜特調醬汁</p>
+                </div>
+              </div>
+
+              <br>
+
+             
+               </div>
+
+               <div class="vote">
+                <div class="strawpoll-embed" id="strawpoll_PbZqo948GnN" style="height: 480px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" src="https://strawpoll.com/embed/polls/PbZqo948GnN" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+            </div>
+          </div>
+<hr>
+          <div class="title">
+            <h3  >南部粽vs北部粽</h3>
+         </div> 
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./img/南部粽.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">南部粽</h5>
+                  <p class="card-text">糯米是生糯米，包起來後再用水煮，吃來軟爛，通常一定會放肥肉，會加上醬油膏、花生粉和香菜。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/北部粽.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">北部粽</h5>
+                  <p class="card-text">北部粽通常會先把配料、糯米爆香拌炒，然後才包進粽葉裡蒸到熟透，口感粒粒分明，但口味會比南部來的鹹。</p>
+                </div>
+              </div>
+
+              <br>
+
+            </div>
+
+            <div class="vote">
+              <div class="strawpoll-embed" id="strawpoll_1MnwvazdAy7" style="height: 480px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" src="https://strawpoll.com/embed/polls/1MnwvazdAy7" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+             </div>
+
+          </div>
+          
+          <hr>
+
+          <div class="title">
+            <h3  >南部意麵vs北部意麵</h3>
+         </div> 
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./img/鍋燒意麵.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">南部意麵</h5>
+                  <p class="card-text">鍋燒意麵，湯的。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/北部意麵.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">北部意麵</h5>
+                  <p class="card-text">接近南投意麵，乾的。</p>
+                </div>
+              </div>
+
+              <br>
+
+               </div>
+
+               <div class="vote">
+                <div class="strawpoll-embed" id="strawpoll_B2ZB3ewJAyJ" style="height: 480px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" src="https://strawpoll.com/embed/polls/B2ZB3ewJAyJ" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+             
+
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="title">
+            <h3  >南部米血vs北部米血</h3>
+         </div> 
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./img/南部米血.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">南部米血</h5>
+                  <p class="card-text">有時會用鴨血製作，以高湯煮熟方式食用，會切成小塊狀並淋上醬油膏，口感較有嚼勁。</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/北部米血.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">北部米血</h5>
+                  <p class="card-text">以竹籤串上整根食用，並會在底層刷上醬油膏，然後裹上花生粉以及香菜，口感濕潤。
+                </p>
+                </div>
+              </div>
+
+              <br>
+
+               </div>
+
+               <div class="vote">
+                <div class="strawpoll-embed" id="strawpoll_PbZqo94GKnN" style="height: 480px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" src="https://strawpoll.com/embed/polls/PbZqo94GKnN" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+            
+
+            </div>
+          </div>
+         
+          <hr>
+
+          <div class="title">
+            <h3  >薑汁番茄vs水果番茄</h3>
+         </div> 
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./img/薑汁番茄.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">薑汁番茄</h5>
+                  <p class="card-text">醬汁由醬油、砂糖、薑泥、甘草粉調配而成，沾醬食用</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./img/水果番茄.jpg" class="card-img-top img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">水果番茄</h5>
+                  <p class="card-text">就是。番茄。。。
+                </p>
+                </div>
+              </div>
+
+              <br>
+
+              <br>
+
+            
+               </div>
+
+               <div class="vote">
+                <div class="strawpoll-embed" id="strawpoll_GeZANY4kEyV" style="height: 480px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" src="https://strawpoll.com/embed/polls/GeZANY4kEyV" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+            </div>
+          </div>
+         
+
+         
+
+           </div>  
+           
+           <a href="#"><img id = "imgTOP" src="./img/icons8-up-64.png" alt=""></a>
+
+
+
+           <a href="index.html">  <img src="./img/logo2.jpg" alt="" class="logo"></a>
+        
+
+           
+         
+ 
+        
+       
+
+     
+   
+</body>
+</html>

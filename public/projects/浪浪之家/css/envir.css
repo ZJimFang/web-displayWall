@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+    background-color: #fff0ac;
+}
+.row1 img{
+    width: 70%;
+}
+
+.row{
+    padding: 0 0 0 0;
+}
+#lg{
+    height: 150px;
+}
+#tit{
+    height: 150px;
+}
+footer{
+    background-color: #d7d7df;
+}

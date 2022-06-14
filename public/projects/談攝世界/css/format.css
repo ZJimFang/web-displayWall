@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+body {
+    background-color: #EAE7DC;
+    font-family: 'Noto Serif TC', serif;
+    color: #20313F;
+    width: 100%;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand a {
+    position: relative;
+    top: 1em;
+    text-decoration: none;
+    color: #20313F;
+}
+
+.snav {
+    text-align: center;
+}
+
+.all {
+    margin: 0 auto;
+    width: 60%;
+    letter-spacing: 3px;
+}
+
+.all h2 {
+    text-align: center;
+}
+
+.all button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    margin: 15px 15px 30px 15px;
+    -webkit-animation: fadeInbottom 1s both;
+    -moz-animation: fadeInbottom 1s both;
+    -o-animation: fadeInbottom 1s both;
+    animation: fadeInbottom 1s both 0s;
+}
+
+h2 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.15s;
+    -moz-animation: fadeInbottom 1s both 0.15s;
+    -o-animation: fadeInbottom 1s both 0.15s;
+    animation: fadeInbottom 1s both 0.15s;
+}
+
+.photo1 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.3s;
+    -moz-animation: fadeInbottom 1s both 0.3s;
+    -o-animation: fadeInbottom 1s both 0.3s;
+    animation: fadeInbottom 1s both 0.3s;
+}
+
+.photo2 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.45s;
+    -moz-animation: fadeInbottom 1s both 0.45s;
+    -o-animation: fadeInbottom 1s both 0.45s;
+    animation: fadeInbottom 1s both 0.45s;
+}
+
+.photo3 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.6s;
+    -moz-animation: fadeInbottom 1s both 0.6s;
+    -o-animation: fadeInbottom 1s both 0.6s;
+    animation: fadeInbottom 1s both 0.6s;
+}
+
+.photo4 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.75s;
+    -moz-animation: fadeInbottom 1s both 0.75s;
+    -o-animation: fadeInbottom 1s both 0.75s;
+    animation: fadeInbottom 1s both 0.75s;
+}
+
+.video1 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.3s;
+    -moz-animation: fadeInbottom 1s both 0.3s;
+    -o-animation: fadeInbottom 1s both 0.3s;
+    animation: fadeInbottom 1s both 0.3s;
+}
+
+.video2 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.45s;
+    -moz-animation: fadeInbottom 1s both 0.45s;
+    -o-animation: fadeInbottom 1s both 0.45s;
+    animation: fadeInbottom 1s both 0.45s;
+}
+
+.video3 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.6s;
+    -moz-animation: fadeInbottom 1s both 0.6s;
+    -o-animation: fadeInbottom 1s both 0.6s;
+    animation: fadeInbottom 1s both 0.6s;
+}
+
+button {
+    justify-content: center;
+    color: #20313F;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    padding: 8px 15px 8px 15px;
+    -webkit-animation: fadeInbottom 1s both 2s 0.3s;
+    -moz-animation: fadeInbottom 1s both 0.3s;
+    -o-animation: fadeInbottom 1s both 0.3s;
+    animation: fadeInbottom 1s both 0.3s;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991.33px) {
+    .all {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .all {
+        width: 90%;
+        font-size: 16px;
+    }
+    button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@-webkit-keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

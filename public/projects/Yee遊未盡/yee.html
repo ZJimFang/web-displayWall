@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yee遊未盡</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="assets/dist/js/javascript.js"></script>
+    <style>
+        .bg {
+            background-image: url("assets/img/game_bg.jpg");
+            background-attachment: relative;
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid container">
+                <a class="navbar-brand title" href="index.html"><img class="me-2" src="assets/img/logo_new.png"
+                        width="50" height="50" alt="Yee遊未盡">YEE遊未盡</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link a-nav" href="index.html">遊戲推薦</a>
+                        <a class="nav-link a-nav" href="form.html">測驗結果統計</a>
+                        <a class="nav-link a-nav" href="discount.html">折扣紀錄查詢</a>
+                        <a class="nav-link a-nav" href="host.html">訪客遊戲分享</a>
+                        <a class="nav-link active a-nav" aria-current="page" href="#">關於我們</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <div class="form">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control form-input" placeholder="Search...">
+                        <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                    </div>
+                </div>      
+            </div> -->
+            <hr class="container" style="border: 1px solid lightgoldenrodyellow;">
+        </div>
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                        <div class="col-lg-3 col-md-6 d-lg-block upperCarousel1">
+                            <img class="img-discount-thumbnail" style="opacity: 100%;" src="assets/img/logo-02.png">
+                        </div>
+                        <div class="col-lg-9 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                            <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;">
+                            <p class="d-inline-block mb-2 title upperTitle">YEE遊未盡</p>
+                            <div class="upperCarouselText">
+                                <h4 class="text-light">
+                                    網站開發製作團隊
+                                </h4>
+                                <p class="text-light">
+                                    基礎程式設計-Web Programming（二）<br>期末網站設計專案
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                                <div class="col-lg-12 col-md-12 p-4 d-flex flex-column position-static"
+                                    style="text-align: left;">
+                                    <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;">
+                                    <p class="d-inline-block upperTitle" style="font-size: 25px;">團隊介紹</p>
+                                    <div class="upperCarouselText">
+                                        <h5 class="text-light">
+                                            與我們一起分享遊戲的喜悅吧！<br><br>
+                                            &nbsp;&nbsp;我們是一群喜歡玩遊戲的人，除了喜歡體驗各種遊戲外，也想要與更多人分享遊戲帶給我們的樂趣與感動。靠著滿腔熱血，我們組成了YEE遊未盡這個開發團隊，透過遊戲推薦與性向測驗，幫助大家找到自己感興趣的遊戲。<br><br>       
+                                        </h5>
+                                        <p class="text-light" style="font-style:italic;">
+                                            &nbsp;&nbsp;"May the Father of Understanding guide us." - Haytham E. Kenway,《Assassin's Creed III》
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 p-4">
+                                    <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;">
+                                    <p class="d-inline-block upperTitle" style="font-size: 25px;">
+                                        團隊成員
+                                    </p>
+                                    <div class="row justify-content-center text-light">
+                                        <div class="col-lg-4 col-md-4 pt-4">
+                                            <img class="img-discount-thumbnail rounded-circle upperCarousel1"
+                                                src="assets/img/member/1.png"
+                                                style="width: 150px; height: 150px; opacity: 100%;">
+                                            <div class="upperCarouselText">
+                                                <h2 class="fw-normal pt-4">鄭宇浩</h2>
+                                                <p>
+                                                    團隊組長，負責內容構想、企劃書撰寫、甘特圖與PPT製作。
+                                                </p>
+                                            </div>
+                                        </div><!-- /.col-lg-4 -->
+                                        <div class="col-lg-4 col-md-4 pt-4">
+                                            <img class="img-discount-thumbnail rounded-circle upperCarousel1"
+                                                src="assets/img/member/2.png"
+                                                style="width: 150px; height: 150px; opacity: 100%;">
+                                            <div class="upperCarouselText">
+                                                <h2 class="fw-normal pt-4">李明軒</h2>
+                                                <p>
+                                                    負責內容構想、企劃書撰寫、架構圖與PPT製作。
+                                                </p>
+                                            </div>
+                                        </div><!-- /.col-lg-4 -->
+                                        <div class="col-lg-4 col-md-4 pt-4">
+                                            <img class="img-discount-thumbnail rounded-circle upperCarousel1"
+                                                src="assets/img/member/3.png"
+                                                style="width: 150px; height: 150px; opacity: 100%;">
+                                            <div class="upperCarouselText">
+                                                <h2 class="fw-normal pt-4">吳獻</h2>
+                                                <p>
+                                                    負責內容構想、Logo與版面設計與美術編輯。
+                                                </p>
+                                            </div>
+                                        </div><!-- /.col-lg-4 -->
+                                        <div class="col-lg-4 col-md-4 pt-4">
+                                            <img class="img-discount-thumbnail rounded-circle upperCarousel1"
+                                                src="assets/img/member/4.png"
+                                                style="width: 150px; height: 150px; opacity: 100%;">
+                                            <div class="upperCarouselText">
+                                                <h2 class="fw-normal pt-4">汪士翔</h2>
+                                                <p>
+                                                    負責內容構想與網頁編寫
+                                                </p>
+                                            </div>
+                                        </div><!-- /.col-lg-4 -->
+                                        <div class="col-lg-4 col-md-4 pt-4">
+                                            <img class="img-discount-thumbnail rounded-circle upperCarousel1"
+                                                src="assets/img/member/5.jpg"
+                                                style="width: 150px; height: 150px; opacity: 100%;">
+                                            <div class="upperCarouselText">
+                                                <h2 class="fw-normal pt-4">劉庭瑋</h2>
+                                                <p>
+                                                    負責內容構想與網頁編寫
+                                                </p>
+                                            </div>
+                                        </div><!-- /.col-lg-4 -->
+                                    </div><!-- /.row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row p-3">
+                <hr class="container" style="border: 1px solid lemonchiffon; opacity: 50%;">
+                <p class="text-light upperCarouselText">
+                    For Educational Purpose Only<br>
+                    Copyright © 2022 Department of Information Communcation. Yuen Ze University.</p>
+            </footer>
+    </main>
+</body>

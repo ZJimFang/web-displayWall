@@ -1,0 +1,835 @@
+.hr-edge-weak {
+    border: 4;
+    padding-top: 1px;
+    background: linear-gradient(to right, transparent, rgb(23, 56, 87), transparent);
+}
+
+.singer1 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer1:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer1:hover::before {
+    position: absolute;
+    top: -40px;
+    left: 200px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '台灣樂團，出身宜蘭，目前團員為男主唱兼吉他手潘雲安、女主唱犬青及鼓手哲謙、 Bass老師展哥、Jason哥以及客座吉他手豆漿哥。不設限曲風的音樂風格，展現告五人多元的音樂面向。';
+}
+
+#pic1 .container1 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic1 .img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic1 .img1 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic1 .text1 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic1 .text1 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic1 .img1:hover .text1 {
+    left: 0;
+}
+
+#pic1 .img1:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics1 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics1 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics1 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer2 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer2:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer2:hover::before {
+    position: absolute;
+    top: -18px;
+    left: 150px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '藝名JJ Lin，新加坡華裔男歌手、詞曲作家、音樂製作人、品牌潮牌衣服企業人士，曾拿下金曲獎最佳新人獎以及兩屆金曲獎最佳男歌手。2003年，發行首張創作專輯《樂行者》。';
+}
+
+#pic2 .container2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic2 .img2 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic2 .img2 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic2 .text2 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic2 .text1 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic2 .img2:hover .text2 {
+    left: 0;
+}
+
+#pic2 .img2:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics2 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics2 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics2 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer3 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer3:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer3:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 150px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '台灣創作歌手、填詞人和演員，他的音樂演藝生涯，開始於就讀大學時學習彈奏吉他後。後來，他參與於金韶獎、金旋獎等比賽並獲得突出成績，最後決定正式以創作歌手為職業。';
+}
+
+#pic3 .container3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic3 .img3 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic3 .img3 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic3 .text3 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic3 .text3 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic3 .img3:hover .text3 {
+    left: 0;
+}
+
+#pic3 .img3:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics3 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics3 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics3 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer4 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer4:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer4:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 150px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '台灣男歌手。2014年，因演唱電視劇《16個夏天》的片尾曲《以後別做朋友》及參與演出打開知名度，發行第三張由自己首次擔任製作人的專輯《如果雨之後》。';
+}
+
+#pic4 .container4 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic4 .img4 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic4 .img4 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic4 .text4 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic4 .text4 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic4 .img4:hover .text4 {
+    left: 0;
+}
+
+#pic4 .img4:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics4 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics4 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics4 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer5 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer5:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer5:hover::before {
+    position: absolute;
+    top: -22px;
+    left: 160px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '馬來西亞華人女歌手，本名梁翠萍，華語樂壇天后級歌手，有「情歌天后」、「療癒系天后」美譽，其作品被冠上「情歌本格派」及「梁式情歌」的稱號。';
+}
+
+#pic5 .container5 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic5 .img5 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic5 .img5 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic5 .text5 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic5 .text5 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic5 .img5:hover .text5 {
+    left: 0;
+}
+
+#pic5 .img5:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics5 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics5 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics5 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer6 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer6:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer6:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 180px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '臺灣樂團，成員共有三人。團員有小玉（主唱）、阿奎（吉他手）、方Q（貝斯手）。2004年9月於玩家練團室師大店發跡，成員都是建國中學畢業生組成。';
+}
+
+#pic6 .container6 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic6 .img6 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic6 .img6 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic6 .text6 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic6 .text6 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic6 .img6:hover .text6 {
+    left: 0;
+}
+
+#pic6 .img6:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics6 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics6 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics6 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer7 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer7:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer7:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 130px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '臺灣獨立樂團，2012年成立於台北，由主唱兼鍵盤手阿斌、吉他手阿德及阿任組成，歌曲風格涵蓋經典搖滾、藍調、Fusion交織著街頭卡拉OK和流行金曲風格。';
+}
+
+#pic7 .container7 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic7 .img7 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic7 .img7 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic7 .text7 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic7 .text7 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic7 .img7:hover .text7 {
+    left: 0;
+}
+
+#pic7 .img7:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics7 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics7 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics7 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer8 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer8:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer8:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '又名G.E.M.，本名鄧詩穎，是一名香港創作歌手，生於上海，四歲時移居至香港。2012年，發行專輯《Xposed》並奪得香港IFPI成為全年最高銷量香港女歌手。';
+}
+
+#pic8 .container8 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic8 .img8 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic8 .img8 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic8 .text8 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic8 .text8 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic8 .img8:hover .text8 {
+    left: 0;
+}
+
+#pic8 .img8:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics8 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics8 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics8 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer9 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer9:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer9:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '出生於臺灣新北市新莊區，是一名臺灣歌手、詞曲作家、演員。她被媒體稱為「亞洲流行天后」，是華人世界流行文化中最具影響力的人物之一。';
+}
+
+#pic9 .container9 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic9 .img9 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic9 .img9 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic9 .text9 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic9 .text9 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic9 .img9:hover .text9 {
+    left: 0;
+}
+
+#pic9 .img9:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics9 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics9 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics9 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer10 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer10:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer10:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '華語流行音樂創作歌手，生於臺灣臺中市。2006年底報名參加華視《快樂星期天》在國立臺灣大學舉辦的第一屆〈校園歌喉戰〉，冠軍賽以一曲《You’re beautiful》奪得總冠軍。';
+}
+
+#pic10 .container10 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic10 .img10 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic10 .img10 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic10 .text10 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic10 .text10 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic10 .img10:hover .text10 {
+    left: 0;
+}
+
+#pic10 .img10:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics10 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics10 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics10 p {
+    color: rgb(213, 216, 230);
+}

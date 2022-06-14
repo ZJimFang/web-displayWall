@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讓渡</title>
+    <link rel="stylesheet" href="transfer.css">
+    <link rel="icon" href="/img/icon.png">
+</head>
+<body>
+    <div>
+        <h1>讓渡資料</h1>
+        <form action="transfer.php" method="Get">
+            <table>
+                <tr>
+                    <th>讓渡人資料</th>
+                </tr>
+                <tr>
+                    <td>姓名</td>
+                    <td><input type="text" name="peo" required></td>
+                </tr>
+                <tr>
+                    <td>生理性別</td>
+                    <td>
+                        <input type="radio" name="peogen" value="1">男
+                        <input type="radio" name="peogen" value="2">女
+                    </td>
+                </tr>
+                <tr>
+                    <td>聯絡電話</td>
+                    <td><input type="tel" name="tel" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="mail" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>寵物資料</th>
+                </tr>
+                <tr>
+                    <td>預計讓渡時間</td>
+                    <td><input type="month" name="month" required></td>
+                </tr>
+                <tr>
+                    <td>寵物名字</td>
+                    <td><input type="text" name="petname" required></td>
+                </tr>
+                <tr>
+                    <td>類別</td>
+                    <td>
+                        <input type="radio" name="cate" value="1">狗
+                        <input type="radio" name="cate" value="2">貓
+                    </td>
+                </tr>
+                <tr>
+                    <td>性別</td>
+                    <td>
+                        <input type="radio" name="petgen" value="1">公
+                        <input type="radio" name="petgen" value="2">母
+                    </td>
+                </tr>
+                <tr>
+                    <td>品種</td>
+                    <td><input type="text" name="var"></td>
+                </tr>
+                <tr>
+                    <td>毛色</td>
+                    <td><input type="text" name="hair"></td>
+                </tr>
+                <tr>
+                    <td>體型</td>
+                    <td>
+                        <input type="radio" name="bdsize" value="1">小
+                        <input type="radio" name="bdsize" value="2">中
+                        <input type="radio" name="bdsize" value="3">大
+                    </td>
+                </tr>
+                <tr>
+                    <td>年齡</td>
+                    <td>
+                        <input type="text" name="old" placeholder="幾歲或幾個月大" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>是否絕育</td>
+                    <td>
+                        <input type="radio" name="neu" value="1">是
+                        <input type="radio" name="neu" value="2">否
+                        <input type="radio" name="neu" value="3">不清楚
+                    </td>
+                </tr>
+                <tr>
+                    <td>晶片號碼</td>
+                    <td><input type="text" name="idnum" placeholder="若沒有請填無" required></td>
+                </tr>
+                <tr>
+                    <td>特徵</td>
+                    <td><textarea name="fea" cols="50" rows="5" placeholder="請簡單描述"></textarea></td>
+                </tr>
+                <tr>
+                    <td>個性</td>
+                    <td><textarea name="per" cols="50" rows="5" placeholder="請簡單描述"></textarea></td>                        
+                </tr>
+                <tr>
+                    <td>病史</td>
+                    <td><textarea name="sick" cols="50" rows="5" placeholder="若沒有請填無" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>不擬飼養原因</td>
+                    <td><textarea name="reason" cols="50" rows="5" placeholder="請簡單描述" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>補充說明事項</td>
+                    <td><textarea name="add" cols="50" rows="5" placeholder="若沒有請填無"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align-last: right;">
+                        <input type="submit" value="提交" onclick="return(confirm('您確定要送出嗎？'))">
+                        <input type="reset" value="重新輸入">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h3>～～～填寫完並提交表單後，我們會再與您聯絡，感謝您～～～</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>SEP</title>
+    <style>
+        @media screen {
+            .inner{
+                columns: 3;
+            }
+        }
+        @media screen and (min-width:600px) and (max-width:900px) {
+            .inner{
+                columns: 2;
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (max-width:599px) {
+            .inner{
+                columns: 1;
+                font-size: 2rem;
+            }
+        }
+        body{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        header{
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+            border: 2px solid gray;
+        }
+        .NL{
+            border: 2px solid gray;
+            padding: 20px;
+            height: 700px;
+        }
+        .Newsletter{
+            text-align: center;
+            font-size: 200%;
+            font-weight: bold;
+            border: 2px solid gray;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10px;
+        }
+        
+        .NewsletterPhone{
+            width: 200px;
+            text-align: center;
+            margin-left: 20%;
+        }
+        
+        div.carousel img{
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .container{
+            margin: 0 auto;
+            border: 2px solid rgb(17, 17, 18);
+            width: 100%;
+            text-align: center;
+        }
+        #mytable td {
+            margin: 0 auto;
+            font-size: 2.1rem;
+        }
+        footer{
+            border: 2px solid grey;
+        }
+        #table2{
+            color: gray;
+        }
+        h1{
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <div><!-- 頁首 -->
+        <header>
+            <h1>思友瘋 <img src="img/logo.png" alt="" width="30px"></h1>
+        </header>
+    </div>
+
+    <div><!-- 輪播系統 -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/lb-1_0.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/lb-2_0.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/lb-3_0.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/lb-4_0.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/lb-5_0.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div  class="container" ><!-- 介紹與排行 -->
+        <table id="mytable" style="width: 100%;">
+            <tr >
+                <td style="border-right: 2px solid grey;">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="butto    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                          品牌介紹
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item">品牌歷史介紹</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Applehistory.html">蘋果 Apple</a></li>
+                            <li><a class="dropdown-item" href="Xiaomihistory.html">小米 Xiaomi</a></li>
+                            <li><a class="dropdown-item" href="samsunghistory.html">三星 Samsung</a></li>
+                            <li><a class="dropdown-item" href="oppohistory.html">oppo</a></li>
+                            <li><a class="dropdown-item" href="vivohistory.html">vivo</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item">品牌詳細手機介紹</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="Applepage.html">蘋果 Apple</a></li>
+                            <li><a class="dropdown-item" href="Xiaomipage.html">小米 Xiaomi</a></li>
+                            <li><a class="dropdown-item" href="samsungpage.html">三星 Samsung</a></li>
+                            <li><a class="dropdown-item" href="oppopage.html">oppo</a></li>
+                            <li><a class="dropdown-item" href="vivopage.html">vivo</a></li>
+                       </ul>
+                    </div>
+                </td>
+                <td style="border-left: 2px solid grey;">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="butto    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                          各類排行榜
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="ranking_sales.html">暢銷</a></li>
+                            <li><a class="dropdown-item" href="ranking_CP.html">CP值</a></li>
+                            <li><a class="dropdown-item" href="ranking_electricity.html">電容量</a></li>
+                            <li><a class="dropdown-item" href="ranking_waterproof.html">防水</a></li>
+                            <li><a class="dropdown-item" href="ranking_heatdissipation.html">散熱</a></li>
+                            <li><a class="dropdown-item" href="ranking_game.html">遊戲</a></li>
+                            <li><a class="dropdown-item" href="ranking_sound.html">音效</a></li>
+                            <li><a class="dropdown-item" href="ranking_runpoint.html">跑分</a></li>
+                            <li><a class="dropdown-item" href="ranking_photograph.html">拍照</a></li>
+                       </ul>
+                    </div>
+                </td> 
+            </tr>
+        </table>
+    </div>
+
+    <div class="NL"><!-- 最新推出快訊 -->
+        <div class="Newsletter">最新推出快訊</div><hr>
+
+        <div class="inner">
+            <div class="NewsletterPhone">
+                <h1>Apple</h1> 
+                <img src="img/iphone 13 Pro.jpg" height="150px"><br>
+            iphone 13 Pro<br>
+                    2022/03 <br>
+                    <a href="Detail_apple/iPhone13Pro.html" style="color: gray;">點我看更多...</a>
+                    
+            </div>
+
+            <br>
+            <div class="NewsletterPhone">
+                <h1>Xiaomi</h1> 
+                <img src="img/Xiaomi 12 Pro.jpg" height="150px"><br>
+                Xiaomi 12 Pro<br>
+                    2022/04 <br>
+                    <a href="Detail_xiaomi/Xiaomi_12_Pro.html" style="color: gray;">點我看更多...</a>
+            </div>
+
+            <div class="NewsletterPhone">
+                <h1>Samsung</h1> 
+                <img src="img/Galaxy S21+ 5G.jpg" height="150px"><br>
+                Galaxy S21+ 5G <br>
+                    2022/04 <br>
+                    <a href="Detail_samsung/Galaxy S21+ 5G.html" style="color: gray;">點我看更多...</a>
+            </div>
+              <br>
+            <div class="NewsletterPhone">
+                <h1>Oppo</h1> 
+                <img src="img/OPPO Find X5 Pro.jpg" height="150px"><br>
+                OPPO Find X5 Pro<br>
+                    2022/04 <br>
+                    <a href="Detail_oppo/OPPO Find X5 Pro.html" style="color: gray;">點我看更多...</a>
+            </div>
+
+            <div class="NewsletterPhone">
+                <h1>Vivo</h1> 
+                <img src="img/vivo X60 Pro.jpg" height="150px"><br>
+                vivo X60 Pro<br>
+                    2021/03 <br>
+                    <a href="Detail_vivo/vivo X60 Pro.html" style="color: gray;">點我看更多...</a>
+            </div>
+            <br>
+            <div class="NewsletterPhone">
+                <h1>Apple</h1> 
+                    <img src="img\iphonese.png" height="150px"><br>
+                iphone SE 3<br>
+                        2022/04 <br>
+                        <a href="Detail_apple/iPhone13Pro.html" style="color: gray;">點我看更多...</a>
+                        </div>
+                
+        </div>
+    </div>
+
+    <footer><!-- 頁尾 -->
+        <table style=" width: 100%; text-align: center;">
+            <tr>
+            <td><img src="img/logo.png" alt=""width="30px">思友瘋團隊</td>
+            <td id="table2">聯絡方式:S1101849@mail.yzu.edu.tw</td>
+            </tr>
+        </table>
+    </footer>
+
+    
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

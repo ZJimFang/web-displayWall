@@ -1,0 +1,205 @@
+body {
+    width: 1200px;      
+    margin: 0 auto;
+    text-align:center;
+    background: rgb(245, 225, 225);
+    color: #891C3E;
+}
+header h1 {
+    text-align: center;
+}
+
+/* 置中導覽列 */
+.center-nav {
+    text-align: center;
+}
+
+.center-nav ul {
+    list-style: none;
+}
+
+.center-nav li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.center-nav a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 置右按鈕 */
+.right-nav {
+    float: right;
+}
+
+.right-nav li {
+    margin: 0 auto 0 auto;
+}
+
+.right-nav i {
+    font-size: 20px;
+    color: #E0999E;
+}
+
+/* 置右搜尋框 */
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    display: inline-block;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    height: auto;
+}
+
+.search {
+    position: relative;
+    width: 50%;
+    float: right;
+}
+
+.search-bar {
+    width: 130%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-left: -90px;
+    border: 2px solid #E0999E;
+    background-color: white;
+}
+
+.search-btn {
+    width: 36px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: white;
+    color: #E0999E;
+    outline: none;
+    border: 2px solid #E0999E;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+#text1 {
+    clear: both;
+    color: rgb(137, 28, 62);
+    font-size: 20px ;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#picture1 {
+    padding-left: 80px;
+    position: relative;
+    text-align: center;
+}
+
+#picture2 {
+    clear: both;
+    padding-left: 51px;
+    position: relative;
+    text-align: center;
+}
+
+#pictureo {
+    float:left;
+}
+
+#pictureee1 {
+    width: 260px;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#pictureee1:hover {
+    float: right;
+}
+
+#pictureee2 {
+    width: 260px;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#pictureee2:hover {
+    float: right;
+}
+
+#pictureee3 {
+    width: 260px;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#pictureee3:hover {
+    float: right;
+}
+
+#pictureee4 {
+    width: 260px;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#pictureee4:hover {
+    float: right;
+}
+
+#pictureee5 {
+    width: 260px;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#pictureee5:hover {
+    float: right;
+}
+
+#pictureee6 {
+    width: 260px;
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#pictureee6:hover {
+    float: right;
+}
+
+#texttt {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(137, 28, 62);
+    padding-left: 25px;
+    text-align:left;
+}
+
+#arrow111, #arrow222 {
+    cursor: pointer;
+    margin-top: 86px;
+    float: left;
+    height: 30px;
+}

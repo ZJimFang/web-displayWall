@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+body {
+    background-color: #EAE7DC;
+    font-family: 'Noto Serif TC', serif;
+    color: #20313F;
+    width: 100%;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand a {
+    position: relative;
+    top: 1em;
+    text-decoration: none;
+    color: #20313F;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-animation: fadeInbottom 1s both 2s 0.15s;
+    -moz-animation: fadeInbottom 1s both 0.15s;
+    -o-animation: fadeInbottom 1s both 0.15s;
+    animation: fadeInbottom 1s both 0.15s;
+}
+
+.all {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.div1 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.3s;
+    -moz-animation: fadeInbottom 1s both 0.3s;
+    -o-animation: fadeInbottom 1s both 0.3s;
+    animation: fadeInbottom 1s both 0.3s;
+}
+
+.div2 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.45s;
+    -moz-animation: fadeInbottom 1s both 0.45s;
+    -o-animation: fadeInbottom 1s both 0.45s;
+    animation: fadeInbottom 1s both 0.45s;
+}
+
+.div3 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.6s;
+    -moz-animation: fadeInbottom 1s both 0.6s;
+    -o-animation: fadeInbottom 1s both 0.6s;
+    animation: fadeInbottom 1s both 0.6s;
+}
+
+.div4 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.75s;
+    -moz-animation: fadeInbottom 1s both 0.75s;
+    -o-animation: fadeInbottom 1s both 0.75s;
+    animation: fadeInbottom 1s both 0.75s;
+}
+
+.div5 {
+    -webkit-animation: fadeInbottom 1s both 2s 0.9s;
+    -moz-animation: fadeInbottom 1s both 0.9s;
+    -o-animation: fadeInbottom 1s both 0.9s;
+    animation: fadeInbottom 1s both 0.9s;
+}
+
+.div6 {
+    -webkit-animation: fadeInbottom 1s both 2s 1.05s;
+    -moz-animation: fadeInbottom 1s both 1.05s;
+    -o-animation: fadeInbottom 1s both 1.05s;
+    animation: fadeInbottom 1s both 1.05s;
+}
+
+a {
+    color: #20313F;
+    text-decoration: none;
+}
+
+button {
+    justify-content: center;
+    color: #20313F;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    padding: 8px 15px 8px 15px;
+    -webkit-animation: fadeInbottom 1s both 2s 0.3s;
+    -moz-animation: fadeInbottom 1s both 0.3s;
+    -o-animation: fadeInbottom 1s both 0.3s;
+    animation: fadeInbottom 1s both 0.3s;
+}
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991.33px) {
+    .all {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .all {
+        width: 90%;
+        font-size: 16px;
+    }
+    button {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@-webkit-keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

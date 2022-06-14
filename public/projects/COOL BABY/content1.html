@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/content1.css">
+    <title>Cool Baby</title>
+    <style>
+        .square{
+            margin: 0 auto;
+            display: flex;
+            padding-top: 180px;
+            padding-bottom: 20px;
+        }
+        .left{
+            flex: 4;
+        }
+        .right{
+            flex: 6;
+        }
+        .pic{
+            border-radius: 70px;
+            width: 500px;
+        }
+        .cart{
+            background-color: white;
+            list-style-type: none;
+            border: 1px solid;
+            border-radius: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-color: pink;
+            border-width:3px;
+        }
+        .cart:hover{
+            background-color: rgb(220, 172, 165);
+            cursor: pointer;
+            list-style-type: none;
+            border: 1px solid;
+            border-radius: 10px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-color: pink;
+            border-width:3px;
+        }
+        .content{
+            list-style-type: none;
+            text-align: left;
+            font-size: 20px;
+            padding-top: 70px;
+        }
+        .tittle{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="square">
+            <article class="left">
+                <img class="pic" src="img/big1.jpg" alt="">
+            </article>
+            <aside class="right">
+                <div class="text">
+                    <h1 class="tittle">基礎清潔-綠淨(U1)</h1>
+                    <ul class="content">
+                        <li>用途：基礎深層清潔-肌膚屏障工程建構</li>
+                        <li>優點：除臭、抑菌，潤膚抗敏感與防刺激滋養毛囊、平衡肌膚油脂</li>
+                        <li>產品包裝：淨含量500ml</li>
+                        <li>售價：NT $590</li>
+                        <li>購買瓶數：</li>
+                    </ul>
+                    <tr>
+                        <td>
+                            <input type="radio" name="UserGrade" value="1" checked>1瓶
+                            <input type="radio" name="UserGrade" value="2">2瓶
+                            <input type="radio" name="UserGrade" value="3">3瓶
+                            <input type="radio" name="UserGrade" value="4">4瓶
+                            <input type="radio" name="UserGrade" value="5">5瓶
+                        </td>
+                    </tr>
+                </div>
+            </aside>
+        </div>
+        <ul class="cart">
+            <li>加入購物車</li>
+        </ul>
+    </body>
+    </html>
+</body>
+</html>

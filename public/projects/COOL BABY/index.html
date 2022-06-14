@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css撰寫連結 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 忘了是什麼但不能刪掉 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome 置入nav圖標 -->
+    <script src="https://kit.fontawesome.com/9ea25825d5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ea25825d5.js" crossorigin="anonymous"></script>
+    <!-- slick 響應式頁面 -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- 網頁標籤 -->
+    <link rel="icon" href="img/pet.svg" type="img/x-icon/">
+    <link rel="shortcut icon" href="img/pet.svg" type="img/x-icon/">
+    <title>Cool Baby</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cool Baby</h1>
+    </header>
+    <!-- 水平導覽列 -->
+    <div class="myNav">
+        <nav>
+            <!-- 置中導覽列 -->
+            <ul class="center-nav">
+                <li style="padding-left: 200px;"><a href="index.html">Home</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <!-- 置右按鈕 -->
+                <div class="right-nav">
+                    <li style="padding-right: 5px;"><a href="car.html"><i class="fa-solid fa-cart-shopping"></i></a></img></li>
+                    <li><a href="personal.html"><i class="fa-solid fa-user"></i></a></img></li>
+                    <!-- 置右搜尋框 -->
+                    <div class="wrap">
+                        <div class="search">
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="">
+                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- gif -->
+        <div><img src='img/logo.gif' /></a></div>
+        <!-- 按鈕 -->
+        <div><a href="#items"><button class="button">Read more</button></a></div>
+    </div>
+    <!-- 商品概覽 -->
+    <div class="slide-show">
+        <h1>商品概覽</h1>
+        <ul class="items" id="items">
+            <li><img src="img/bang1.jpg" alt=""></li>
+            <li><img src="img/bang2.jpg" alt=""></li>
+            <li><img src="img/bang3.jpg" alt=""></li>
+            <li><img src="img/bang4.jpg" alt=""></li>
+            <li><img src="img/bang5.jpg" alt=""></li>
+            <li><img src="img/bang6.jpg" alt=""></li>
+        </ul>
+    </div>
+    <!-- social條 -->
+    <div class="social">
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js "></script>
+    <script>
+        $('.items').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+        });
+    </script>
+</body>
+
+</html>

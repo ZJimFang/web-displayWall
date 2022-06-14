@@ -1,0 +1,33 @@
+
+.container{
+    width: 100%;
+}
+
+
+article{
+    width: 100%;
+    flex: 1;
+ }
+ 
+ aside{
+     width: 100%;
+     flex: 1;
+ }
+ 
+ aside.three{
+     width: 100%;
+     flex: 1;
+ }
+
+ #mynav ul{
+     padding: 0px;
+ }
+
+ #mynav li{
+     width: 100%;
+ }
+
+ #mynav li a{
+     width: 100%;
+     border: 1px grey solid;
+ }

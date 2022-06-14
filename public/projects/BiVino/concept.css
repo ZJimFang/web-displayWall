@@ -1,0 +1,83 @@
+#t-concept {
+    padding: 6.5em 7.7% 7.7%;
+    box-sizing: border-box;
+    color: rgb(103, 101, 97);
+    display: block;
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.896px;
+    line-height: 17.1429px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 77.375px;
+    padding-left: 77.375px;
+    padding-right: 77.375px;
+    padding-top: 72.8px;
+    position: relative;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color :rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+.sec-title1{
+    font-size: 2.6em;
+    display: block;
+    text-align: center;
+    color: #bc9d51;
+    font-family: "abolition";
+    font-weight: normal;
+    letter-spacing: .2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+#i-concept {
+    box-sizing: border-box;
+    color: rgb(103, 101, 97);
+    content:url(https://www.smokeman.restaurant/assets/img/i_dinner.svg);
+    display: block;
+    letter-spacing: 0.896px;
+    line-height: 17.1429px;
+    margin-bottom:11.2px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 11.2px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    
+}
+
+.category-icon {
+    display: block;
+    margin: 1em auto;
+}
+
+.category-icon {
+    display: block;
+    margin: 1em auto;
+}
+
+.read {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1.2em;
+    color: #FFF;
+}
+
+#t-concept p {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.18em;
+    line-height: 1.4;
+    vertical-align: top;
+    margin: 0 0 10px;
+}
+
+#BiVino_img {
+    height:288px;
+    width: 270px;
+    padding-top: 20px;
+    margin-bottom: 120px;
+}

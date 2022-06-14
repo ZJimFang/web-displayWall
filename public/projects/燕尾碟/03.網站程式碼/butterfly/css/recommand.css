@@ -1,0 +1,99 @@
+#container {
+    background-color: rgb(23, 56, 87);
+    /* text-align: center; */
+}
+
+#header {
+    display: flex;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.head {
+    margin-top: 20px;
+    padding-right: 20px;
+    color: rgb(213, 216, 230);
+}
+
+.head1 {
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+#title {
+    margin: auto;
+    text-align: left;
+}
+
+#title h2 {
+    margin: 0 auto;
+    font-size: 40px;  
+    
+}
+
+#img img{
+    width: 350px;
+    height: 350px;
+    float:left;
+    padding-top: 35px;
+    padding-left: 160px;
+}
+
+#story  {
+    padding: 60px;
+    padding-left: 600px;
+    padding-right: 160px;
+    height: 350px;
+    background-color:rgb(72, 96, 132)
+}
+
+#story h2 {
+    text-indent: 20px;
+}
+
+#story p {
+    font-size: 20px;
+    text-indent: 20px;
+    color: rgb(213, 216, 230);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    padding-left: 20px;
+    height: 100px;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    padding-right: 15px;
+    height: 100px;
+    padding-top: 8px;
+    color: rgb(213, 216, 230);
+}
+
+.mp3 {
+    float: right;
+    padding-right: 100px;
+}
+

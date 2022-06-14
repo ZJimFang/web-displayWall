@@ -1,0 +1,848 @@
+.hr-edge-weak {
+    border: 4;
+    padding-top: 1px;
+    background: linear-gradient(to right, transparent, rgb(23, 56, 87), transparent);
+}
+
+.singer1 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer1:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer1:hover::before {
+    position: absolute;
+    top: -25px;
+    left: 200px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '美國創作歌手、音樂製作人、演員及導演，作為世上最有影響力的歌手之一，她以跨越了多種類型的音樂作品，基於個人生活的敘事性的歌曲創作受到了眾多的好評。';
+}
+
+#pic1 .container1 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic1 .img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic1 .img1 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic1 .text1 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic1 .text1 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic1 .img1:hover .text1 {
+    left: 0;
+}
+
+#pic1 .img1:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics1 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics1 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics1 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer2 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer2:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer2:hover::before {
+    position: absolute;
+    top: -40px;
+    left: 150px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '本名Casey Thai Luong，以藝名Keshi而聞名，是一名越南裔美國歌手及詞曲作家。作品在串流媒體平台上擁有超過4000萬次的播放數。其作品《over u》被評為新一代R&B的代表作品。';
+}
+
+#pic2 .container2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic2 .img2 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic2 .img2 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic2 .text2 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic2 .text1 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic2 .img2:hover .text2 {
+    left: 0;
+}
+
+#pic2 .img2:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics2 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics2 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics2 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer3 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer3:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer3:hover::before {
+    position: absolute;
+    top: -25px;
+    left: 230px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '美國創作型歌手。 他在2018年發布的單曲let me down slowly在25個以上的國家中躋身前40名，截至2021年5月，歌曲已累積超過8.07億串流次數。';
+}
+
+#pic3 .container3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic3 .img3 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic3 .img3 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic3 .text3 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic3 .text3 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic3 .img3:hover .text3 {
+    left: 0;
+}
+
+#pic3 .img3:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics3 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics3 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics3 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer4 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer4:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer4:hover::before {
+    position: absolute;
+    top: -23px;
+    left: 190px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '本名Edward Christopher Sheeran，英國流行樂男歌手、音樂創作人、演員，隸屬於大西洋唱片。';
+}
+
+#pic4 .container4 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic4 .img4 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic4 .img4 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic4 .text4 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic4 .text4 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic4 .img4:hover .text4 {
+    left: 0;
+}
+
+#pic4 .img4:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics4 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics4 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics4 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer5 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer5:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer5:hover::before {
+    position: absolute;
+    top: -22px;
+    left: 180px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '愛爾蘭男歌手，One Direction成員。2016年，One Direction進入休整期，開始以個人名義發展 。2017年，發行的個人首張音樂專輯《Flicker》登上美國公告牌專輯榜排行冠軍 。';
+}
+
+#pic5 .container5 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic5 .img5 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic5 .img5 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic5 .text5 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic5 .text5 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic5 .img5:hover .text5 {
+    left: 0;
+}
+
+#pic5 .img5:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics5 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics5 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics5 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer6 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer6:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer6:hover::before {
+    position: absolute;
+    top: -24px;
+    left: 350px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '加拿大歌手、詞曲作家、音樂製作人及模特兒，現為環球音樂旗下小島唱片的歌手。';
+}
+
+#pic6 .container6 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic6 .img6 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic6 .img6 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic6 .text6 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic6 .text6 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic6 .img6:hover .text6 {
+    left: 0;
+}
+
+#pic6 .img6:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics6 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics6 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics6 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer7 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer7:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer7:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 130px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '本名Ari Staprans Leff，是一名美國創作歌手，以藝名Lauv出道。 他的迷你專輯lost in the light為他的出道作品於2015年發行。';
+}
+
+#pic7 .container7 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic7 .img7 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic7 .img7 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic7 .text7 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic7 .text7 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic7 .img7:hover .text7 {
+    left: 0;
+}
+
+#pic7 .img7:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics7 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics7 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics7 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer8 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer8:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer8:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '加拿大的歌手。 憑藉著2017 年與Zedd 合作的〈Stay〉，她登上了Billboard 的第七名，讓她聲名遠播，這首歌也成為了當年最洗腦的歌曲之一。';
+}
+
+#pic8 .container8 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic8 .img8 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic8 .img8 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic8 .text8 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic8 .text8 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic8 .img8:hover .text8 {
+    left: 0;
+}
+
+#pic8 .img8:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics8 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics8 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics8 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer9 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer9:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer9:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '美國流行男歌手、詞曲創作者。2018年，與環球音樂集團旗下共和唱片簽約。同年，發行個人首張音樂EP《Sunset Season》。';
+}
+
+#pic9 .container9 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic9 .img9 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic9 .img9 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic9 .text9 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic9 .text9 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic9 .img9:hover .text9 {
+    left: 0;
+}
+
+#pic9 .img9:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics9 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics9 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics9 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer10 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer10:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer10:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '擁有加拿大、法國雙重國籍，加拿大女歌手、詞曲作者、演員。 2002年，發行個人首張錄音室專輯《Let Go》，從而正式出道。';
+}
+
+#pic10 .container10 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic10 .img10 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic10 .img10 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic10 .text10 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic10 .text10 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic10 .img10:hover .text10 {
+    left: 0;
+}
+
+#pic10 .img10:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics10 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics10 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics10 p {
+    color: rgb(213, 216, 230);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yee遊未盡</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/dist/css/style.css"> 
+    
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="assets/dist/js/javascript.js"></script>
+    <style>
+        .bg {
+            background-image: url("assets/img/game_bg.jpg");
+            background-attachment: relative;
+        }
+    </style>
+</head> 
+
+<body class="bg">    
+    <header>        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid container"> 
+                <a class="navbar-brand title" href="index.html"><img class="me-2" src="assets/img/logo_new.png" width="50" height="50" alt="Yee遊未盡">YEE遊未盡</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active a-nav " aria-current="page" href="index.html">遊戲推薦</a>
+                    <a class="nav-link a-nav" href="form.html">測驗結果統計</a>
+                    <a class="nav-link a-nav" href="discount.html">折扣紀錄查詢</a>
+                    <a class="nav-link a-nav" href="host.html">訪客遊戲分享</a>
+                    <a class="nav-link a-nav" href="yee.html">關於我們</a>
+                    </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <div class="form">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control form-input" placeholder="Search...">
+                        <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                    </div>
+                </div>      
+            </div> -->
+            <hr class="container" style="border: 1px solid lightgoldenrodyellow;">          
+        </div>        
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">                
+                  <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                        <div class="col-lg-3 col-md-6 d-lg-block upperCarousel1" >
+                            <img class="img-discount-thumbnail" style="opacity: 100%;" src="assets/img/Genshin Impact/logo.webp">                               
+                        </div>
+                        <div class="col-lg-3 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                            <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                        <p class="d-inline-block mb-2 title upperTitle">《原神》</p>
+                        <div class="upperCarouselText">
+                            <h4 class="text-light">角色扮演、動作冒險
+                            </h4> 
+                            <a href="https://genshin.hoyoverse.com/zh-tw/home/">
+                                <button type="button" class="btn btn-outline-warning">
+                                    <span>官方網站</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-lg-block d-none justify-content-end upperCarousel1" >
+                        <img class="img-discount-thumbnail" style="opacity: 100%;" src="assets/img/Genshin Impact/banner.jpg">                               
+                    </div>                        
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">            
+                            <div class="col-lg-3 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                                <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                                <p class="d-inline-block upperTitle" style="font-size: 25px;">遊戲介紹</p>
+                                <div class="upperCarouselText">
+                                    <h5 class="text-light">
+                                        &nbsp;&nbsp;這裡是七種元素交匯的幻想世界「提瓦特」。<br><br>
+                                        在遙遠的過去，人們藉由對神靈的信仰，獲賜了驅動元素的力量，得以在荒野中築起家園。
+                                        五百年前，古國的覆滅卻使得天地變異…
+                                        如今，席捲大陸的災難已經停息，和平卻仍未如期光臨。<br><br>
+                                        &nbsp;&nbsp;挺身而出與鄉里志士們共同作戰，化身令敵人怵目驚心、聞之喪膽的的「戰鬼」，不擇手段拯救遭受蹂躪的家園與同胞。他必須捨棄一直堅守的武士之道，開創新的道路，為了解放對馬島而展開一場不循常規的戰爭。
+                                    </h5>
+                                </div>                 
+                            </div>
+                            <div class="col-lg-3 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                                <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                                <p class="d-inline-block upperTitle" style="font-size: 25px;">遊戲特點</p>
+                                <div class="upperCarouselText">
+                                    <h5 class="text-light">              
+                                        &nbsp;&nbsp;史詩級奇幻冒險，沉浸式單人冒險。作為來自另一個世界的旅行者，您將踏上尋找自我的旅程，並與失散已久的親人團聚。<br><br>
+                                        &nbsp;&nbsp;開放世界探索，飛越廣袤的世界、暢游海洋湖泊、翻越崇山峻嶺、探索人跡罕至的地方，發掘這充滿奇蹟和神秘的世界所隱藏的秘密。<br><br>
+                                        &nbsp;&nbsp;元素戰鬥系統，這不是款單純打怪練等的遊戲。在《原神》的開放世界中，靈活巧妙地操縱元素力量是戰勝強大敵人與解決複雜謎題的關鍵。
+                                    </h5>
+                                </div>                 
+                            </div>                            
+                            <div class="col-lg-6 col-md-12 p-4">
+                                <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                                <p class="d-inline-block upperTitle" style="font-size: 25px;">遊戲圖片<p class="text-light">點擊圖片可放大顯示</p></p>              
+                                <div class="row g-0 rounded flex-md-row mb-4 h-md-250 position-relative">
+                                    <div class="col-md-6 upperCarousel1">
+                                        <img class="img-discount-thumbnail img" src="assets/img/Genshin Impact/gameplay1.jpg">                     
+                                    </div>
+                                    <div class="col-md-6 upperCarousel1" >
+                                        <img class="img-discount-thumbnail img" src="assets/img/Genshin Impact/gameplay2.jpg">
+                                    </div>
+                                    <div class="col-md-6 upperCarousel1" >
+                                        <img class="img-discount-thumbnail img" src="assets/img/Genshin Impact/gameplay3.jpg">
+                                    </div>
+                                    <div class="col-md-6 upperCarousel1" >
+                                        <img class="img-discount-thumbnail img" src="assets/img/Genshin Impact/gameplay4.jpg">
+                                    </div>
+                                    <!--Img Preview Center-->
+                                    <div class="imgPreview">
+                                        <img src="#" alt="" id="imgPreview">
+                                    </div> 
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>                          
+            </div>                    
+        </div>
+        <footer class="row p-3">
+            <hr class="container" style="border: 1px solid lemonchiffon; opacity: 50%;">             
+            <p class="text-light upperCarouselText">
+              For Educational Purpose Only<br>
+              Copyright © 2022 Department of Information Communcation. Yuen Ze University.</p>
+        </footer>
+    </main>
+</body>

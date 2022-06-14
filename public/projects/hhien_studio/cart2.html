@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1300px;
+            margin:0 auto;
+        }
+        
+        header {
+            background-color: #e8e8e8;
+            height:160px;
+            padding: 10px 15px;
+            padding-top: 40px;
+        }
+
+        header p{
+            font-size: 18px;
+            margin-right: 250px;
+            padding-top: 35px;
+        }
+
+        header div {
+            position: absolute;
+            top: 60px;
+            right: 160px;
+        }
+
+        header a #logo {
+            position: absolute;
+            top: -60px;
+            left: 140px;
+        }
+
+       body{
+           background-color: #e8e8e8;
+        }
+
+       #top{
+            width: 80%;
+            padding: 4%;
+            margin-inline: 35%;
+            margin-left: 350px;
+            font-size: 27px;
+        }
+
+        .circle{
+            background-color: rgb(255, 255, 255);
+            border:none;
+            margin: auto;
+            padding: 3%;
+            border-radius: 50%;
+            text-align: center;
+            text-decoration-color: black;
+        }
+
+        section{
+           width: 70%;
+           height: 100%;
+           padding: 3%;
+           margin: auto;
+           background-color: rgba(255, 255, 255, 0.829);
+           display: flex;
+        }
+        
+        article{
+            flex: 1;
+            padding: 30px;
+        }
+
+        #line:after{
+            content: '';
+            height: 750px;
+            width: 1px;
+            background: #000000;
+            background: #000000;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        aside{
+            flex:1;
+            padding: 30px;
+        }
+
+        .box0{
+            width: 80%;
+            margin-left: 10%;
+            padding: 3%;
+            background-color: rgba(52, 52, 52, 0.077);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .box1{
+            width: 80%;
+            margin-top: 18%;
+            margin-left: 10%;
+            padding: 4%;
+            background-color: rgba(52, 52, 52, 0.077);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .box2{
+            width: 80%;
+            margin-left: 8%;
+            padding: 4%;
+            background-color: rgba(52, 52, 52, 0.077);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+
+        .titleWeight{
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .formLeft{
+            width: 100px;
+            margin-left: 10%;
+            padding: 1.5%;
+        }
+
+        .formRight{
+            width: 100%;
+            padding: 5%;
+            margin-left: 10%;
+        }
+
+        .fill{
+            width: 100px;
+            margin-left: 10%;
+            padding: 1.5%;
+        }
+
+        #bill{
+            padding: 0;
+            margin-left: 10%;
+            margin-top: 7%;
+            font-family: "Roboto Condensed", sans-serif, 微軟正黑體;
+        }
+
+        table{
+            width: 400px;
+            height: 200px;
+            padding: 10%;
+            border: 1px;
+            border-color: aliceblue;
+        }
+
+        table,tr{
+        border: 1px solid;
+        padding: 0;
+        }
+
+        td{
+            border: 1px solid;
+            width: 10%;
+            border-style:outset;
+        }
+
+        a {
+            color: black;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: rgb(109, 46, 46);
+            text-decoration: underline
+        }
+
+        div#click{    
+            width: 100%;
+            padding: 13%;
+            margin-top: 27%;
+        }
+
+        .button {
+            width: 100px;
+            height: 35px;
+            background-color: rgba(52, 52, 52, 0.077);
+            border: 1px solid;
+            border-color: ivory;
+            border-radius: 8px;
+            font-weight: bolder;
+            font-size: larger;
+            position: relative;
+            left: 36.5%;
+            top: 26px;
+        }
+
+        .button:hover{
+            color: rgb(89, 62, 62);
+            text-decoration: underline;
+            background-color: rgba(137, 134, 134, 0.31);
+        }
+   
+       </style>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href ="index.html"><img src="props/logo.png" alt="" width=230px></a>
+            <div>
+                <a href="index.html"><p>繼續購物</p>
+                <img src="img/triangle.png" alt="" height="15px"></a>
+            </div>
+        </header>
+    <hr>
+
+    
+    <div id="top">
+        <span class="circle">購物車</span>  &nbsp;>&nbsp; 
+        <span class="circle" span style="color:rgb(255, 255, 255); background-color: black;">&nbsp;&nbsp;&nbsp;付款&nbsp;&nbsp;&nbsp;</span>  &nbsp;>&nbsp;
+        <span class="circle">訂單完成</span>
+    </div>
+
+    <section id="content">
+        <article>
+            <div class="box0"><span class="titleWeight">運送地區</span>
+                <br>
+                <input type="radio" name="UserCourses[]" value="1" checked>台灣及離島
+                <input type="radio" name="UserCourses[]" value="2" >海外國家
+            </div>
+
+            <div class="formLeft">付款方式
+                <input type="text" list="browsers1" name="browser" size="50" required>
+                <datalist id="browsers1">
+                    <option value="cash">現金</option>
+                    <option value="creditcard">信用卡</option>
+                    <option value="Linepay">Linepay</option>
+                </datalist>
+            </div>
+
+            <div class="formLeft">運送方式
+                <input type="text" list="browsers2" name="browser" size="50" required>
+                <datalist id="browsers2">
+                    <option value="SevenElevent">7-11</option>
+                    <option value="Family">全家</option>
+                    <option value="delivery">宅急便</option>
+                </datalist>
+            </div>
+
+            <div class="box1"><span class="titleWeight">收件資料</span></div>
+            <div class="fill">收件人姓名
+                <input type="text" name="UserName" size="20" placeholder="請輸入大名">
+            </div>
+
+            <div class="fill">手機號碼
+                <input type="tel" name="UserTel" size="20" placeholder="09xxxxxxxx">
+            </div>
+
+            <div class="formLeft">門市選擇
+                <input type="text" list="browsers3" name="browser" size="50" placeholder="請選擇門市" required>
+                <datalist id="browsers3">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                </datalist>
+            </div>
+
+            <div class="fill">
+                備註 <textarea name="note" id="" cols="47" rows="10"></textarea>
+    
+            </div>         
+        </article>
+
+        <span id="line"></span>
+
+            <aside>
+                <div>
+                    <div class="box2"><span class="titleWeight"> 發票資訊</span>
+                        <input type="radio" name="UserCourses2[]" value="1" checked>電子發票 
+                        <input type="radio" name="UserCourses2[]" value="2" >電子公司索取發票證明聯
+                </div>
+
+                <div class="formRight">
+                    <input type="radio" name="UserCourses3[]"  value="" checked>無 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                    <input type="radio" name="UserCourses3[]"  value="">手機條碼載具 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <input type="radio" name="UserCourses3[]"  value="">自然人憑證載具
+                </div>
+
+                <div class="box2"><span class="titleWeight">購物明細</span></div>
+
+                
+                <div>
+                    <table id="bill">
+                        <tr>
+                            <td>&nbsp;&nbsp;商品數量</td>
+                            <td class="boxSize">&nbsp; 共&nbsp;2&nbsp;件&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;&nbsp;金額</td>
+                            <td class="boxSize">&nbsp; $ 810</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;&nbsp;運費</td>
+                            <td  class="boxSize">&nbsp; $ 60</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;&nbsp;優惠折抵</td>
+                            <td class="boxSize">&nbsp;總折扣 : $0</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp; 應付金額</td>
+                            <td class="boxSize"><span style="color:red ;"> &nbsp; $870 </span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br>
+
+                <div id="click">
+                    <a href="cart1.html"><button type="button" name="button" class="button">上一頁</button></a>     &nbsp;&nbsp;
+                    <a href="cart3.html"><button type="button" name="button" class="button">結帳</button></a>
+                </div>
+               
+            </aside>
+        
+        
+        
+
+
+
+
+
+    </section>
+    
+
+    </div>
+</body>
+</html>

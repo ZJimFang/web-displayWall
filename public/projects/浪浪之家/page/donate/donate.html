@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捐款</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="icon" href="/img/icon.png">
+</head>
+<body>
+    <div>
+    <h1>愛心捐助</h1>
+    <h2>贊助我們，幫助更多浪浪</h2>
+    <h2>如您已有飼料，請寄送到「浪浪之家」
+    <br>地址：C市F區貓貓路九段狗狗巷7-11號 聯絡電話：0912-345678
+    <br>（請在包裹上寫寄件人姓名 若沒標示則以『善心人士』公告）</h2>
+    <h3>～～～請先勾選您想選擇的品項再選擇該品項的數量～～～</h3>
+    <h3>***本網站僅能以信用卡付費，如有不便請見諒***</h3>
+    <form name="" action="donate.php" method="Get">
+        <table>
+            <tr>
+                <th>全選<input type="checkbox" name="" id="checkAll" value=""></th>
+                <th>品項</th>
+                <th>說明</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>金額</th>
+            </tr>
+            <tr>
+                <th><input type="checkbox" name="liCheck" id="" value=""></th>
+                <td>1. 狗飼料</td>
+                <td>1袋狗飼料/15kg</td>
+                <td>$<span class="price">500</span>元</td>
+                <td class="amount">
+                    <button type="button" class="decrease" disabled="disabled">-</button>
+                    <span class="piece">0</span>件
+                    <button type="button" class="increase">+</button>
+                </td>
+                <td>$<input class="smallPrice" type="text" name="sprice1" value="0">元</td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" name="liCheck" id="" value=""></th>
+                <td>2. 貓飼料</td>
+                <td>1袋貓飼料/9kg</td>
+                <td>$<span class="price">600</span>元</td>
+                <td class="amount">
+                    <button type="button" class="decrease" disabled="disabled">-</button>
+                    <span class="piece">0</span>件
+                    <button type="button" class="increase">+</button>
+                </td>
+                <td>$<input class="smallPrice" type="text" name="sprice2" value="0" >元</td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" name="liCheck" id="" value=""></th>
+                <td>3. 狗罐頭</td>
+                <td>1個狗食罐頭</td>
+                <td>$<span class="price">40</span>元</td>
+                <td class="amount">
+                    <button type="button" class="decrease" disabled="disabled">-</button>
+                    <span class="piece">0</span>件
+                    <button type="button" class="increase">+</button>
+                </td>
+                <td>$<input class="smallPrice" type="text" name="sprice3" value="0">元</td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" name="liCheck" id="" value=""></th>
+                <td>4. 貓罐頭</td>
+                <td>1個貓食罐頭</td>
+                <td>$<span class="price">35</span>元</td>
+                <td class="amount">
+                    <button type="button" class="decrease" disabled="disabled">-</button>
+                    <span class="piece">0</span>件
+                    <button type="button" class="increase">+</button>
+                </td>
+                <td>$<input class="smallPrice" type="text" name="sprice4" value="0">元</td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" name="liCheck" id="" value=""></th>
+                <td>5. 更多狗罐頭</td>
+                <td>1箱狗食罐頭/24入</td>
+                <td>$<span class="price">950</span>元</td>
+                <td class="amount">
+                    <button type="button" class="decrease" disabled="disabled">-</button>
+                    <span class="piece">0</span>件
+                    <button type="button" class="increase">+</button>
+                </td>
+                <td>$<input class="smallPrice" type="text" name="sprice5" value="0">元</td>
+            </tr>
+            <tr>
+                <th><input type="checkbox" name="liCheck" id="" value=""></th>
+                <td>6. 更多貓罐頭</td>
+                <td>1箱貓食罐頭/24入</td>
+                <td>$<span class="price">850</span>元</td>
+                <td class="amount">
+                    <button type="button" class="decrease" disabled="disabled">-</button>
+                    <span class="piece">0</span>件
+                    <button type="button" class="increase">+</button>
+                </td>
+                <td>$<input class="smallPrice" type="text" name="sprice6" value="0" >元</td>
+            </tr>
+            
+            <tr class="info">
+                <th colspan="4"></th>
+                <th>總計</th>
+                <th>$<span id="totalPrice">0</span>元</th>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                <th>聯絡資料</th>
+            </tr>
+            <tr>
+                <td>姓名</td>
+                <td colspan="5"><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>聯絡電話</td>
+                <td colspan="5"><input type="tel" name="tel" required></td>
+            </tr>
+            <tr>
+                <td>信用卡</td>
+                <td colspan="5">
+                卡號：
+                <input type="password" name="password1" value="" maxlength="4" size="4" placeholder="" required>
+                - <input type="password" name="password2" value="" maxlength="4" size="4" placeholder="" required>
+                - <input type="password" name="password3" value="" maxlength="4" size="4" placeholder="" required>
+                - <input type="password" name="password4" value="" maxlength="4" size="4" placeholder="" required>
+                有效期限：
+                <select name="month" required>
+                    <option value="– –">– –</option>
+                    <option value="Jan">01</option>
+                    <option value="Feb">02</option>
+                    <option value="Mar">03</option>
+                    <option value="Apr">04</option>
+                    <option value="May">05</option>
+                    <option value="Jun">06</option>
+                    <option value="Jul">07</option>
+                    <option value="Aug">08</option>
+                    <option value="Sep">09</option>
+                    <option value="Oct">10</option>
+                    <option value="Nov">11</option>
+                    <option value="Dec">12</option>
+                </select>
+                <select name="year" required>
+                    <option value="– – – –">– – – –</option>
+                    <option value="bb">2022</option>
+                    <option value="bc">2023</option>
+                    <option value="bd">2024</option>
+                    <option value="be">2025</option>
+                    <option value="bf">2026</option>
+                    <option value="bg">2027</option>
+                    <option value="bh">2028</option>
+                    <option value="bi">2029</option>
+                    <option value="co">2030</option>
+                    <option value="ca">2031</option>
+                    <option value="cb">2032</option>
+                    <option value="cc">2033</option>
+                    <option value="cd">2034</option>
+                    <option value="ce">2035</option>
+                    <option value="cf">2036</option>
+                    <option value="cg">2037</option>
+                    <option value="ch">2038</option>
+                    <option value="ci">2039</option>
+                    <option value="do">2040</option>
+                    <option value="da">2041</option>
+                    <option value="db">2042</option>
+                    <option value="dc">2043</option>
+                    <option value="dd">2044</option>
+                    <option value="de">2045</option>
+                    <option value="df">2046</option>
+                    <option value="dg">2047</option>
+                </select>
+                安全碼：
+                <input type="password" name="safeword" value="" maxlength="3" size="3" required>
+            </td>
+            </tr>
+            <tr>
+                <td>備註</td>
+                <td colspan="5">
+                    <textarea cols="85" rows="15" name="talk"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: right;">
+                    <input type="submit" value="提交" onclick="return(confirm('您確定要送出嗎？'))">
+                    <input type="reset" value="重新輸入" onclick="location.reload()">
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+</div>
+<script src="donate.js"></script>
+
+</body>
+</html>

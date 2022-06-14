@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+        .mybox{
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border: 3px dashed black;
+            background-color: azure;
+            display: inline-block;
+        }
+
+        .mybox img{
+            width: 300px;
+            height: 200px;
+        }
+
+        .mybox01{
+            position: absolute;
+            top: 10px;
+            left: 0px;
+        }
+
+        .mybox01:hover::before{
+            position: absolute;
+            color: black;
+            background: rgba(128, 128, 128, 0.497);
+            font-size: 3em;
+            padding: 5px;
+            content: '貓好可愛';
+        }
+
+        .mybox02:hover::before{
+            position: absolute;
+            color: black;
+            background: rgba(128, 128, 128, 0.497);
+            font-size: 3em;
+            padding: 5px;
+            content: '貓好可愛';
+        }
+
+        .mybox03:hover::before{
+            position: absolute;
+            color: black;
+            background: rgba(128, 128, 128, 0.497);
+            font-size: 3em;
+            padding: 5px;
+            content: '貓好可愛';
+        }
+
+        .mybox04:hover::before{
+            position: absolute;
+            color: black;
+            background: rgba(128, 128, 128, 0.497);
+            font-size: 3em;
+            padding: 5px;
+            content: '貓好可愛';
+        }
+
+        .mybox02{
+            position: absolute;
+            top: 10px;
+            right: 320px;
+        }
+
+        .mybox03{
+            position: absolute;
+            top: 10px;
+            left: 315px;
+        }
+
+        .mybox04{
+            position: absolute;
+            top: 10px;
+            right: 0px;
+        }
+
+        .show {
+            position: absolute;
+            bottom: 0px;
+            left: 380px;
+        }
+        .show img{
+            width: 500px;
+            height: 300px;
+        }
+
+
+
+        
+ 
+ 
+        
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="mybox mybox01"><img src="./img/cat1.jpg" alt=""></div>
+        <div class="mybox mybox02"><img src="./img/cat2.jpg" alt=""></div>
+        <div class="mybox mybox03"><img src="./img/cat3.jpg" alt=""></div>
+        <div class="mybox mybox04"><img src="./img/cat4.jpg" alt=""></div>
+    </div>
+
+    <div class="show"><img src="./img/bean.jpg" alt=""></div>
+
+
+    
+   
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>燕尾碟</title>
+    <link rel="icon" href="../jpg/logo.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="index.html">
+                <h2 class="head1"><img src="../jpg/logo.jpg" alt="" weight="70px" height="70px"></h2>
+            </a>
+            <a href="chinese.html">
+                <h2 class="head">中文歌</h2>
+            </a>
+            <a href="english.html">
+                <h2 class="head">英文歌</h2>
+            </a>
+            <a href="japanese.html">
+                <h2 class="head">日文歌</h2>
+            </a>
+            <a href="korean.html">
+                <h2 class="head">韓文歌</h2>
+            </a>
+            <a href="contact.html">
+                <h2 class="head">聯絡資訊</h2>
+            </a>
+        </div>
+
+        <br>
+
+        <body>
+
+            <div id="banner">  
+                <!-- 輪播圖片 -->
+                <div id="tab">
+                    <a href="../CH/CH SG1.html"><img class="tabImg" src="../jpg/weekly/recom1-2.jpg"/></a>
+                    <a href="../EG/EG SG1.html"><img class="tabImg" src="../jpg/weekly/recom2-2.jpg" /></a>
+                    <a href="../JP/JP SG4.html"><img class="tabImg" src="../jpg/weekly/recom3-2.jpg" /></a>
+                    <a href="../KR/KR SG1.html"><img class="tabImg" src="../jpg/weekly/recom4-2.jpg" /></a>
+                </div>
+                <!-- 指示符 -->
+                <div class="lunbo_btn">
+                    <span num="0" class="tabBtn hover"></span>
+                    <span num="1" class="tabBtn"></span>
+                    <span num="2" class="tabBtn"></span>
+                    <span num="3" class="tabBtn"></span>
+                </div>    
+                <!-- 左右切換按鈕 -->
+                <div class="arrow prve">
+                    <span class="slider_left"></span>
+                </div>
+                <div class="arrow next">
+                    <span class="slider_right"></span>
+                </div>    
+            </div>
+            
+            <script type="text/javascript">
+            
+                //輪播圖
+                var curIndex=0;//初始化
+                var img_number = document.getElementsByClassName('tabImg').length;
+                var _timer = setInterval(runFn,2000);//2秒
+                function runFn(){ //運行定時器         
+                    curIndex = ++curIndex == img_number ? 0 : curIndex;//演算法 4為banner圖片數量
+                    slideTo(curIndex);
+                 }
+                 
+                 //圓點點擊切換輪播圖
+                 window.onload = function  () {    //為按鈕初始化onclick事件
+                    var tbs = document.getElementsByClassName("tabBtn");
+                    for(var i=0;i<tbs.length;i++){
+                        tbs[i].onclick = function  () {
+                            clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+                            slideTo(this.attributes['num'].value);
+                            curIndex = this.attributes['num'].value
+                            _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
+                        }
+                    }
+                }
+            
+                var prve = document.getElementsByClassName("prve");
+                prve[0].onclick = function () {//上一張
+                    clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+                    curIndex--;
+                    if(curIndex == -1){
+                        curIndex = img_number-1;
+                    }
+                    slideTo(curIndex);
+                    _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
+                }
+                
+                var next = document.getElementsByClassName("next");
+                next[0].onclick = function () {//下一張
+                    clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+                    curIndex++;
+                    if(curIndex == img_number){
+                        curIndex =0;
+                    }
+                    slideTo(curIndex);
+                    _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
+                }
+                
+                //切換banner圖片 和 按鈕樣式
+                function slideTo(index){
+                    console.log(index)
+                    var index = parseInt(index);//轉int類型
+                    var images = document.getElementsByClassName('tabImg');
+                    for(var i=0;i<images.length;i++){//遍歷每個圖片
+                        if( i == index ){
+                            images[i].style.display = 'inline';//顯示            
+                        }else{
+                            images[i].style.display = 'none';//隱藏
+                        }
+                    }
+                    var tabBtn = document.getElementsByClassName('tabBtn');
+                    for(var j=0;j<tabBtn.length;j++){//遍歷每個按鈕
+                        if( j == index ){
+                            tabBtn[j].classList.add("hover");    //添加輪播按鈕hover樣式
+                            curIndex=j;
+                        }else{
+                            tabBtn[j].classList.remove("hover");//去除輪播按鈕hover樣式
+                        }
+                    }
+                    
+                }
+                
+            </script>
+            </body>
+
+        <br><br>
+
+        <div id="border2">
+            <div id="playlist">
+                <marquee behavior="scroll" scrolldelay="0" direction="slider_left" width="950px">
+                    <p>防彈少年團 最新專輯精選輯「PROOF」(韓國進口) 6/10隆重發行</p>
+                </marquee>
+            </div>
+        </div>
+        <br><br><br>
+        <div id="recommandtop">
+            <h1>本週推薦</h1>
+            <h2>燕尾蝶 </h2>
+        </div>
+
+        <br>
+        <br>
+
+        <div id="recommand">
+            <img class="cover-fit" src="../jpg/fish.jpg" alt="" width="400px" height="400px">
+            <h1>梁靜茹</h1>
+
+            <br>
+
+            <p>馬來西亞華人女歌手，本名梁翠萍，華語樂壇天后級歌手，有「情歌天后」、「療癒系天后」美譽，其作品被冠上「情歌本格派」及「梁式情歌」的稱號。1999年在台灣演藝圈出道，至今已發行13張音樂專輯和2張精選專輯，全亞洲銷量近2000萬張，累計超過130場世界巡迴售票演唱會，其中世界巡迴演唱會的觀賞人數突破200萬人次。除演唱事業外，梁靜茹亦積極參與公益事業，擔任馬來西亞世界展望會愛心大使和創世基金會愛心大使。</p>
+        </div>
+
+        <br>
+
+        <div id="story">
+            <img class="cover-fit" src="../jpg/butterfly.jpg" alt="" width="400px" height="400px">
+            <h1>燕尾蝶</h1>
+
+            <br>
+
+            <P>情人節過後梁靜茹與交往多年的男友阿管在雙方理性彼此祝福的情形下選擇結束這段感情，她始終相信兩人都接受愛情中無形轉變的過程是一件幸運的事。相愛的時候認定彼此絕無僅有，分手的時候祝福自由，這時候情感空白的靜茹如同燕尾蝶一般永遠準備好下定愛的決心不怕受傷害不怕再愛；就算天大地大也天不怕地不怕。
+                五月天阿信特別為靜茹量身定做了《燕尾蝶》，《燕尾蝶》因為美麗碩大，花紋獨特，成為世人注目焦點，更因為稀少數量，更顯珍貴；就如同靜茹在現今華語歌壇中，她的形象跟聲音，都是無人能比。也呼應著靜茹招牌歌曲《勇氣》一直以來的效應，要勇敢蛻變、勇敢去愛、勇敢快樂。</P>
+        </div>
+
+        <br>
+
+        <div id="lyrics">
+            <h2>歌詞</h2>
+            <P>興高采烈的破蛹 重獲新生的衝動 尋找燦爛天地 美夢</P>
+            <P>主宰愛情的是誰 奮不顧身的撲火 就算輪回只為 襯托</P>
+            <P>你笑 你哭 你的動作 都是我的聖經 珍惜的背頌</P>
+            <P>我喜 我悲 我的生活 為妳放棄自由 要為妳左右</P>
+            <P>你是火 你是風 你是織網的惡魔 破碎的 燕尾蝶 還作最後的美夢</P>
+            <P>你是火 你是風 你是天使的誘惑 讓我做 燕尾蝶 擁抱最後的美夢</P>
+            <P>讓我短暫快樂很感動</P>
+            <P>興高采烈的破蛹 重獲新生的衝動 尋找愛情世界 美夢</P>
+            <P>既然不是毛毛蟲 就要壯烈的撲火 短暫青春要像 煙火</P>
+            <P>此生 此愛 此刻揮霍 揮霍我的色彩 在妳的天空</P>
+            <P>你想 你說 你要我做 其實我很快樂 全都因為</P>
+            <P>你是火 你是風 你是織網的惡魔 破碎的 燕尾蝶 還作最後的美夢</P>
+            <P>你是火 你是風 你是天使的誘惑 讓我做 燕尾蝶 擁抱最後的美夢</P>
+            <P>讓我短暫快樂很感動</P>
+            <P>你是火 你是風 你是織網的惡魔 破碎的 燕尾蝶 擁抱最後的美夢</P>
+            <P>你是火 你是風 你是天使的誘惑 讓我做 燕尾蝶 擁抱最後的美夢</P>
+            <P>讓我快樂讓我痛</P>
+            <P>你是火 你是風 你是織網的惡魔 破碎的 燕尾蝶 還作最後的美夢</P>
+            <P>你是火 你是風 你是天使的誘惑 讓我做 燕尾蝶 擁抱最後的美夢</P>
+            <P>讓我短暫快樂很感動 讓我短暫快樂很感動</P>
+        </div>
+
+        <br><br><br><br><br><br><br>
+
+        <hr>
+
+        <div id="footer">
+            <a href="contact.html">
+                <h2 class="footer1">聯絡我們</h2>
+            </a>
+            <a href="https://www.instagram.com/butterfly_music11018/">
+                <h2 class="footer"><img src="../jpg/insta.png" width="50px" height="50px"></h2>
+            </a>
+            <a href="https://www.facebook.com/butterflymusic11018/">
+                <h2 class="footer"><img src="../jpg/facebook.png" width="50px" height="50px"></h2>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

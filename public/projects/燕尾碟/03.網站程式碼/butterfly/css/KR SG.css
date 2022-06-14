@@ -1,0 +1,835 @@
+.hr-edge-weak {
+    border: 4;
+    padding-top: 1px;
+    background: linear-gradient(to right, transparent, rgb(23, 56, 87), transparent);
+}
+
+.singer1 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer1:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer1:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '2013出道的韓國男子音樂團體，由Jin、SUGA、J-hope、RM、Jimin、V、Jung Kook七名成員組成，隸屬BIGHIT MUSIC‎經紀公司旗下。';
+}
+
+#pic1 .container1 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic1 .img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic1 .img1 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic1 .text1 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic1 .text1 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic1 .img1:hover .text1 {
+    left: 0;
+}
+
+#pic1 .img1:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics1 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics1 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics1 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer2 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer2:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer2:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 150px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '韓國90後歌手 Crush（申孝燮）擅長演繹饒舌與 R&B 歌曲，在2012 年發行數位單曲《Red Dress》後出道，其後也發行了多張單曲。';
+}
+
+#pic2 .container2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic2 .img2 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic2 .img2 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic2 .text2 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic2 .text1 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic2 .img2:hover .text2 {
+    left: 0;
+}
+
+#pic2 .img2:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics2 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics2 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics2 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer3 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer3:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer3:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 160px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: 'SM韓國經紀公司於2012年4月8日推出的韓國男子組合，團體名稱為太陽系外行星EXOPLANET一詞中得來，寓意這個團體是「從未知星球來的新星」。';
+}
+
+#pic3 .container3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic3 .img3 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic3 .img3 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic3 .text3 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic3 .text3 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic3 .img3:hover .text3 {
+    left: 0;
+}
+
+#pic3 .img3:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics3 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics3 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics3 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer4 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer4:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer4:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 160px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '為韓國JYP娛樂旗下的五人女子團體。由五名韓國成員組成：隊長禮志、LiA、留真、彩領、有娜組成，2019年2月12日以首張單曲專輯正式出道。';
+}
+
+#pic4 .container4 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic4 .img4 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic4 .img4 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic4 .text4 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic4 .text4 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic4 .img4:hover .text4 {
+    left: 0;
+}
+
+#pic4 .img4:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics4 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics4 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics4 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer5 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer5:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer5:hover::before {
+    position: absolute;
+    top: -23px;
+    left: 210px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: 'YG娛樂於2016年推出的韓國女子組合，由 Jisoo、Jennie、Rose和Lisa 四名成員組成，從出道作品〈BOOMBAYAH〉、〈WHISTLE〉就造就了相當亮眼的成績。。';
+}
+
+#pic5 .container5 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic5 .img5 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic5 .img5 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic5 .text5 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic5 .text5 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic5 .img5:hover .text5 {
+    left: 0;
+}
+
+#pic5 .img5:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics5 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics5 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics5 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer6 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer6:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer6:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 130px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '身兼歌手、演員及主持人等多重身份，2011年首次出演KBS2打造的電視劇《夢想起飛Dream High》，除了歌手又多了演員身份，靠著實力派演技獲得粉絲喜愛。';
+}
+
+#pic6 .container6 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic6 .img6 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic6 .img6 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic6 .text6 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic6 .text6 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic6 .img6:hover .text6 {
+    left: 0;
+}
+
+#pic6 .img6:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics6 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics6 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics6 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer7 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer7:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer7:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '韓國數一數二且眾所皆知的天團，也是YG Entertainment 旗下的男子組合。團名BigBang為宇宙大爆炸之意，寓意BigBang這個組合對於韓國歌謠界具有重大的影響。';
+}
+
+#pic7 .container7 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic7 .img7 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic7 .img7 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic7 .text7 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic7 .text7 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic7 .img7:hover .text7 {
+    left: 0;
+}
+
+#pic7 .img7:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics7 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics7 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics7 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer8 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer8:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer8:hover::before {
+    position: absolute;
+    top: -40px;
+    left: 210px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '2015年出道的韓國13人男子流行音樂團體，為團員人數過多，所以常分為四個小隊進行表演，有主唱隊、嘻哈隊、表演隊，而團名為「SEVENTEEN」就是因為「13名成員+3個小隊+1個團體=17」的說法。';
+}
+
+#pic8 .container8 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic8 .img8 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic8 .img8 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic8 .text8 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic8 .text8 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic8 .img8:hover .text8 {
+    left: 0;
+}
+
+#pic8 .img8:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics8 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics8 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics8 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer9 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer9:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer9:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 170px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: 'YG Entertainment在2013年透過生存節目《WIN》推出的五人男子團體，成員有金秦禹、李昇勳、宋旻浩、姜昇潤、南太鉉。2016年11月25日，南太鉉宣布退出團體。';
+}
+
+#pic9 .container9 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic9 .img9 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic9 .img9 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic9 .text9 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic9 .text9 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic9 .img9:hover .text9 {
+    left: 0;
+}
+
+#pic9 .img9:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics9 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics9 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics9 p {
+    color: rgb(213, 216, 230);
+}
+
+.singer10 {
+    color: rgb(213, 216, 230);
+    position:relative;
+}
+
+.singer10:hover {
+    color: rgb(25, 70, 109);
+}
+
+.singer10:hover::before {
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    color: rgb(234, 236, 243);
+    font-size: .7em;
+    background: rgb(36, 63, 104);
+    padding: 5px;
+    border-radius: 5px;
+    content: '韓國SM Entertainment2014年推出的四人女子組合，成員由Irene、Seul Gi、Wendy、Joy四人組成，於2015年3月再加入一位新成員Yeri，最終成為五人形式團體。';
+}
+
+#pic10 .container10 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 20.5%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#pic10 .img10 {
+    position: relative;
+    overflow: hidden;
+}
+
+#pic10 .img10 img {
+    width: 100%;
+    transition: .3s;
+}
+
+#pic10 .text10 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(234, 236, 243, 0.9);
+    transition: .5s;
+}
+
+#pic10 .text10 h3 {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: rgb(23, 56, 87);
+}
+
+#pic10 .img10:hover .text10 {
+    left: 0;
+}
+
+#pic10 .img10:hover img {
+    transform: scale(1.2);
+}
+
+#lyrics10 {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 60px;
+}
+
+#lyrics10 h2 {
+    padding-top:55px;
+    color: rgb(213, 216, 230);
+}
+
+#lyrics10 p {
+    color: rgb(213, 216, 230);
+}

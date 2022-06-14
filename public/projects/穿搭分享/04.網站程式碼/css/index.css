@@ -1,0 +1,50 @@
+
+.myimg{
+     width: 300px;
+}
+#mylogo{
+    width: 200px;
+     height: 200px;
+}
+.space{
+     height: 1300px;
+     position: relative;
+}
+#img02{ 
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+ #img03{
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+}
+ #img04{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.footer{
+    width: 960;
+    height: 200px;
+    position: relative;
+}
+.pic{
+    margin: 20px 0px;
+    position: absolute;
+    right: 0;
+}
+#pic01{
+    width: 50px;
+}
+#pic02{
+    width: 60px;
+}
+#pic03{
+    width: 70px;
+}
+.card-header{
+    font-weight: bolder;
+    font-size: larger;
+}

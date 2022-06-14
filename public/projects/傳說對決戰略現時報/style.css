@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fredoka", sans-serif;
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+nav {
+    background-color: black;
+    width: 100%;
+}
+nav li{
+    text-align:center;
+}
+nav ul li{
+    display: inline-flex;
+    list-style-type: none;
+}
+section{
+    display:flex;
+}
+section.courses{
+    height: auto;
+    width:auto;
+}
+article{
+    background:url('img/background.jpg');
+    flex:3;
+    padding:30px;
+}
+article h1 h2{
+  color:white;
+  font-size: center;
+}
+article p{
+  color:white;
+  font-size:small;
+}
+aside{
+  background-color:#001638 ;
+    float:right;
+    flex:1;
+    padding:0px 0px 0px 20px;
+}
+aside section a{
+    display:block;
+    padding:10px;
+    border-bottom: 1px solid #eee;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:7px 0px 0px 20px;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+  min-height: 500px;
+  min-width: 1000px;
+  background-color: #28004D;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 50px;
+  color: white;
+  position: relative;
+}
+
+.home_blob-img {
+  width: 900px;
+  filter: brightness(110%);
+}
+
+.name::before{
+content:"";
+position:absolute;
+left: 0;
+right: 0;
+top:0;
+bottom:0;
+}
+@keyframes typing{
+  25%{
+    border-left:2px solid white;
+    left:100%;
+  }
+  65%{
+    boder-left:2px solid white;
+    left:100%;
+  }
+  80%{
+    boder-left:2px solid white;
+    left:0%;
+  }
+  100%{
+    boder-left:2px solid white;
+    left:0%;
+  }
+}
+@keyframes blink{
+  to{
+    border-left:transparent;
+  }
+}
+.name::before{
+  border-left: 2px solid white;
+  background-color: #28004D;
+  animation: typing 6s steps(20) forwards infinite,
+  blink 900ms steps(20) infinite;
+}
+#logo{
+    width:150px;
+    margin:0px auto 0px auto;
+}
+#bg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border-collapse: separate;
+    border-color:#28004D;
+    padding:10px;
+}
+table img{
+  padding:10px;
+    width: auto;
+    height: auto;
+}
+table th{
+  font-size:large;
+  color:white
+}
+#first img{
+width: 100%;
+height: 100%;
+}
+.card{
+height: auto;
+width: auto;
+}

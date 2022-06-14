@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Blugoon HTML Bootstrap 4 Template</title>
+  <meta name="description" content="" />
+  <meta name="author" content="Tooplate" />
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Additional CSS Files -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/tooplate-style.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
+  <link rel="stylesheet" href="assets/css/lightbox.css" />
+</head>
+
+<style>
+ background: #4AA0DD no-repeat center center fixed;
+    body {
+     
+        padding: 100px;
+    }
+
+    textarea {
+        width: 400px;
+        height: 250px;
+        border: 1px rgb(144, 41, 58) solid;
+ 
+        outline: none;
+      
+        resize: none;
+    }
+
+    li {
+        width: 600px;
+        padding: 20px;
+        background-color: rgb(40, 35, 108);
+        font-size: 15px;
+        margin: 10px 0;
+    }
+
+    li a {
+        float: right;
+    }
+</style>
+
+<body>
+  <div id="page-wraper">
+    <!-- Sidebar Menu -->
+    <div class="responsive-nav">
+     
+      <div id="menu" class="menu">
+        <i class="fa fa-times" id="menu-close"></i>
+        <div class="container">
+          <div class="image">
+            <a href="#"><img src="assets/images/logo-image.jpg" alt="Blugoon by Tooplate" /></a>
+          </div>
+          <div class="author-content">
+        
+        
+         
+            </ul>
+          </nav>
+          
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-text">
+            <p><br>
+         </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <section class="section contact-me" data-section="section4">
+    <div class="container">
+      <div class="section-heading">
+        <h2>留言區  <i class="fa fa-comments-o"></i></h2>
+        <div class="line-dec"></div>
+        <span> </span>
+    <textarea></textarea>
+    <button>發布</button>
+    <ul></ul>
+    <script>
+       
+        var txt = document.querySelector("textarea");
+        var btn = document.querySelector("button");
+        var ul = document.querySelector("ul");
+        
+        btn.onclick = function () {
+            if (txt.value == "") {//
+                alert("您没有输入内容")
+            } else {
+                
+                var li = document.createElement("li");
+               
+                li.innerHTML = txt.value + "<a href='javascript:;'>删除</a>"
+                txt.value = "";
+                ul.insertBefore(li, ul.children[0]);
+                
+                var as = document.querySelectorAll("a");
+                
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                       
+                        ul.removeChild(this.parentNode);
+                    }
+                }
+            }
+        }
+    </script>
+    <br>
+    <div style="background-color:rgb(151, 225, 221) ;">
+     
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-8">
+            <h5 class="font-weight-bold spanborder"><span>其他作品</span></h5>
+            <div class="mb-3 d-flex justify-content-between" style="background-color: rgb(166, 224, 166); box-shadow: 10px;">
+              <div class="pr-3" >
+                <h2 class="mb-1 h4 font-weight-bold">
+                <a class="text-dark" href="https://zh.m.wikipedia.org/zh-tw/%E4%BE%86%E8%87%AA%E6%B7%B1%E6%B7%B5_(%E6%BC%AB%E7%95%AB)">來自深淵</a>
+                </h2>
+                <p>
+                  《來自深淵》（日語：メイドインアビス，英語：Made in abyss）是奇幻題材的日本漫畫作品，由つくしあきひと創作，並於竹書房旗下漫畫網站《WEBコミックガンマ》上刊載。
+                </p>
+                
+              </div>
+              <img height="200" width="50" src="./assets/images/img1.jpg" padding="20px">
+            </div>
+            <div class="mb-3 d-flex justify-content-between" style="background-color:rgb(165, 192, 255) ;">
+              <div class="pr-3">
+                <h2 class="mb-1 h4 font-weight-bold">
+                <a class="text-dark" href="https://zh.m.wikipedia.org/zh-tw/%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%B0%8F%E5%9C%93">魔法少女小圓</a>
+                </h2>
+                <p>
+                  《魔法少女小圓》（日語：魔法少女まどか☆マギカ；拉丁語：Puella Magi Madoka Magica）是由日本動畫公司SHAFT製作、新房昭之執導、2011年1月開始播放的原創電視動畫，全12話。
+                </p>
+               
+              </div>
+              <img height="200" src="./assets/images/img2.jpg">
+            </div>
+            <div class="mb-3 d-flex justify-content-between" style="background-color: rgb(166, 224, 166)";>
+              <div class="pr-3" >
+                <h2 class="mb-1 h4 font-weight-bold">
+                <a class="text-dark" href="https://zh.m.wikipedia.org/zh-tw/%E6%9C%AB%E6%97%A5%E6%99%82%E5%9C%A8%E5%81%9A%E4%BB%80%E9%BA%BC%EF%BC%9F%E6%9C%89%E6%B2%92%E6%9C%89%E7%A9%BA%EF%BC%9F%E5%8F%AF%E4%BB%A5%E4%BE%86%E6%8B%AF%E6%95%91%E5%97%8E%EF%BC%9F">末日時在做什麼？有沒有空？可以來拯救嗎？</a>
+                </h2>
+                <p>
+                  《末日時在做什麼？有沒有空？可以來拯救嗎？》（日語：終末なにしてますか？忙しいですか？救ってもらっていいですか？，日文略稱「終末な（略）」或「すかすか[1]」）是一部由枯野瑛創作的輕小說，插畫由ue負責。
+                </p>
+                <div class="card-text text-muted small">
+                
+                </div>
+                <small class="text-muted"></small>
+              </div>
+              <img height="250" width="250" src="./assets/images/img3.jpg">
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div><br>
+    <a href="index.html#com"><button style="font-size:24px">返回 <i class="fa fa-mail-reply"></i></i></button></a>
+</body>
+
+</html>
+
+
+   

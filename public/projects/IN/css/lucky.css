@@ -1,0 +1,68 @@
+#container{
+    margin: 0 auto;
+}
+
+header{
+    background-color:lightgray;
+    text-align: center;
+    height: 105px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;/*文字水平分散*/
+    background-color: black;
+    height: 44px;
+}
+
+
+nav ul li{
+    display: inline-block;/*水平排列*/
+    list-style-type: none;/*不要黑點點*/
+}
+
+nav ul li a{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: gray;
+    color: white;
+}
+
+.space{
+    background: white;
+}
+
+.lucky{
+    position: relative;
+    left: 480px;
+}
+
+button{
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    clear: both;
+    text-align: center;
+    height: 80px;
+    background-color:lightgray;
+    position: relative;
+    top: 450px;
+}

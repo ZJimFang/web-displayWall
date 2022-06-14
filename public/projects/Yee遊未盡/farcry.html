@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yee遊未盡</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/dist/css/style.css"> 
+    
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="assets/dist/js/javascript.js"></script>
+    <style>
+        .bg {
+            background-image: url("assets/img/game_bg.jpg");
+            background-attachment: relative;
+        }
+    </style>
+</head> 
+
+<body class="bg">    
+    <header>        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid container"> 
+                <a class="navbar-brand title" href="index.html"><img class="me-2" src="assets/img/logo_new.png" width="50" height="50" alt="Yee遊未盡">YEE遊未盡</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active a-nav " aria-current="page" href="index.html">遊戲推薦</a>
+                    <a class="nav-link a-nav" href="form.html">測驗結果統計</a>
+                    <a class="nav-link a-nav" href="discount.html">折扣紀錄查詢</a>
+                    <a class="nav-link a-nav" href="host.html">訪客遊戲分享</a>
+                    <a class="nav-link a-nav" href="yee.html">關於我們</a>
+                    </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <div class="form">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control form-input" placeholder="Search...">
+                        <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                    </div>
+                </div>      
+            </div> -->
+            <hr class="container" style="border: 1px solid lightgoldenrodyellow;">          
+        </div>        
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">                
+                  <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
+                        <div class="col-lg-3 col-md-6 d-lg-block upperCarousel1" >
+                            <img class="img-discount-thumbnail" style="opacity: 100%;" src="assets/img/Farcry6/logo.webp">                               
+                        </div>
+                        <div class="col-lg-3 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                            <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                        <p class="d-inline-block mb-2 title upperTitle">《極地戰嚎 6》</p>
+                        <div class="upperCarouselText">
+                            <h4 class="text-light">動作冒險、FPS
+                            </h4> 
+                            <a href="https://store.ubi.com/sea/game?lang=zh_TW&pid=5ecd2c925cdf9a1528a8c1d1&dwvar_5ecd2c925cdf9a1528a8c1d1_Platform=pcdl&edition=%E6%A8%99%E6%BA%96%E7%89%88&source=detail">
+                                <button type="button" class="btn btn-outline-warning">
+                                    <span>官方網站</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-lg-block d-none justify-content-end upperCarousel1" >
+                        <img class="img-discount-thumbnail" style="opacity: 100%;" src="assets/img/Farcry6/banner.jpg">                               
+                    </div>                        
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="row g-0 rounded overflow-hidden flex-md-row mb-4 h-md-250 position-relative">            
+                            <div class="col-lg-3 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                                <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                                <p class="d-inline-block upperTitle" style="font-size: 25px;">遊戲介紹</p>
+                                <div class="upperCarouselText">
+                                    <h5 class="text-light">
+                                        「你邪惡嗎？你是怪物嗎？」<br><br>
+                                        &nbsp;&nbsp;一名殘酷的獨裁者在目睹抗議群眾走上街頭號召革命時，問了問自己的兒子。安東．卡斯迪路因承諾讓曾經繁榮的亞拉島國恢復昔日輝煌而掌握大權，打算不計任何必要手段打造他願景中的天堂。有著 13 歲的兒子迪亞哥作為自己忠實的擁護者，安東將亞拉的未來緊緊握在手中。<br><br>
+                                        &nbsp;&nbsp;亞拉位於加勒比海的中心，是一座時間被定格的熱帶天堂。數十年的經濟制裁毀了這個國家，使它因此變得貧窮且四分五裂。部分亞拉人盲目地追隨安東，另一些人則是歸順於恢復天堂的號召之下。在他統治的殘酷程度達到狂熱巔峰之時，眾怒開始沸騰，全國各地都點燃了起義的火苗......
+                                    </h5>
+                                </div>                 
+                            </div>
+                            <div class="col-lg-3 col-md-6 p-4 d-flex flex-column position-static" style="text-align: left;">
+                                <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                                <p class="d-inline-block upperTitle" style="font-size: 25px;">遊戲特點</p>
+                                <div class="upperCarouselText">
+                                    <h5 class="text-light">
+                                        &nbsp;&nbsp;在《極地戰嚎 6》中，玩家會沉浸於血脈賁張又混亂四起的現代游擊革命世界。以亞拉當地人丹妮．羅哈斯的身分在混亂中崛起，並於蓊鬱叢林和密集的城市向安東的暴政開戰。<br><br>
+                                        &nbsp;&nbsp;在這場戰役中，你必須將手邊材料化為所需用品，運用多種獨特又驚奇的新武器、載具和動物夥伴組織革命，徹底剷除暴政。
+                                    </h5>
+                                </div>                 
+                            </div>                            
+                            <div class="col-lg-6 col-md-12 p-4">
+                                <hr class="container" style="border: 2px solid rgb(250, 211, 40); opacity: 50%;"> 
+                                <p class="d-inline-block upperTitle" style="font-size: 25px;">遊戲圖片<p class="text-light">點擊圖片可放大顯示</p></p>              
+                                <div class="row g-0 rounded flex-md-row mb-4 h-md-250 position-relative">
+                                    <div class="col-md-6 upperCarousel1">
+                                        <img class="img-discount-thumbnail img" src="assets/img/Farcry6/gameplay1.jpg">                     
+                                    </div>
+                                    <div class="col-md-6 upperCarousel1" >
+                                        <img class="img-discount-thumbnail img" src="assets/img/Farcry6/gameplay2.jpg">
+                                    </div>
+                                    <div class="col-md-6 upperCarousel1" >
+                                        <img class="img-discount-thumbnail img" src="assets/img/Farcry6/gameplay3.jpg">
+                                    </div>
+                                    <div class="col-md-6 upperCarousel1" >
+                                        <img class="img-discount-thumbnail img" src="assets/img/Farcry6/gameplay4.jpg">
+                                    </div>
+                                    <!--Img Preview Center-->
+                                    <div class="imgPreview">
+                                        <img src="#" alt="" id="imgPreview">
+                                    </div> 
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>                          
+            </div>                    
+        </div>
+        <footer class="row p-3">
+            <hr class="container" style="border: 1px solid lemonchiffon; opacity: 50%;">             
+            <p class="text-light upperCarouselText">
+              For Educational Purpose Only<br>
+              Copyright © 2022 Department of Information Communcation. Yuen Ze University.</p>
+        </footer>
+    </main>
+</body>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+  <style>
+    nav {
+      background-color: #654f80 !important;
+
+    }
+
+    nav a {
+      color: #ffeae4 !important;
+    }
+
+    li.nav-item a {
+      font-size: large !important;
+      font-weight: bold;
+    }
+
+    li.nav-item a:hover {
+      color: #ffb2b9 !important;
+    }
+
+    div.container h1 {
+      font-weight: bold;
+    }
+
+    div.container p {
+      font-size: large;
+    }
+
+    div#article.container-fluid {
+      background-color: #ffeae4;
+    }
+
+    div.container {
+      border-radius: 5rem;
+      background-color: white;
+      padding: 5vh;
+    }
+
+    div#footer.container-fluid {
+      padding: 2vh;
+      background-color: #654f80;
+      color: #ffb2b9;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      color: #fff;
+      background-color: #654f80;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #ffb2b9;
+      text-decoration: none;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+
+    div.topon {
+      padding: 5vh;
+      padding-left: 20vh;
+      padding-right: 20vh;
+      background-color: #ffeae4;
+    }
+
+    div.col p {
+      color: #654f80;
+    }
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #398565;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+
+    #myBtn:hover {
+      background-color: #7ddbb5;
+    }
+    div.video1{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../css/img/logo-02.png" alt="" width="40" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="../css/img/nav_button.png" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">主頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/vt_product.html">Vtuber 製作</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/vt_introduce.html">知名 Vtuber 介紹</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../page/vt_meme.html">Vtuber 迷因</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/site_introduce.html">本站介紹</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid" id="article">
+    <div class="container topon">
+      <h1>VT構想</h1>
+      <p>　　一開始是由我和惠維慶一同想出來的角色，在兩人的胡言亂語中逐漸成形，之後便由我提出了軍人的想法，而因為是對應到龍岡的作業所以我便決定要將"龍"的屬性加進去，便在這之後開始著手繪製。<br><br>
+        以下分為兩個大方向來解釋。</p>
+    </div>
+    <div class="container">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#TabA">插圖製作</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#TabB">Live2D製作</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabs">
+        <div class="tab-pane fade show active" id="TabA">
+          <div class="container"><h1>角色構想</h1>
+            <p>
+              　　從一開始的角色構想開始，我們就已經決定好要將角色的特色發展出來，而顏色設計的部分我一開始是想用黑色當作底，再用鮮艷的髮色來吸引人，但後來因為黑色筆竟屬於男性的顏色，再加上白色也能夠很好的襯托出其鮮豔的髮色，在視覺上也比黑色舒服不少，所以便選擇了此種配色方案，這段時間就是不停地修改人物的細節及線搞，修到最後就可以進行輸出並開始拆圖層了。
+            </p>
+
+          </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col"><img src="../css/img/vt_pd/draw/01.jpg" alt="" style="height: 15rem;"></div>
+              <div class="col">
+                <p> ➤</p>
+              </div>
+              <div class="col"><img src="../css/img/vt_pd/draw/02.png" alt="" style="height: 15rem;"></div>
+              <div class="col">
+                <p> ➤</p>
+              </div>
+              <div class="col"><img src="../css/img/vt_pd/draw/03.jpg" alt="" style="height: 15rem;"></div>
+              <div class="col">
+                <p> ➤</p>
+              </div>
+              <div class="col"><img src="../css/img/vt_pd/draw/04.jpg" alt="" style="height: 15rem;"></div>
+              <div class="col">
+                <p> ➤</p>
+              </div>
+              <div class="col"><img src="../css/img/vt_pd/draw/05.jpg" alt="" style="height: 15rem;"></div>
+            </div>
+          </div>
+          <div class="container">
+            <h1>手動拆圖層</h1>
+            <p>　　在創作完人物基本的插圖繪製後我開始進行了拆圖層的工作，其目的是因為要讓角色動起來，而各部件需要做適當的分開，再分完塗層後還要將原本被剪下的地方在畫上被覆蓋掉的部分，不然在做live
+              2d時移動後就會產生破綻。
+            </p>
+
+          </div>
+          <div class="container video1">
+            <div><video src="../css/img/vt_pd/draw/06.mkv" controls style="width: 30rem; margin: 0 auto;"></video></div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="TabB">
+          <div class="container"><h1>Live 2D製作</h1>
+            <p>　　一開始需要在角色分件的圖層上面套上變形用的錨點，依照變形程度的不同會分成little、heavy，也可以用鋼筆工具進行設定，在設定完錨點之後便可以將變形工具套上，在不同的物件上套用旋轉變形器或是彎曲變形器，便可以做出不同的效果，在這些變形器套用後便要開始設定位移參數，舍弟完後便可以到物理運算的系統中進行微調，在物理界面中便可以直接觀察自己是否有地方沒做好，有的話就必須要再重新做修正，修正完後便可以輸出並使用了。</div>
+              <div class="container video1">
+                <div><video src="../css/img/vt_pd/L2d/01.mkv" controls style="width: 30rem; margin: 0 auto;"></video></div>
+              </div>
+              <div class="container video1">
+                <div><video src="../css/img/vt_pd/L2d/02.mkv" controls style="width: 30rem; margin: 0 auto;"></video></div>
+              </div>
+              <div class="container video1">
+                <div><video src="../css/img/vt_pd/L2d/03.mkv" controls style="width: 30rem; margin: 0 auto;"></video></div>
+              </div>
+              <div class="container video1">
+                <div><video src="../css/img/vt_pd/L2d/04.mkv" controls style="width: 30rem; margin: 0 auto;"></video></div>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="footer">
+    <p>Copyright © 2022 油到滑倒基金會 保留一切權利。</p>
+  </div>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

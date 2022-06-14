@@ -1,0 +1,41 @@
+header{
+    background-color:rgba(183,186,188);
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+
+.nav img{
+width: 150px;
+left: 0%;
+}
+
+.cc01{
+   margin-bottom: 50%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #2f3542;
+}
+
+h1{
+    text-align: center;
+}
+
+.name01{
+    margin-top: 110px;
+}
+#idk{
+    width:26%;
+}
+@media only screen and (min-width: 600px) and (max-width:991.33px) {
+    #idk{
+        width: 10%;
+    }
+}

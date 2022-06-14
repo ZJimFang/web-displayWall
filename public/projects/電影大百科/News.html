@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="main.js" />
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+
+        div.carousel-caption{
+            text-align:left;
+            color: silver;
+            font-size: 30px;
+        }
+        #carousel01{
+            width: 100%;
+            position: absolute; left: 0; right: 0;
+            
+        }
+
+        img.myimage{
+          height: 350px;
+          object-fit: cover;
+        }
+        h1.news{
+          color: aliceblue;
+        }
+        div.colors{
+          text-align: center;
+        }
+
+        #dropdownMenuButton {
+        color: rgb(255, 255, 255);
+        background-color: rgb(41, 59, 95);
+        height: 50px;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 2px;
+
+      }
+
+    </style>
+</head>
+    <body onload="init()" style="background-color: #1a1a24">
+      <header>
+        <div class="container-fluid" style="height: 100px" style="width: 100%">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex">
+                <div>
+                  <a href="index.html">
+                  <img
+                    src="./IMG/Picture1.png"
+                    alt=""
+                    class="d-inline-block align-text-bottom"
+                    style="width: 150px"
+                  />
+                </a>
+                </div>
+                
+                <div style="position: relative; width: 150px">
+                  <span class="name01" style="position: absolute; bottom: 0">
+                    The Universal Studio</span
+                  >
+                </div>
+                <div id="idk"></div>
+                <div class="col my-auto mx-auto d-flex" align="center" >
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      NEWS
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="about.html">About</a>
+                      <a class="dropdown-item" href="News.html">News</a>
+                      <a class="dropdown-item" href="map.html">Map</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </header>
+
+    
+
+    <div class="container bg-primary">
+        <div class="row bg-secondary">
+            <div class="col">
+
+                <div id="carousel01" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./IMG/1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The Wizarding World of Harry Potter<br>哈利波特的魔法世界</h5>
+                            <p>Universal Studios Hollywood<br>好萊塢環球影城</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./IMG/2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>最新電影</h5>
+                            <p>Jurassic World: Dominion<br>侏羅紀世界：統霸天下</p>
+                          </div>
+                      
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./IMG/3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Universal’s Volcano Bay<br>環球火山灣</h5>
+                            <p>open now<br>現在開幕</p>
+                          </div>
+                      
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel01" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel01" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+   <br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br>
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <ul class="nav border nav-tabs   nav-fill   nav-justified">
+          <li class="nav-item">
+            <a class="nav-link " data-bs-toggle="tab" href="#tabA">最新活動</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab"  href="#tabB">最新樂園消息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tabC">最新電影消息</a>
+          </li>
+        </ul>
+
+           <div class="tab-content" id="myTabContent"> 
+            <div class="tab-pane" id="tabA">
+              <h1 class="news">最新活動</h1>
+              
+              <div class="row">
+                <div class="col"><div class="card" style="width: 53rem;">
+                  <img src="./IMG/13.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">使用年票體驗洛杉磯最美好的一天——每一天</h5>
+                    <p class="card-text">在線購買時還可節省 10 美元
+                      使用年票或季票，您將在翱翔於哈利波特的魔法世界™ 時享受特別折扣和福利。在侏羅紀世界中面對兇猛的 Indominus rex。在我們的旅程中放鬆一下，寵物的秘密生活：脫離皮帶。</p>
+                    <a href="https://www.universalstudioshollywood.com/web/en/us/pass-members/pass-types-and-benefits" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 54rem;">
+                  <img src="./IMG/14.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">NBC SPORTS Grill& BREW的家族樂趣</h5>
+                    <p class="card-text">登上 NBC Sports Grill & Brew 的餐盤，每頓飯都是贏家。內外高清屏幕讓您沉浸在體育報導流中，因此您不會錯過任何一個進球，沒有比這更好的地方可以趕上您最喜歡的球隊了，因為這裡的食物獨樹一幟。</p>
+                    <a href="https://www.universalstudioshollywood.com/web/en/us/things-to-do/dining/citywalk/nbc-sports-grill" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 53rem;">
+                  <img src="./IMG/15.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">SUPER NINTENDO WORLD™
+                      2023 年初開幕</h5>
+                    <p class="card-text">在 2023 年初開放的 SUPER NINTENDO WORLD™ 上，全家人都可以盡情享受刺激，讓自己充滿活力並沉浸其中。在這片令人難以置信、色彩繽紛的遊戲世界中盡情放鬆，其中包括開創性的馬里奧賽車™：鮑澤挑戰，以及富有想像力的互動區域，主題購物和餐飲。</p>
+                    <a href="https://www.universalstudioshollywood.com/web/en/us/super-nintendo-world" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 54rem;">
+                  <img src="./IMG/16.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">好萊塢環球影城™ 基本指南</h5>
+                    <p class="card-text">定制您的體驗！
+
+                      創建您自己的行程列表並查看信息、位置和等待時間。
+                      隨時隨地訪問公園外的乘車、表演和景點等待時間。
+                      如果您有視力障礙，您可以使用 iPhone 的 VoiceOver 支持和 Android 的 Talkback 來增強您的公園體驗。
+                      在 Facebook 和 Twitter 上分享您的體驗。</p>
+                    <a href="https://www.universalstudioshollywood.com/web/en/us/the-universal-studios-hollywood-mobile-app" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+              </div>
+
+              
+              
+            </div>
+            <div class="tab-pane" id="tabB" >
+              <h1 class="news">最新樂園消息</h1>
+
+              <div class="row">
+                <div class="col"><div class="card" style="width: 53rem;">
+                  <img src="./IMG/12.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">遊樂設施和景點</h5>
+                    <p class="card-text">在哈利波特魔法世界™探索霍格沃茨™城堡的奧秘，讓自己沉浸在史詩般的冒險：侏羅紀世界 - 旅程中。對孩子和父母來說都很有趣。</p>
+                    <a href="https://www.usj.co.jp/web/en/us/areas/the-wizarding-world-of-harry-potter" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 54rem;">
+                  <img src="./IMG/6.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">季節性活動</h5>
+                    <p class="card-text">參加我們的季節性活動之一，讓您的旅行難忘。從環球影城的假期到新年前夜 (EVE) 和萬聖節恐怖之夜，樂趣從這裡開始。</p>
+                    <a href="https://www.universalorlando.com/hhn/en/us" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 53rem;">
+                  <img src="./IMG/5.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">餐飲和娛樂</h5>
+                    <p class="card-text">Universal CityWalk 是最受歡迎的娛樂場所，擁有餐廳、獨特的商店、擁有 7 層 IMAX ®的 19 屏幕影院等等。我們有事要為全家人做。</p>
+                    <a href="https://www.universalorlando.com/web/en/us/plan-your-visit/dining-experiences/reservations" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 54rem;">
+                  <img src="./IMG/4.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">體驗好萊塢</h5>
+                    <p class="card-text">在一個地方探索一整天的動感十足的娛樂活動：驚險刺激的主題公園遊樂設施、電影製片廠以及位於 CityWalk 的洛杉磯最好的商店、餐廳和電影院。</p>
+                    <a href="https://www.universalstudioshollywood.com/web/en/us/hanzi-chinese-park-highlights" class="btn btn-primary">more about</a>
+                  </div>
+                </div></div>
+              </div>
+              
+            </div>
+            <div class="tab-pane" id="tabC">
+              <h1 class="news">最新電影消息</h1>
+              
+              <div class="row">
+                <div class="col"><div class="card" style="width: 53rem;">
+                  <img src="./IMG/7.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">侏羅紀世界：統霸天下<br>
+                      Jurassic World Dominion</h5>
+                    <p class="card-text">《侏羅紀世界：統霸天下》一片是《侏羅紀世界》電影系列統籌及導演柯林崔佛洛的全新力作，故事發生在努布拉島完全毀滅的四年之後。恐龍現在和全世界的人類共同生存，同時也在獵捕食物。這個微妙的平衡即將重新塑造未來，並且即將決定人類從此以後，是否能夠與史上最可怕的生物共同生存，同時卻仍然保持地球頂級掠食者的地位。</p>
+                    <a href="https://zh.m.wikipedia.org/zh-tw/%E4%BE%8F%E7%BE%85%E7%B4%80%E4%B8%96%E7%95%8C%EF%BC%9A%E7%B5%B1%E9%9C%B8%E5%A4%A9%E4%B8%8B" class="btn btn-primary">more更多資訊</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 54rem;">
+                  <img src="./IMG/8.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">小小兵2：格魯的崛起<br>
+                      Minions: The Rise of Guru</h5>
+                    <p class="card-text">《小小兵2：格魯的崛起》一片由這個電影系列的原創掌舵，製片包括照明娛樂極具遠見的創辦人和執行長克里斯梅勒丹德利、他的長期合作夥伴珍妮特希利以及克里斯雷納德，導演凱爾巴爾達（《神偷奶爸3》、《小小兵》）則再度回歸執導這部電影。共同導演是布萊德艾柏森（長壽喜劇影集《辛普森家庭》）以及強納森戴凡（《寵物當家》系列電影）。</p>
+                    <a href="https://zh.m.wikipedia.org/zh-tw/%E5%B0%8F%E5%B0%8F%E5%85%B52%EF%BC%9A%E6%A0%BC%E9%AD%AF%E7%9A%84%E5%B4%9B%E8%B5%B7" class="btn btn-primary">more更多資訊</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 53rem;">
+                  <img src="./IMG/10.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">闇黑電話<br>
+                      The Black Phone</h5>
+                    <p class="card-text">《闇黑電話》一片的編劇是史考特德瑞森及羅柏卡吉爾（《奇異博士》、《凶兆》系列電影），根據作家喬希爾收錄在他的《紐約時報》暢銷短篇小說集《20世紀的幽靈》中的同名短篇小說改編。這部電影由史考特德瑞森及羅柏卡吉爾的彎曲公路製作公司（Crooked Highway）製作，由環球影業暨布倫屋製作公司出品。製片是傑森布倫、史考特德瑞森及羅柏卡吉爾，執行製片則是萊恩圖瑞克以及克里斯多福華納。</p>
+                    <a href="https://zh.wikipedia.org/wiki/%E9%97%87%E9%BB%91%E9%9B%BB%E8%A9%B1" class="btn btn-primary">more更多資訊</a>
+                  </div>
+                </div></div>
+                <div class="col"><div class="card" style="width: 54rem;">
+                  <img src="./IMG/9.jpg" class="card-img-top myimage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">鞋貓劍客2 <br>
+                      Puss in Boots: The Last Wish</h5>
+                    <p class="card-text">《鞋貓劍客2》是全球影迷期待已久，曾於2011年入圍奧斯卡獎的賣座動畫片《鞋貓劍客》的續集電影，導演是喬伊克勞福德，製片是馬克斯威鞋貓劍客這個角色在2004年入圍奧斯卡獎的《史瑞克2》一片中首度出場，電影一上映，這個超搶戲的角色就立刻風靡全球、大受喜愛。鞋貓劍客之後又出現在兩部《史瑞克》續集電影，也有他自己的獨立電影，另外還有多部夢工廠動畫製作的影片和電視影集。《史瑞克》系列電影以及《鞋貓劍客》總共在全球締造35億美元的驚人票房成績。</p>
+                    <a href="https://zh.m.wikipedia.org/zh-tw/%E9%9E%8B%E8%B2%93%E5%8A%8D%E5%AE%A22" class="btn btn-primary">more更多資訊</a>
+                  </div>
+                </div></div>
+              </div>
+              
+            </div>
+
+            </div>
+            
+           </div> 
+        
+      </div>
+      </div>
+    </div>
+    <div class="colors">
+      <h1 class="news">聯絡我們social media</h1>
+      <a href="https://www.instagram.com/universalpicturestwn/"><img src="img/instagram (1).png" alt=""height="87px"></a> 
+      <a href="https://www.facebook.com/UniversalTaiwan/?brand_redir=215204471085"><img src="img/fb.png" alt=""></a>
+      <a href="https://www.youtube.com/c/UniversalPictures"><img src="img/youtube.png" alt=""height="95px"></a>
+      <a href="https://www.universalpictures.com/"><img src="IMG/Universal-Logo.png" alt=""height="95px"></a>
+      <p style="color: dimgray;">&copy; Copy by universal studio All Rights Reserved.</p>
+    </div>
+
+ 
+  </body>
+</html>

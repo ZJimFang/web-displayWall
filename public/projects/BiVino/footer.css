@@ -1,0 +1,290 @@
+body, html {
+    overflow-x: hidden;
+}
+
+#copy {
+    box-sizing: border-box;
+    display:block;
+    color:rgb(103, 101, 97);
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    letter-spacing :0.7168px;
+    padding-bottom :15.232px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :15.232px;
+    text-align : center;
+}
+
+#connect {
+    box-sizing: border-box;
+    display:block;
+    color:rgb(103, 101, 97);
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    letter-spacing :0.7168px;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :15.232px;
+    text-align : center;
+}
+
+#TEL {
+    box-sizing: border-box;
+    display:block;
+    color:rgb(103, 101, 97);
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    letter-spacing :0.7168px;
+    padding-bottom :15.232px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :0px;
+    text-align : center;
+}
+
+.tel {
+    box-sizing: border-box ;
+    color:white;
+    cursor: pointer;
+    display: inline;
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana," Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 37.0048px;
+    letter-spacing: 0.7168px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration-line: none;
+    text-size-adjust: 100%;
+    width: auto;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.tel:hover {
+    color:#bc9d5e;
+    display: block;
+}
+
+#connect div ul {
+    box-sizing: border-box ;
+    color:white;
+    display: block;
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    height: 54.9132px;
+    letter-spacing: 0.7168px;
+    line-height: 17.1429px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-block-end: 17.92px;
+    margin-block-start: 0px;
+    margin-bottom: 17.92px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding-bottom: 0px ;
+    padding-inline-start: 0px;
+    padding-left: 0px ;
+    padding-right: 0px ;
+    padding-top: 0px ;
+    text-align: center ;
+    text-size-adjust:100%;
+}
+
+.sec-titlefooter {
+    font-size: 2.6em;
+    display: block;
+    text-align: center;
+    color: #bc9d51;
+    font-family: "abolition";
+    font-weight: normal;
+    letter-spacing: .2em;
+    padding-bottom: 30px;
+}
+
+#FOOTERfb{
+    fill:white;
+    text-decoration:none;
+    transform: translate(30px,-55px);
+    transition-duration:0.3s;
+    z-index:50;
+    
+}
+#FOOTERfb:hover{
+    fill:#bc9d51;
+}
+#FOOTERig{
+    fill:white;
+    text-decoration:none;
+    transform: translate(120px,-150px);
+    transition-duration:0.3s;
+    z-index:50;
+}
+#FOOTERig:hover{
+    fill:#bc9d51;
+}
+
+#FOOTERline{
+    fill: white;
+    text-decoration:none;
+    transform: translate(-110px,0px);
+    transition-duration:0.3s;
+    z-index:50;
+    overflow: hidden;
+    
+}
+.footerline{
+    margin-top:20px;
+}
+
+#FOOTERline:hover{
+    fill:#bc9d51;
+}
+
+footer {
+    background-color: black;
+}
+
+#hr {
+    background-color: gray;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#address h2 {
+    box-sizing: border-box;
+    display:block;
+    color:white;
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", Verdana, "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    letter-spacing :0.7168px;
+    padding-bottom :15.232px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :18.232px;
+    text-align : center;
+}
+
+#pagetop {
+    box-sizing: border-box;
+    color:rgb(30, 30, 30);
+    display: block;
+    font-family: "Helvetica Neue", helvetica, "Hiragino Kaku Gothic Pro", "Verdana", "Meiryo", "Osaka", "MS PGothic", sans-serif;
+    font-size: 12px;
+    height: 60px;
+    letter-spacing: 0.7168px;
+    line-height: 17.1429px;
+    overflow-x: hidden;
+    overflow-y: hidden; 
+    text-align: center;
+    text-size-adjust: 100%;
+    padding-bottom: 0px;    
+    padding-top:0px;
+}
+
+#pagetop a {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgb(30, 30, 30);
+    border-bottom-style: solid;
+    border-bottom-width: 60px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 60px;
+    border-right-color: rgba(0, 0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 60px;
+    border-top-color: rgba(0, 0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 120px;
+    letter-spacing: 0.7168px;
+    line-height: 17.1429px;
+    margin-top: -40px;
+    overflow-wrap: break-word;
+    position: relative;
+    text-align: center;
+    text-decoration-color: rgb(188, 157, 81);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-size-adjust: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;
+    vertical-align: bottom;
+    width: 120px;
+    
+}
+
+div#pagetop a:hover{
+    background-color:rgb(30, 30, 30) ;
+    border-bottom-color: rgb(188, 157, 81); /*大三角的底色*/
+    border-bottom-style: solid;
+    border-bottom-width: 70px;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 70px;
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 70px;
+    border-top-color:rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 50px;
+    
+}
+
+#pagetop .arrow {
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 2px;
+    box-sizing: border-box;
+    color: rgb(188, 157, 81);
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    height: 26px;
+    left: 0px;
+    letter-spacing: 0.7168px;
+    line-height: 17.1429px;
+    margin-bottom:0px;
+    margin-left: -12px;
+    margin-right: 0px;
+    margin-top: 31px;
+    overflow-wrap: break-word;
+    position: absolute;
+    text-align: center;
+    text-size-adjust: 100%;
+    top: 0px;
+    transform: matrix(0.707107, -0.707107, 0.707107, 0.707107,0,0);
+    width: 26px;  
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease;  
+    
+}
+
+::selection {
+    color:white;
+    background: #bc9d51;
+}
+
+#eightimg {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}

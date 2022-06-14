@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fashion.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Fashion</title>
+</head>
+<body>
+    <div id="container-fluid">
+        <header>
+            <img src="../img/logo.png" alt="" width="90px" height="100px">
+            <li style="list-style-type: none; float:right;"><a onclick="zxw ()" class="zxw" href="">購物車</a></li>
+            <li style="list-style-type: none; float: left;"><img height="100px" width="90px" src="../img/three.png" alt="">
+                <ul>
+                    <li><a href="../index.html">首頁</a></li>
+                    <li><a href="./in.html">全體展示</a></li>
+                    <li><a href="./shoes.html">單一球鞋介紹</a></li>
+                    <li><a href="./draw.html">抽籤頁面</a></li>
+                </ul>
+            </li>
+        </header>
+    </div>
+
+    <h2>當季最新時尚</h2>
+
+    <div class="grid">
+        <div><p>嘻哈</p><img style="width: 90%;height: 90%;margin-top: 10%;" src="../img/20-1.png" onclick="clickImg1();"></div>
+        <div><p>百搭</p><img style="width: 90%;height: 90%;margin-top: 10%;" src="../img/05-1.png" onclick="clickImg2();"></div>
+        <div><p>工裝</p><img style="width: 90%;height: 90%;margin-top: 10%;" src="../img/02-1.png" onclick="clickImg3();"></div>
+        <div><p>籃球</p><img style="width: 90%;height: 90%;margin-top: 10%;" src="../img/19-1.png" onclick="clickImg4();"></div>
+    </div>
+
+    <footer>
+        <br>
+        <p>課堂使用,若有侵權請來信告知 <br>Copyright © 2022 Department of Information Communication.Yuan Ze University.</p>
+    </footer>
+
+    <script>
+    function clickImg1 () {
+        document.location.href="../page/shoe20.html";
+    }
+    function clickImg2 () {
+        document.location.href="../page/shoe05.html";
+    }
+    function clickImg3 () {
+        document.location.href="../page/shoe02.html";
+    }
+    function clickImg4 () {
+        document.location.href="../page/shoe19.html";
+    }
+    function zxw () {
+        alert("您尚未將商品放入購物車");
+    }
+    </script>
+</body>
+</html>

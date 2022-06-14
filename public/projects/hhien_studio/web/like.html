@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 1300px;
+            margin:0 auto;
+        }
+
+
+        header{
+            background-color: #e8e8e8;
+            height: 120px;
+            padding: 10px 15px;
+        }
+
+        header button{
+            background-color: inherit;
+            padding: 10px;
+            border-style: none;
+            border-radius: 10px;
+            cursor: pointer;
+            float: right;
+            margin: 35px 10px;
+            
+        }
+
+        header img{
+            margin-bottom: 5px;
+        }
+
+        body{
+            background-color: #e8e8e8;
+        }
+
+        #banner{
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 20px 10px;
+            
+        }
+        #banner h1{
+            font-size: 35px;
+            text-align: center;
+            padding-top: 5%;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: lighter;
+        }
+        .productList img{
+            width: 100%;
+        }
+
+        .productList img::after{
+            content: '';
+            width: 0%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .3s linear;
+        }
+        .productList img:hover::after{
+            width: 100%;
+        }
+
+        .productList li{
+            position: relative;
+            float:left;
+            width: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            padding-right: 5px;
+            padding-left: 10px;
+        }
+
+        .productList li h2{
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            color: rgb(88, 88, 88);
+        }
+        .productList li h2::after{
+            content: '';
+            width: 0%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .3s linear;
+        }
+
+        .productList li h2:hover::after{
+            width: 100%;
+        }
+
+
+
+        .productList li span{
+            color: #3a3a3a;
+            font-size: 20px;
+            
+        }
+        ol, ul {
+            list-style: none;
+            padding-left: 10%;
+        }
+
+        .productList li span img{
+            width: 30px;
+            padding-left: 90%;
+
+        }
+        
+        #hearttrash img{
+            width: 30px;
+            
+        }
+        #hearttrash button {
+            background-image: url(img/heart\ red.png);
+            background-color: #e8e8e8;
+            border: none
+            
+        }
+        #hearttrash button:hover{
+            background-color: rgb(219, 219, 219);
+        }
+        
+
+    </style>
+</head>
+
+
+    <header>
+        <a href ="home.html"><img src="img/logo.png" alt="" width=230px height=""></a>
+
+
+        <a href=""><button><img src="img/more.png" width="55px"></button></a>
+        <a href="heart.html"><button><img src="img/profile.png" width="55px"></button></a>
+        <a href="cart.html"><button><img src="img/cart.png" width="43px"></button></a>
+        <a href="heart.html"><button><img src="img/heart.png" width="38px"></button></a>
+        
+        <a href=""><button><img src="img/search.png" width="40px"></button></a>
+    </header>
+
+    <div id="container">
+    <body>
+       <div id="banner">
+           <h1>
+               收藏
+           </h1>
+           <img src="img/line.png" alt="" style="display:block; margin:auto;" >
+           
+           <div class="productList">
+               <ul>
+                   <li>
+                    <div class="sale"></div>
+                    <a href="../web/zz.html"><img src="img/IMG_1250.jpeg" alt="" width="300px"></a>
+                    <a href="../web/zz.html"> <h2>韓國綁帶設計款不單調的皺皺上衣</h2></a>
+                    <h3></h3>
+                    <span>$460</span>
+                    <div id="hearttrash">
+                        <a href=""><button type="button" style="float: right;"><img src="img/heart red.png" alt=""></button></a>
+                        
+                        <a href=""><button type="button" style="float: right;"><img src="img/trash.png" alt="" style="float: right;"></button></a>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="sale"></div>
+                    <a href="../web/whitesk.html"><img src="img/IMG_3628.jpeg" alt="" width="300px"></a>
+                    <a href="../web/whitesk.html"><h2>韓版100種穿法的氣質皺皺白裙</h2></a>
+                    <h3></h3>
+                    <span>$420</span>
+                    <div id="hearttrash">
+                        <a href=""><button type="button" style="float: right;"><img src="img/heart red.png" alt=""></button></a>
+                        
+                        <a href=""><button type="button" style="float: right;"><img src="img/trash.png" alt="" style="float: right;"></button></a>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="sale"></div>
+                    <a href="../web/ym.html"><img src="img/IMG_7520.jpeg" alt="" width="300px"></a>
+                    <a href="../web/ym.html"><h2>自留款燕麥拿鐵毛衣</h2></a>
+                    <h3></h3>
+                    <span>$510</span>	
+                    <div id="hearttrash">
+                        <a href=""><button type="button" style="float: right;"><img src="img/heart red.png" alt=""></button></a>
+                        
+                        <a href=""><button type="button" style="float: right;"><img src="img/trash.png" alt="" style="float: right;"></button></a>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="sale"></div>
+                    <a href="../web/bag.html"><img src="img/IMG_5325.jpg" alt="" width="300px"></a>
+                    <a href="../web/bag.html"><h2>逛街必備小巧好裝的雙提把斜背包</h2></a>
+                    <h3></h3>
+                    <span>$390</span>	
+                    <div id="hearttrash">
+                        <a href=""><button type="button" style="float: right;"><img src="img/heart red.png" alt=""></button></a>
+                        
+                        <a href=""><button type="button" style="float: right;"><img src="img/trash.png" alt="" style="float: right;"></button></a>
+                    </div>
+                   </li>
+
+                   <li>
+                    <div class="sale"></div>
+                    <a href="../web/set.html"><img src="img/IMG_5280.jpg" alt="" width="300px"></a>
+                    <a href="../web/set.html"><h2>韓國質感棉麻排扣短西外套裝</h2></a>
+                    <h3></h3>
+                    <span>$580</span>	
+                    <div id="hearttrash">
+                        <a href=""><button type="button" style="float: right;"><img src="img/heart red.png" alt=""></button></a>
+                        
+                        <a href=""><button type="button" style="float: right;"><img src="img/trash.png" alt="" style="float: right;"></button></a>
+                    </div>
+                   </li>
+               </ul>
+
+           </div>
+          
+           
+
+           
+           
+        </div>  
+            
+       
+    
+    </body>
+</div>
+
+</html>

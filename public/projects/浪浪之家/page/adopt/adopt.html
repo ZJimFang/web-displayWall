@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>領養</title>
+    <link rel="stylesheet" href="adopt.css">
+    <link rel="icon" href="/img/icon.png">
+</head>
+<body>
+    <div>
+        <h1>領養資料</h1>
+        <h3>～～～建議領養人最低年齡為10，10歲以下小朋友請找家長幫忙填寫～～～</h3>
+        <form action="adopt.php" method="Get">
+            <table>
+                <tr>
+                    <td>浪浪姓名</td>
+                    <td>
+                        <select name="ani" required>
+                        <option value="">請選擇</option>
+                        <option value="姊姊">姊姊</option>
+                        <option value="醬油">醬油</option>
+                        <option value="愛德華">愛德華</option>
+                        <option value="大橘">大橘</option>
+                        <option value="小吉">小吉</option>
+                        <option value="菲菲">菲菲</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>領養人姓名</td>
+                    <td><input type="text" maxlength="8" placeholder="請輸入全名" name="peo" required></td>
+                </tr>
+                <tr>
+                    <td>生理性別</td>
+                    <td>
+                        <input type="radio" name="gender" value="1">男
+                        <input type="radio" name="gender" value="2">女
+                    </td>
+                </tr>
+                <tr>
+                    <td>年齡</td>
+                    <td><input type="number" min="10" max="100" step="1" name="age" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="mail" required></td>
+                </tr>
+                <tr>
+                    <td>聯絡電話</td>
+                    <td><input type="tel" name="tel" required></td>
+                </tr>
+                <tr>
+                    <td>工作及職稱</td>
+                    <td><input type="text" name="work"></td>
+                </tr>
+                <tr>
+                    <td>經濟來源</td>
+                    <td><input type="text" name="moneysrc"></td>
+                </tr>
+                <tr>
+                    <td>家庭成員</td>
+                    <td><input type="text" name="family" required></td>
+                </tr>
+                <tr>
+                    <td>您有無養寵物經驗？</td>
+                    <td>
+                        <input type="radio" name="petex" value="1" required>是
+                        <input type="radio" name="petex" value="2">否
+                    </td>
+                </tr>
+                <tr>
+                    <td>您所居住的地點？<br>請您略述居住的環境</td>
+                    <td>
+                        <textarea name="place" cols="50" rows="5" placeholder="可協助送養義工了解送養人情況，增加認養成功率"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>每天有多少時間可以陪牠？</td>
+                    <td>
+                        <textarea name="time" cols="50" rows="5" placeholder="可協助送養義工了解送養人情況，增加認養成功率"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>您想要領養牠的原因？</td>
+                    <td>
+                        <textarea name="reason" cols="50" rows="5" placeholder="可協助送養義工了解送養人情況，增加認養成功率"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>你是否願意包容、保護牠，
+                    <br>讓牠不再流浪，一生安全有家？</td>
+                    <td>
+                        <input type="radio" name="endcheck" value="1" required>是
+                        <input type="radio" name="endcheck" value="2">否
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align-last: right;">
+                        <input type="submit" value="提交" onclick="return(confirm('您確定要送出嗎？'))">
+                        <input type="reset" value="重新輸入">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h3>～～～填寫完並提交表單後，我們會再與您聯絡，約家訪時間，之後進行評估，感謝您～～～</h3>       
+    </div>
+
+</body>
+</html>

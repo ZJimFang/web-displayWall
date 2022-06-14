@@ -1,0 +1,398 @@
+
+.containe{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #142314;
+    overflow: hidden;
+    animation: animatecolor 5s linear infinite;
+}
+@keyframes animatecolor{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.containe span{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.containe span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height:200%;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+    0 0 20px #00ff0a,
+    0 0 40px #00ff0a,
+    0 0 60px #00ff0a,
+    0 0 80px #00ff0a,
+    0 0 100px #00ff0a;
+    border-radius: 50%;
+    transition: 3s;
+    transform: scale(0);
+}
+.containe span:hover::before{
+    transition: 0s;
+    transform: scale(1);
+}
+.contain{
+    position: relative;
+    width: 100%;
+    background: rgba(0, 6, 24, 0.949);
+    
+   
+    overflow: hidden;
+}
+.bubble{
+   position: relative;
+   display: flex; 
+}
+.bubble span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #3bea0b;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #dcbe4f,
+    0 0 100px #4fc 3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/var(--i));
+}
+.bubble span:nth-child(even){
+    background: #f2f60b;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+@keyframes animate{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+/*=============*/
+#copy {
+    box-sizing: border-box;
+    display:block;
+    color:rgb(120, 107, 80);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    padding-bottom :15px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :15px;
+    text-align : center;
+}
+
+#connect {
+    box-sizing: border-box;
+    display:block;
+    color:rgb(245, 184, 61);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding-bottom :15px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :15px;
+    text-align : center;
+}
+
+#TEL {
+    box-sizing: border-box;
+    display:block;
+    color:rgb(103, 101, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing :0.7168px;
+    padding-bottom :15.232px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :0px;
+    text-align : center;
+}
+
+.tel {
+    box-sizing: border-box ;
+    color:white;
+    cursor: pointer;
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 37px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-decoration-line: none;
+    text-size-adjust: 100%;
+    width: auto;
+}
+
+.tel:hover {
+    color:rgb(72, 121, 185);
+    display: block;
+}
+
+#connect div ul {
+    box-sizing: border-box ;
+    color:white;
+    display: block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.7168px;
+    line-height: 17.1429px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding-bottom: 0px ;
+    padding-inline-start: 0px;
+    padding-left: 0px ;
+    padding-right: 0px ;
+    padding-top: 0px ;
+}
+
+#icon li {
+    display:inline;
+    padding-left: 20px;
+}
+
+#icon li img{
+    width:50px;
+    height:50px;
+}
+
+footer {
+    background-color: rgb(27, 18, 18);
+}
+
+#hr {
+    background-color: gray;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#address h2 {
+    box-sizing: border-box;
+    display:block;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding-bottom :15px ;
+    padding-left :0px;
+    padding-right :0px;
+    padding-top :18px;
+    text-align : center;
+}
+
+#pagetop {
+    display: block;
+    text-align: center;
+    text-size-adjust: 100%;
+    padding-bottom: 0px;    
+    padding-top:0px;
+}
+
+#pagetop a {
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: -40px;
+    position: relative;
+    text-align: center;
+    text-decoration-color: rgb(72, 121, 185);
+}
+
+::selection {
+    color:white;
+    background-color: rgb(72, 121, 185);
+}
+
+/*================================header css====================================*/
+body{
+    background-color: rgb(19, 23, 44);
+}
+/*================================================================*/
+#header a {
+    color: black;
+}
+#header{
+    background: gray;
+    /*margin: 10px;*/
+    padding-top: 20px;
+    padding-left:30px;
+    /*margin-left: 20px;*/
+}
+#header h1 {
+    float: left;
+    font-size: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;/*字上下行的寬度*/
+}
+/*================================================================*/
+#game{
+    background-color:rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display:inline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:35px; /*文字大小*/
+    font-weight: 500;  /*字体的粗细程度*/
+    height: auto; /*元素內容區域的高度 auto=預設值*/
+    letter-spacing: 0.7168px;
+    line-height: 25.088px;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin-top: 50px;
+    transition-delay:0s;
+    transition-duration:0.5s;
+}
+#game:hover{
+    color: #bc9d51;
+}
+
+#menu{
+    text-align: right;
+    padding-right: 20px;
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+}
+#menu ul li a{
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    height: auto;
+    line-height: 22px;
+    overflow-wrap: break-word;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration-color:rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    padding: 11px 20px;
+    padding-left:20px;
+}
+#menu ul li a:before{
+    content:'';
+    width: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 45px;
+    transition:  0.7s all;
+}
+#menu ul li a:hover:before{
+    right: 0;
+}
+#carouselExampleCaptions img {
+    position: absolute;
+    background-position: center;
+    max-height: 37rem;
+ }
+ .carousel-item{
+   height: 40rem;
+   position: relative;
+   padding-bottom: 100px;
+   
+ }
+ .carousel {
+   min-width: 60px;
+   min-height: 500px;
+   max-width: 70%;
+  
+   width: auto;
+   height: auto; 
+   margin-left: auto;
+   margin-right: auto;
+ 
+ }
+ .carousel-inner > .item > img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   width: auto;
+   height: auto;
+ }
+ 
+ .navbar .navbar-nav>li>a {color: #fff;}
+ 
+#heada .navbar .navbar-nav>li>a {color: #fff;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+}
+.cool
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.cool li
+{
+    position: relative;
+    list-style: none;
+}
+.cool li a
+{
+    position: relative;
+    font-size: 2em;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+}
+.cool li a::before
+{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 30%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+.cool li a:hover::before
+{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}

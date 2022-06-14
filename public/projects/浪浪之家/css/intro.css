@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-color: #fff0ac;
+}
+
+.content {
+    padding: 0 10% 0 10%;
+}
+
+.col{
+    width: 50%;
+}
+
+.col img{
+    display: inline;
+    width: 49%;
+}
+
+.row {
+    background: #fff0ac;
+    display: flex;
+    text-align: center;
+}
+#lg{
+    height: 150px;
+}
+#tit{
+    height: 150px;
+}
+footer{
+    background-color: #d7d7df;
+}

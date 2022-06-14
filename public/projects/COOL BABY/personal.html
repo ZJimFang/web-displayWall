@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css撰寫連結 -->
+    <link rel="stylesheet" href="css/personal.css">
+    <!-- 忘了是什麼但不能刪掉 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome 置入nav圖標 -->
+    <script src="https://kit.fontawesome.com/9ea25825d5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9ea25825d5.js" crossorigin="anonymous"></script>
+    <!-- 網頁標籤 -->
+    <link rel="icon" href="img/pet.svg" type="img/x-icon/">
+    <link rel="shortcut icon" href="img/pet.svg" type="img/x-icon/">
+    <title>Cool Baby</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cool Baby</h1>
+    </header>
+    <!-- 水平導覽列 -->
+    <div class="myNav">
+        <nav>
+            <!-- 置中導覽列 -->
+            <ul class="center-nav">
+                <li style="padding-left: 200px;"><a href="index.html">Home</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <!-- 置右按鈕 -->
+                <div class="right-nav">
+                    <li style="padding-right: 5px;"><a href="car.html"><i
+                                class="fa-solid fa-cart-shopping"></i></a></img></li>
+                    <li><a href="personal.html"><i class="fa-solid fa-user"></i></a></img></li>
+                    <!-- 置右搜尋框 -->
+                    <div class="wrap">
+                        <div class="search">
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="">
+                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <article>
+            <div>
+                <img src="img/paimong.jpg" alt="">
+                <h2>用戶名</h2>
+                <hr class="hr1">
+                <p><a href="#">我的帳戶</a></p>
+                <p><a href="#">登出</a> </p>
+        </article>
+
+        <aside>
+            <h2>我的帳戶</h2>
+            <p>於下方查看和編輯您的個人資訊</p>
+            <hr class="hr2">
+            <div>
+                <h3>帳戶</h3>
+                <table>
+                    <tr>
+                        <td>名字</td>
+                        <td>姓氏</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>電子郵件</td>
+                        <td>聯絡資訊</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>送貨地址</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="upload">
+            <button>取消</button>
+            <button>更新資料</button>
+        </div>
+        </aside>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.js "></script>
+    <script>
+        $('.items').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+        });
+    </script>
+</body>
+
+</html>
