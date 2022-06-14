@@ -33,6 +33,7 @@ const LeaderBoard = () => {
       })
       .then((rank) => {
         rank.forEach((element, index) => {
+          console.log(element);
           setRows((prev) => [
             ...prev,
             createData(index + 1, element.name, element.total),

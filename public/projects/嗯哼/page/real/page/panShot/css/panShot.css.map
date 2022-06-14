@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,gBAAgB,EAAE,oBAAoB;CACzC",
+    "sources": [
+        "panShot.scss"
+    ],
+    "names": [],
+    "file": "panShot.css"
+}

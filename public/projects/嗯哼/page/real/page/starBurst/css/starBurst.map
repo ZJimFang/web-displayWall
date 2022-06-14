@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,YADQ,CACR,GAAG,CAAA;EACC,IAAI,EAAE,KAAK;EACX,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,qBAAqB,CAAC,cAAc;CAClD",
+    "sources": [
+        "astro.scss"
+    ],
+    "names": [],
+    "file": "astro.css"
+}

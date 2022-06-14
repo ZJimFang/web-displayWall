@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嗯哼</title>
+    <!-- JQuery　連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+    <!-- CSS連結 -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <a href="page/explore/explore.html"><li>探索</li></a>
+            <a href="page/real/real.html"><li>實戰</li></a>
+            <li>關於</li>
+        </ul>
+    </div>
+
+    <div class="bg">
+        <h1>嗯哼</h1>
+        <h2>嗯哼</h2>
+        <h3>嗯哼</h3>
+        <h4>嗯哼</h4>
+        <p>1213211651565321321</p>
+        <p id="guide">開始導覽</p>
+    </div>
+
+    <div id="fullpage">
+
+        <div class="section">
+            <img src="css/element/scrollArrow.gif" alt="">
+        </div>
+        <div class="section">
+            <p>生活中有許多司空見慣卻一知半解的學問<br>
+                攝影，正是最具代表性的項目<br>
+                我們希望能降低攝影這門技術的門，以盡可能白話、視覺化的方案<br>建立這個銜接初學到進階的資訊整合平台</p>
+        </div>
+        <div class="section">
+            <div class="gradient"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non officiis quisquam cum nesciunt optio eligendi beatae aspernatur velit explicabo. Magni odio est quos optio? Itaque commodi necessitatibus magni possimus dolore.</p>
+            <div class="video">
+                <video>
+                    <source src="css/video/1-8.webm">
+                </video>
+            </div>
+        </div>
+        <div class="section">
+            <p id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium iure ab odio obcaecati dolore praesentium tempora minus dicta asperiores earum, at adipisci aspernatur animi quasi perspiciatis eveniet ducimus autem accusamus.</p>
+            <div class="parts">
+                <a href="page/explore/page/shutter/shutter.html">
+                    <div class="part" id="shutter">  
+                        <div id="shutterText">
+                            <h1>快門</h1>
+                            <p>Shutter</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="page/explore/page/aperture/aperture.html">
+                    <div class="part" id="aperture">
+                        <div id="apertureText">
+                            <h1>光圈</h1>
+                            <p>Aperture</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="page/explore/page/iso/iso.html">
+                    <div class="part" id="iso">
+                        <div id="isoText">
+                            <h1>感光度</h1>
+                            <p>ISO</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="section">
+        </div>
+           
+    </div>
+
+    <script>
+        var SCROLLING_SPEED = 700;
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                navigation: true,
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嗯哼</title>
+
+    <!-- JQuery　連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../../css/fullpage.css" />
+
+    <script type="text/javascript" src="../../../../js/fullpage.js"></script>
+
+    <!-- CSS連結 -->
+    <link rel="stylesheet" href="../css/central.css">
+    <link rel="stylesheet" href="css/starBurst.css">
+    <link rel="stylesheet" href="../../../../css/menu/menu.css">
+
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="../../../../index.html">
+            <img src="../../../css/img/0.png" alt="">
+        </a>
+        <ul id="menuId">
+            <li></li>
+            <a href="../../../explore/explore.html">
+                <li>探索</li>
+            </a>
+            <a href="../../../real/real.html">
+                <li>實戰</li>
+            </a>
+            <a href="../about/about.html">
+                <li>關於</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="bg">
+        <div class="fade"></div>
+        <div class="bgContainer">
+            <img src="css/img/starBurst.JPG" alt="">
+        </div>
+        <h1>星茫</h1>
+        <p>Star Burst</p>
+    </div>
+
+    <div id="fullpage">
+
+        <div class="section">
+            <img src="css/element/scrollArrow.gif" alt="">
+        </div>
+        <div class="section">
+            <h1>second</h1>
+        </div>
+        <div class="section">
+            <h1>third</h1>
+        </div>
+        <div class="section">
+            <h1>forth</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium iure ab odio obcaecati dolore praesentium tempora minus dicta asperiores earum, at adipisci aspernatur animi quasi perspiciatis eveniet ducimus autem accusamus.</p>
+        </div>
+        <div class="section">
+            <h1>fifth</h1>
+        </div>    
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                navigation: true,
+                fadingEffect:true,
+            });
+        });
+    </script>
+
+</body>
+</html>

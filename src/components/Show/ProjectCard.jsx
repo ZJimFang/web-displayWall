@@ -87,13 +87,10 @@ const ProjectCard = ({ name, description, img_url, uid, signed }) => {
     });
   }, []);
 
-  // update(ref(db, "projects/" + name), {
+  // update(ref(db, "projects/c2/" + name), {
+  //   name: name,
   //   total: 0,
-  //   comment: {
-  //     1082022: "Hi",
-  //     1082023: "Hi bro",
-  //     1082024: "Hiii",
-  //   },
+  //   comment: {},
   // });
   return (
     <Card sx={{ minWidth: "350px", backgroundColor: "#C8C2AE" }}>

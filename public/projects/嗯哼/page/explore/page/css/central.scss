@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+    color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #181818;
+    #menuId{
+        position: relative;
+        left: 32px;
+    }
+    .bg{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        .cover{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(circle closest-corner at center, #00000000, #181818);
+            z-index: 0;
+            //animation: C 1s ease-in;
+            //animation-delay: 10s;
+            //animation-fill-mode: forwards;
+        }
+        @keyframes C {
+            from { 
+                opacity: 1;
+            }
+            to { 
+                opacity: 0;
+             }
+        }
+        h1{
+            white-space:nowrap;
+            position: absolute;
+            left: 50%;
+            top: 41%;
+            transform: translate(-50%, -50%);
+            font-weight: 500;
+            -webkit-filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.6));
+            opacity: 0;
+            font-size: 8rem;
+            animation: A 1s cubic-bezier(0,0.2,0.2,1);
+            animation-delay: 5.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes A {
+            from { 
+                opacity: 0; 
+                font-size: 8.5rem;
+            }
+            to { 
+                opacity: 1;
+                font-size: 10rem;
+                }
+        }
+        p{
+            position:absolute;
+            left: 53.5%;
+            top: 56%;
+            transform: translate(-50%, -50%);
+            font-weight: 300;
+            font-size: 4.5rem;
+            -webkit-filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.6));
+            opacity: 0;
+            letter-spacing: 1vw;
+            animation: a 1.5s cubic-bezier(0,1,1,1);
+            animation-delay: 5.5s;
+            animation-fill-mode: both;
+        }
+        @keyframes a {
+            from { 
+                opacity: 0; 
+                letter-spacing: 1vw;
+            }
+            to { 
+                opacity: 1;
+                letter-spacing: 7vw;
+            }
+        }
+        #myVideo{
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            opacity: 0;
+            animation: V 2s ease-out;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes V {
+            from { 
+                opacity: 0;
+            }
+            to { 
+                opacity: 1;
+             }
+        }
+    }
+}

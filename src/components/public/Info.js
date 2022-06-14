@@ -2,20 +2,21 @@
 
 export const c1 = {
   group1: {
-    name: "食5",
+    name: "南區小巷趴趴GO",
     description:
       "旅遊時我們很習慣透過網路去尋找當地食物，但網路上的資訊太雜太發散，且又太多廣告和營銷，往往都無法以最快速度找到當地人心目中的第一名，要找許多的資料相互對照，才能歸納出最佳美食。所以我們想要透過此網站讓大多數人方便且快速就能了解當地的特色，進而更深入了解台灣美食文化，也讓外地人可以得知當地有特色的店家。",
-    img_url: "c1/2.jpg",
+    img_url: "c1/1.png",
   },
   group2: {
-    name: "嘟嘟",
+    name: "嗯哼",
     description:
-      "網站將提供多種膚色及多種顏色口紅，選擇自己的膚色以及喜歡的口紅顏色，看看是否適合自己。挑對適合自己的口紅，在人群中成為最亮眼那個。",
-    img_url: "c1/2.jpg",
+      "剛好系上有一堂課是在介紹相機，再加上組員在高中 時期 設計過關於相機的網頁版面，因此想藉由這次機會把這個版面做成真實的 網頁。",
+    img_url: "c1/2.png",
   },
   group3: {
-    name: "口紅評比",
-    description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
+    name: "DoDo",
+    description:
+      "網站將提供多種膚色及多種顏色口紅，選擇自己的膚色以及喜歡的口紅顏色，看看是否適合自己。挑對適合自己的口紅，在人群中成為最亮眼那個。",
     img_url: "c1/3.png",
   },
   group4: {
@@ -28,7 +29,7 @@ export const c1 = {
     name: "浪浪之家",
     description:
       "提供流浪動物資訊，提倡領養代替購買，會有領養的表單。開設一個經驗分享區，讓一些飼主分享遇到的小趣事、狀況、應變方法。還有一個，如果有人看到有需要協助的流浪動物可以填寫的表單。還會放上菜單。",
-    img_url: "c1/5.jpg",
+    img_url: "c1/5.png",
   },
   group6: {
     name: "IN",
@@ -50,7 +51,8 @@ export const c1 = {
   },
   group9: {
     name: "穿搭分享",
-    description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
+    description:
+      "本網站為一個介紹穿搭的網站。有鑒於現在的年輕人越來越注重自身 的服裝儀容，所以本網站想藉此機會來分享日常穿搭，讓大家有一個參考 的樣式，也不需要每天為了穿著而煩惱。只要打開本網站，便可以得知穿 搭訊息。本網站除了分享穿搭外，也提供了樣本圖示之服裝品牌、該商品 店家資訊、價格⋯⋯等。若未來達到一定觀看流量，本團隊也將考慮開啟代 購或者銷售自創品牌等功能。",
     img_url: "c1/9.png",
   },
   group10: {
@@ -60,7 +62,7 @@ export const c1 = {
     img_url: "c1/10.png",
   },
   group11: {
-    name: "YEEEE GAME SHOW",
+    name: "YEEEE_GAME_SHOW",
     description:
       "在現在這個有各式各樣的遊戲的時代，有時候也找不到想玩的遊戲。我們這個網站就是來推薦益智遊戲，恐怖遊戲，生存遊戲。利用網頁互動的方式了解大致上遊戲的玩法。",
     img_url: "c1/11.png",
@@ -77,17 +79,17 @@ export const c2 = {
   group1: {
     name: "Yee遊未盡",
     description:
-      "透過性向測驗的結果來向使用者推薦遊戲，除了種類豐富以外，更有遊戲歷屆折扣查詢",
-    img_url: "c2/1.jpg",
+      "除了透過性向測驗的選擇結果來向遊戲荒的玩家們進行遊戲建議外，也同時具有瀏覽近期熱 門遊戲、付費遊戲的最低折扣紀錄查詢以及其他玩家的遊戲體驗分享這幾項功能，期望能讓 所有的使用者能透過我們的網頁來找到自己適合的遊戲。",
+    img_url: "c2/1.png",
   },
   group2: {
-    name: "葉尾蝶",
+    name: "燕尾碟",
     description:
-      "我們的網站是為了現今喜愛聽音樂的大眾們，但在聽音樂的同時，卻很少人會去了解這些音樂的創作緣由以及其背後的故事，這讓我們有所啟發，想做出一個音樂介紹網站，讓人們在聽音樂的同時也能感受到創作者們的心情與想法。",
-    img_url: "c2/2.jpg",
+      "現今聽音樂成為了大眾普遍的興趣，但在聽音樂的同時， 卻很少人會去了解這些音樂的創作緣由以及其身後的故事，所以我 們想做出一個音樂介紹網站，讓人在聽音樂的同時也能感受到創作 者們的心情與想法。",
+    img_url: "c2/2.png",
   },
   group3: {
-    name: "hhien studio",
+    name: "hhien_studio",
     description:
       "以販賣衣服和飾品為主的消費購物網站，主打風格是韓系、成熟、時尚。目的是擴張品牌 、賺取營利。 其次是想為自己的品牌設立專屬網站，讓品牌能在服飾網購圈佔有一席之地的同時還能方便客群做瀏覽及購買。",
     img_url: "c2/3.jpg",
@@ -105,10 +107,9 @@ export const c2 = {
     img_url: "c2/5.png",
   },
   group6: {
-    name: "集品王線上GO!",
-    description:
-      "因現在疫情嚴重，再加上能讓學生們方便購物(沒有介紹只能慢慢尋找需要的商品)以及節省時間(特定時段人潮多) ，更能增加學生對本校的回憶和歸屬感，所以我們這組決定製作學校的集品王雜貨店網站。",
-    img_url: "c2/6.jpg",
+    name: "-",
+    description: "-",
+    img_url: "black.png",
   },
   group7: {
     name: "思友瘋",
@@ -118,8 +119,9 @@ export const c2 = {
   },
   group8: {
     name: "台灣美食",
-    description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
-    img_url: "c2/1.jpg",
+    description:
+      "因為我們的組員其中一位是香港人，為了讓他更了解台灣在地的美食，所以打算做推廣台灣特色美食的網站，幫助他們更 清楚，融入台灣文化，除了幫助外國朋友外，我們也想了解台灣 各縣市居民對於各區美食的喜好、偏好程度。",
+    img_url: "c2/8.png",
   },
   group9: {
     name: "青青石工作室",
@@ -127,7 +129,7 @@ export const c2 = {
     img_url: "c2/9.jpg",
   },
   group10: {
-    name: "Island Craft",
+    name: "Island_Craft",
     description:
       "這是一個minecraft伺服器的網站，主要是推廣我們製作的伺服器並廣泛邀請坐在電腦前面，同樣是玩家的你來一起同樂",
     img_url: "c2/10.jpg",
@@ -139,15 +141,14 @@ export const c2 = {
     img_url: "c2/11.jpg",
   },
   group12: {
-    name: "God web",
-    description:
-      "介紹統神的大小事，家庭，工作，平時興趣，或是一些有趣的事跡，讓喜歡統神的人能夠更加了解統神，也能讓想認識統神的人能更方便快速的認識他。我從很久以前就是統神的粉絲所以想要把統神的幽默與歡樂帶給大家。",
-    img_url: "c2/12.png",
+    name: "--",
+    description: "--",
+    img_url: "black.png",
   },
   group13: {
     name: "電影大百科",
     description: "Hello I'm JimHello I'm JimHello I'm JimHello I'm Jim",
-    img_url: "c2/1.jpg",
+    img_url: "c2/13.png",
   },
   group14: {
     name: "Aisai",
@@ -164,32 +165,31 @@ export const c2 = {
 };
 
 export const rate_table = {
-  台灣五區趴趴GO: { score: 0 },
+  南區小巷趴趴GO: { score: 0 },
   嗯哼: { score: 0 },
-  口紅評比: { score: 0 },
-  a: { score: 0 },
-  浪浪四缺一: { score: 0 },
-  IN_鞋子: { score: 0 },
+  DoDo: { score: 0 },
+  夜生活: { score: 0 },
+  浪浪之家: { score: 0 },
+  IN: { score: 0 },
   談攝世界: { score: 0 },
-  台灣靈異故事: { score: 0 },
-  台灣靈異故事2: { score: 0 },
-  傳說對決: { score: 0 },
-  元智國際電玩展: { score: 0 },
-  b: { score: 0 },
+  日本都市傳說: { score: 0 },
+  穿搭分享: { score: 0 },
+  傳說對決戰略現時報: { score: 0 },
+  YEEEE_GAME_SHOW: { score: 0 },
   Bivino: { score: 0 },
   Yee遊未盡: { score: 0 },
   葉尾蝶: { score: 0 },
-  "hhien studio": { score: 0 },
-  "8豆夭": { score: 0 },
+  hhien_studio: { score: 0 },
+  食5: { score: 0 },
   油到滑倒: { score: 0 },
-  "集品王線上GO!": { score: 0 },
+  "-": { score: 0 },
   思友瘋: { score: 0 },
   台灣美食: { score: 0 },
   青青石工作室: { score: 0 },
-  "Island Craft": { score: 0 },
-  "COOL BABY": { score: 0 },
-  "God web": { score: 0 },
+  Island_Craft: { score: 0 },
+  COOL_BABY: { score: 0 },
+  "--": { score: 0 },
   電影大百科: { score: 0 },
-  c: { score: 0 },
+  Aisai: { score: 0 },
   你的好蜂蜜網站: { score: 0 },
 };

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- JQuery　連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../../css/fullpage.css" />
+
+    <script type="text/javascript" src="../../../../js/fullpage.js"></script>
+
+    <!-- CSS連結 -->
+    <link rel="stylesheet" href="../css/central.css">
+    <link rel="stylesheet" href="css/aperture.css">
+    <link rel="stylesheet" href="../../../../css/menu/menu.css">
+
+    <style>
+        ul{
+            list-style-type: square;
+        }
+        li{
+            margin: 10px 0px 0px 0px;
+        }
+        .topphoto{
+            float: right;
+            margin-right: 70px;
+        }
+        .photo{
+            float: right;
+            margin-right: 70px;
+        }
+        .two{
+            height: 600px;
+            width: 550px;
+            margin: 20px;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="../../../../index.html">
+            <img src="../../../css/img/0.png" alt="">
+        </a>
+        <ul id="menuId">
+            <li></li>
+            <a href="../../explore.html">
+                <li>探索</li>
+            </a>
+            <a href="../../../real/real.html">
+                <li>實戰</li>
+            </a>
+            <a href="../../../about/about.html">
+                <li>關於</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="bg">
+        <video autoplay muted id="myVideo">
+            <source src="css/video/aperture.mp4" type="video/mp4">
+        </video>
+        <h1>光圈</h1>
+        <p>Aperture</p>
+    </div>
+
+    <div id="fullpage">
+
+        <div class="section">
+        </div>
+        <div class="section">
+            <br>
+            <br>
+            <p style="font-size: 1.5cm; margin-left:20px ;">簡介</p>
+            <br>
+            <br>
+            <br>
+            <div class="article">
+                <div class="topphoto"><img src="../../../css/img/notYet.jpg" width="500" alt=""></div>
+            <p style="font-size: 0.6cm; margin-left: 30px;">
+                光圈指的是鏡頭內一組細小的葉片，能夠控制鏡頭的光量，
+                <br>
+                也就是照相機上用來控制鏡頭孔徑大小的部件，
+                <br>
+                以控制景深、鏡頭成像素質、以及和快門協同控制進光量。
+                <br>
+                光圈的大小通常用f值表示，光圈f值=鏡頭的焦距除以光圈口徑。
+                <br>
+                簡單而言，f值越小光圈就越大，進光量也越大，景深越淺。
+                <br>
+            </p>
+            </div>
+                
+            
+            
+            
+        </div>
+        <div class="section">
+            <br>
+            <br>
+            <p style="font-size: 1.5cm; margin-left:20px ;">個別特性</p>
+            <br>
+            <br>
+            <p style="font-size: 1cm; margin-left:50px"><b>種類</b></p>
+            <br>
+            <br>
+            <div class="article" style="margin-left:90px">
+            <p style="font-size: 0.7cm;">
+                <ul>
+                    <li style="font-size: 0.5cm; " >
+                        固定光圈：最簡易的相機只有一個圓孔的固定光圈。
+                    </li>
+                    <li style="font-size: 0.5cm;">
+                        沃特侯瑟光圈：最初的可變光圈只是一系列大小不同的圓孔排列在一個有中心軸的圓盤的周圍；
+                        <br>
+                        轉動圓盤可將適當大小的圓孔移到光軸上，達到控制孔徑的效果。
+                    </li>
+                    <li style="font-size: 0.5cm;">
+                        貓眼式光圈：多用於簡單照相機。
+                    </li>
+                    
+                    <li style="font-size: 0.5cm;">
+                        虹膜類光圈：由多個相互重疊的弧形薄金屬葉片組成，葉片的離合能夠改變中心圓形孔徑的大小。
+                    </li>
+                    
+                    <li style="font-size: 0.5cm;">
+                        瞬時光圈：只在快門開啓的瞬間，將光圈縮小到預定大小，平時光圈在最大位置。例如：單鏡反光相機。
+                    </li>
+                    
+                    <li style="font-size: 0.5cm;">
+                        快門光圈：大多是雙葉片的貓眼式光圈，不過與單純是貓眼式光圈不同的是：快門光圈平時是完
+                        <br>
+                        全關閉的，保持預定的孔徑到一段預定快門開啓時間之後，立刻閉合。
+                    </li>
+                </ul>
+            </p>
+        </div>
+        </div>
+        <div class="section">
+            <p style="font-size: 1.5cm; margin-left:20px">特殊技巧</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="article">
+                <div class="photo"><img src="../../../css/img/notYet.jpg" width="400" alt=""></div>
+                <p style="font-size: 1cm; margin-left:50px">
+                    <b>大光圈虛化背景突顯主體</b>
+                </p>
+                <br>
+                <p style="font-size: 0.5cm;margin-left:80px">
+                  在拍攝照片時使用的光圈越大，景深越淺。利用這一點，
+                  <br>
+                  可以避免周圍雜亂的背景影響畫面效果，
+                  <br>
+                  使照片的焦點都集中在主體上，讓主體更被強調出來。  
+                </p>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <br>
+            <br>
+
+            <div class="article2">
+                <div class="photo"><img src="../../../css/img/notYet.jpg" width="400" alt="" ></div> 
+              <p style="font-size: 1cm; margin-left:50px">
+                <b>中小光圈拍攝風景建築</b>
+            </p>
+            <br>
+            <p style="font-size: 0.5cm; margin-left:80px">
+              拍攝城市建築、大場景的風景時，常常使用F8、F11、F16
+              <br>
+              這樣的中小光圈，配合焦距較短的廣角鏡頭，
+              <br>
+              表現豐富細節和細膩的層次。  
+            </p> 
+            </div>
+        </div>
+
+        <div class="section">
+            <p style="font-size: 1cm; margin-left:50px">
+            <b>微光手持拍攝採用大光圈避免畫面模糊</b>
+            </p> 
+            <br>
+            <br>
+            <div class="article">
+                <div class="photo"><img src="../../../css/img/notYet.jpg" width="400" alt=""></div>
+                <p style="font-size: 0.5cm; margin-left:80px">
+                在室內、陰天、傍晚等光線較弱的環境下拍攝時，一個常見的問題就是照片
+                <br>
+                會看不太清楚（模糊）。這是因為在微光環境中拍攝時，需要較長的曝光時
+                <br>
+                間（較慢的快門速度）來拍出自己想要的效果。一旦快門速度「低於」手持
+                <br>
+                安全速度，手的晃動可能會造成照片模糊。使用大光圈能夠在一定程度上提
+                <br>
+                升感光元件單位時間的進光量，從而提升快門速度，避免照片模糊。
+                <br>
+                <br>
+                大光圈提升快門速度並不僅僅用於微光環境中，在陽光明媚的天氣裡，也常
+                <br>
+                常會利用大光圈獲得更快的快門速度。拍攝動物、飛鳥要儘量捕捉瞬間的精
+                <br>
+                彩姿態，表現出它們自然的天性。即使光線充足，也常常使用大光圈、適當
+                <br>
+                調高ISO 感光度，獲得高於1/500 秒的快門速度，以連拍方式凝固精彩瞬間。
+            </p>
+            </div>
+        </div>
+        
+        <div class="section">
+
+            <div class="article">
+                <div class="photo"><img src="../../../css/img/notYet.jpg" width="400" alt=""></div>
+                <p style="font-size: 1cm; margin-left:50px">
+                    <b>微距使用中小光圈避免景深過淺</b>
+                </p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left:80px">
+                    使用微距鏡頭可以用非常近的距離拍攝昆蟲的特寫畫面，影響景深的
+                    <br>
+                    另外一個重要因素就是拍攝距離。越靠近拍攝被攝主體，景深越淺，
+                    <br>
+                    背景越模糊。因此，微距攝影時，如果採用大光圈容易導致景深過淺。
+                    <br>
+                    常常使用F8、F11、F13 這樣的中小光圈拍攝，確保畫面具有一定的
+                    <br>
+                    清晰範圍。  
+                </p>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <br>
+            <br>
+
+            <div class="article2">
+                <div class="photo"><img src="../../../css/img/notYet.jpg" width="400" alt="" ></div> 
+              <p style="font-size: 1cm; margin-left:50px" >
+                <b>中小光圈拍攝獨特的星芒效果</b>
+            </p>
+            <br>
+            <p style="font-size: 0.5cm; margin-left:80px">
+                如果拍攝的畫面中存在太陽、路燈、水面的反光等點光源，選擇F11、F16
+                <br>
+                甚至F22 這樣的小光圈拍攝，畫面上會出現神奇的變化，這些點光源會呈現
+                <br>
+                出漂亮的星茫效果，使人感覺仿佛置身於夢幻世界。
+            </p>
+             
+            </div>
+        </div>
+        
+        <div class="section">
+            <p style="font-size: 1.5cm; margin-left:20px">注意事項</p>
+            <br>
+            <br>
+            <p style="font-size: 1cm; margin-left: 50px;" ><b>使用大光圈的五個拍攝注意事項</b></p>
+            <br>
+            <br>
+
+            <div class="article">
+                <p style="font-size: 0.8cm; margin-left: 80px;">器材選擇</p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 150px;">
+                    當光圈開到最大時，影像質素就會下降，有些甚至慘不忍睹。規格相似，但價格差天共地的鏡頭，
+                    <br>
+                    往往在開盡光圈時就高下立見。所以選擇合適的器材非常重要。
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="article2">
+                <p style="font-size: 0.8cm; margin-left: 80px;">對焦位置</p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 150px;">
+                    大光圈帶來的淺景深，很容易就會模糊化的背景，甚至連主體都會模糊掉，所以拍攝時必須留意對焦
+                    <br>
+                    位置，稍一移動就會對錯焦，把好照片都破壞了。
+                    <br>
+                    <br>
+                    例如拍攝人像的話，一般首要對焦都是主體的雙眼，使用單點對焦就會更加準確了。
+
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="section">
+            <div class="article">
+                <p style="font-size: 0.8cm; margin-left: 80px;">充分瞭解「景深」模式</p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 150px;">
+                    光圈會影響景深，在景深之內的影像清晰，景深以外的影像則模糊，而大光圈導致淺景深，
+                    因此容易造出主體清、
+                    <br>
+                    背景蒙的效果。但除此之外，還有另外兩個重要元素︰鏡頭焦距與拍攝主體距離，都會影響景深的深淺，所以使用
+                    <br>
+                    大光圈，也不一定導致主體清背景蒙，
+                    還須考慮另外兩個元素，並作出調整。
+                </p>
+            </div>
+            <br><br>
+            <div class="article2">
+                <p style="font-size: 0.8cm; margin-left: 80px;">選擇「合適的」光源</p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 150px;">
+                    影像的銳利度，需要一定對比度去襯托出來，所以光源對影像的影響尤其重要。合適的光源能以光影的對比，
+                    <br>
+                    以增加主體的立體感，繼而強化影像的銳利感。
+                </p>
+            </div>
+            <br><br>
+            <div class="article3">
+                <p style="font-size: 0.8cm; margin-left: 80px;">自動對焦的問題</p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 150px;">
+                    使用大光圈鏡頭，對焦是否準確的情況更容易突顯，而一支鏡頭可以因為自身質素、損壞問題等，導致自動對焦不准確，
+                    <br>
+                    如果發現這情況，則可找原廠之類進行校正。另一方面，手動對焦亦是個值得學習及使用的方法，
+                    <br>
+                    <br>
+                    而且數位相機亦有一些對焦輔助，如放大或峰值對焦，都相當有用啊。
+
+                </p>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <p style="font-size: 1.5cm; margin-left:20px">延伸閱讀</p>
+            <br>
+            <br>
+            <div class="two">
+                <p style="font-size: 1cm; margin-left: 50px; " ><b>光圈與景深之間的關係？</b></p>
+                <br>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 50px;">
+                    光圈除了是控制光線的閥門，還能調整對焦範圍（景深）。
+                    <br>
+                    光圈小，景深就大，焦點就會放在所有前景和背景的主體上。
+                    <br>
+                    當光圈大開（最大光圈）時，景深很淺。如果您將焦點對準
+                    <br>
+                    前景的拍攝對象，就可以創造散景效果 （背景模糊）。
+                    <br>
+                    這一來，拍攝對象與背景就彷如有了距離，拍攝對象看起來
+                    <br>
+                    清晰而背景顯得朦朧。
+                    <br>
+                    <br>
+                    秘訣：
+                    <br>
+                    - 如果拍攝對象前面有物體，您還可以使用最大光圈讓物體
+                    <br>
+                    顯得模糊，藉此創造前景散景。
+                    <br>
+                    - 景深較淺時，調焦點時要留意——拍攝對象可能有部分
+                    <br>
+                    會落入離焦範圍。
+                    
+                </p>
+            </div>
+            
+            <div class="two">
+                <p style="font-size: 1cm; margin-left: 50px;" ><b>光圈與景光圈開口與f值之間的關係？</b></p>
+                <br>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 50px;">
+                    f值是表示光圈葉片開口大小的數值。
+                    <br>
+                    當我們更改相機上的f值，或相機調整f值時，孔徑光闌的大小
+                    <br>
+                    會相應改變，改變到達影像感應器的光量。
+                    <br>
+                    <br>
+                    孔徑光闌「開啟」時，大量光線就會進入。
+                    <br>
+                    孔徑光闌「關閉」時，開口則變窄，進入的光線較少。
+                    <br>
+                    <br>
+                    <div class="page9photo"><img src="../../../css/img/notYet.jpg" width="500" alt="" style="margin-left: 80px;"></div><br>
+                    <p style="font-size: 0.5cm; margin-left: 50px;">
+                    開口越窄，f值越大。調整這個開口，就稱為「打開光圈」或「收窄光圈」。  
+                    </p>
+                    
+                    
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <p style="text-align: center; font-size:1cm">參考文獻</p>
+            <br>
+            <br>
+            <p style="text-align: center; font-size:0.5cm">
+                https://digiphoto.techbang.com/posts/3845-typical-use-of-aperture-priority-and-skills?page=1.
+                <br>
+                https://snapshot.canon-asia.com/tw/article/zh_tw/lesson-3-learning-about-aperture.
+
+            </p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                navigation: true,
+                fadingEffect:true,
+            });
+        });
+    </script>
+
+</body>
+</html>

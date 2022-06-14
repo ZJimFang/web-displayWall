@@ -1,0 +1,56 @@
+.section{
+    padding: 10%;
+    background-color: #181818;
+    z-index: 5;
+    background-color: #0000008c;
+    backdrop-filter: blur(20px);
+    &:nth-child(1){
+        background-color: rgba(0, 255, 255, 0);
+        z-index: -1;
+        backdrop-filter: none;
+        img{
+            width: 30px;
+            position: absolute;
+            left: 50%;
+            top: 89%;
+            transform: translate(-50%, -50%);
+            -webkit-filter: drop-shadow(2px px 2px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+            opacity: 0;
+            animation: fadeIn 1s;
+            animation-delay: 6s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    }
+    &:nth-child(2){
+        z-index: 3;
+    }
+    &:nth-child(3){
+        z-index: 4;
+    }
+}
+
+// .fullpage-wrapper {
+// 	width: 100%!important;
+// 	transform: none!important;
+// }
+
+// .fp-section {
+// 	width: 100%!important;
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// 	visibility: hidden;
+// 	opacity: 0;
+// 	transition: all .7s ease-in-out;
+// }
+
+// .fp-section.active {
+// 	visibility: visible;
+// 	opacity: 1;
+// 	z-index: 1;
+// }

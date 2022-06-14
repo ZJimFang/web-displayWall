@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- JQuery　連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../../css/fullpage.css" />
+
+    <script type="text/javascript" src="../../../../js/fullpage.js"></script>
+
+    <!-- CSS連結 -->
+    <link rel="stylesheet" href="css/iso.css">
+    <link rel="stylesheet" href="../../../../css/menu/menu.css">
+    <style>
+        
+        .img1
+        {
+            float: right;
+        }
+        .article1
+        {
+            float: left;
+        }
+        .article
+        {
+            float: left;
+        }
+        .photo{
+            float: right;
+            margin-right: 70px;
+        }
+        .two
+        {
+            height: 600px;
+            width: 550px;
+            margin: 90px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="../../index.html">
+            <img src="../../../css/img/0.png" alt="">
+        </a>
+        <ul id="menuId">
+            <li></li>
+            <a href="../../explore.html">
+                <li>探索</li>
+            </a>
+            <a href="../../../real/real.html">
+                <li>實戰</li>
+            </a>
+            <a href="../../../about/about.html">
+                <li>關於</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="bg">
+        <video autoplay muted id="myVideo">
+            <source src="css/video/iso.mp4" type="video/mp4">
+        </video>
+        <h1>感光度</h1>
+        <p>ISO</p>
+    </div>
+
+    <div id="fullpage">
+
+        <div class="section">
+            <img src="css/element/scrollArrow.gif" alt="">
+        </div>
+
+        <div class="section">
+            
+            
+            <p style="font-size: 1.5cm; margin-top:0px; margin-left: 50px; text-align: center;">簡介</p>
+            <br><br><br><br>
+            <div class="article1"><div class="img"><img src="./1.jpg" alt=""></div></div>
+
+                <div class="article2">
+                    <p style="font-size: 0.6cm; margin-right: 80px; text-align: right;">
+                        「ISO感光度」中的「ISO」代表「國際標準化組織」，是一間
+                        
+                        負責制訂國際標準的機構。
+                        <br>
+                        ISO感光度會控制相機感測器對接觸它的光線有多敏感。
+                        <br>
+                        較高ISO感光度會令相機感測器對光線更敏感，讓您能在較暗的環境下拍照。
+                    </p>
+                </div>
+                <br>
+                
+        </div>
+        <div class="section">
+            <p style="font-size: 1.0cm; margin-top:0px; text-align: center;">在同樣快門速度與光圈大小下，使用不同感光度的結果</p>
+            <br><br><br><br><br>
+            <img src="./2.png.jpg" alt="" width="900" style="margin-left: 350px;">
+
+        </div>
+        <div class="section">
+            
+            <br>
+            <br><br>
+            <div class="two">
+                <img src="./3.jpg" alt="" style="margin-left:150px ;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <p style="font-size: 0.5cm; margin-left: 150px;">
+                    演奏者的動作被高速的快門速度所「凝住」。
+                    <br>
+                    沒有使用閃光燈，以免影響所得相片的氛圍。
+                    <br>
+                    這是典型可用高ISO感光度捕捉的弱光場景。
+                    
+                </p>
+            </div>
+            
+            <div class="two">
+                
+                <br>
+                <br><br>
+                <img src="./4.jpg" alt="" style="margin-left:80px ;">
+                <p style="font-size: 0.5cm; margin-left: 50px; margin-top:50px ;">
+                    使用了低ISO感光度，加上使用較窄的光圈，使能夠實現較慢的快門速度。低速快門速度模糊了汽車前燈和尾燈的光線，形成光跡。
+                    
+                    
+                </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="article">
+                <div class="photo"><img src="./5.jpg" width="400" alt="" style="margin-right:180px"></div>
+                <p style="font-size: 1cm; margin-left:210px">
+                    <b>ISO自動（ISO AUTO）模式</b>
+                </p>
+                <br>
+                <p style="font-size: 0.5cm; margin-left:180px">
+                    可以自動調整相機的ISO感光度，使快門速度設定足夠快，
+                    <br>
+                    以防止相機震動。即使已經從一個昏暗的環境轉移到一個明亮
+                    <br>
+                    的環境去，也可以防止相機使用相同的高ISO感光度來拍攝。
+ 
+                </p>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+            <br>
+            <br>
+
+            <div class="article2">
+                <div class="photo"><img src="./6.jpg" width="400" alt="" style="margin-right:180px"></div> 
+              <p style="font-size: 1cm; margin-left:210px" >
+                <b>中小光圈拍攝獨特的星芒效果</b>
+            </p>
+            <br>
+            <p style="font-size: 0.5cm; margin-left:180px">
+                將ISO感光度設定為「自動」（AUTO）後，也可以設定相機
+                <br>
+                可操作的速度上限。如果將上限設置得較高，即使在昏暗場景
+                <br>
+                或拍攝昏暗物體時可輕鬆拍攝照片，雜訊亦會較多。將ISO感
+                <br>
+                光度設置為不會影響影像質素的數值。
+            </p>
+             
+            </div>
+        </div>    
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                navigation: true,
+                fadingEffect:true,
+            });
+        });
+    </script>
+
+</body>
+</html>
